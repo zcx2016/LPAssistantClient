@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="gTV-IL-0wX" customClass="LPAHomeCollectionCell">
+            <rect key="frame" x="0.0" y="0.0" width="136" height="130"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="136" height="130"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bigScanNew.png" translatesAutoresizingMaskIntoConstraints="NO" id="chT-Ju-AMy">
+                        <rect key="frame" x="33" y="20" width="70" height="70"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="70" id="WcK-g7-NOY"/>
+                            <constraint firstAttribute="height" constant="70" id="YaF-yP-PDz"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="扫一扫开单" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hZ0-9k-qgU">
+                        <rect key="frame" x="32.5" y="100" width="71.5" height="17"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+            </view>
+            <constraints>
+                <constraint firstItem="chT-Ju-AMy" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" constant="20" id="HhU-4c-iAc"/>
+                <constraint firstItem="chT-Ju-AMy" firstAttribute="centerX" secondItem="gTV-IL-0wX" secondAttribute="centerX" id="ZBr-Rq-ID8"/>
+                <constraint firstItem="hZ0-9k-qgU" firstAttribute="top" secondItem="chT-Ju-AMy" secondAttribute="bottom" constant="10" id="bEH-Q4-CZG"/>
+                <constraint firstItem="hZ0-9k-qgU" firstAttribute="centerX" secondItem="gTV-IL-0wX" secondAttribute="centerX" id="gnE-8i-orS"/>
+            </constraints>
+            <size key="customSize" width="136" height="130"/>
+            <connections>
+                <outlet property="imgView" destination="chT-Ju-AMy" id="dux-zu-kCe"/>
+                <outlet property="nameLabel" destination="hZ0-9k-qgU" id="hjk-3V-0l7"/>
+            </connections>
+            <point key="canvasLocation" x="77" y="14"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="bigScanNew.png" width="60" height="60"/>
+    </resources>
+</document>
