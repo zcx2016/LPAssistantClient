@@ -29,7 +29,7 @@
     self.navigationItem.title = @"客户接待";
     
     UIButton *btn = [[UIButton alloc] initWithFrame:CGRectMake(0, 0, 30, 30)];
-    [btn setImage:[UIImage imageNamed:@"bell"] forState:UIControlStateNormal];
+    [btn setImage:[UIImage imageNamed:@"add"] forState:UIControlStateNormal];
     [btn addTarget:self action:@selector(addBtnClick:) forControlEvents:UIControlEventTouchUpInside];
     self.navigationItem.rightBarButtonItem = [[UIBarButtonItem alloc] initWithCustomView:btn];
     

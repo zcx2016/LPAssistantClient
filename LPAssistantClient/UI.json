@@ -15,6 +15,6 @@
  "clsName" : "LPAMyVC",
  "title" : "我的",
  "image" : "main_my",
- "selectImage" : "main_user_highlight"
+ "selectImage" : "main_my_highlight"
  }
 ]

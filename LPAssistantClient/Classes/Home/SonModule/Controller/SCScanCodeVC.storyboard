@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Scan CodeVC-->
+        <scene sceneID="FVZ-JQ-awz">
+            <objects>
+                <viewController restorationIdentifier="SCScanCodeVC" storyboardIdentifier="SCScanCodeVC" id="0Rs-rL-BD4" customClass="SCScanCodeVC" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Q8C-QI-bFJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="8Wx-hE-IqY"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="xAB-WY-uCC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="8Vx-8T-PeQ">
+                                <rect key="frame" x="67" y="213.5" width="240" height="240"/>
+                                <subviews>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ScanQR1.png" translatesAutoresizingMaskIntoConstraints="NO" id="ku5-mf-UFt">
+                                        <rect key="frame" x="0.0" y="0.0" width="40" height="40"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="40" id="Or1-2S-PG7"/>
+                                            <constraint firstAttribute="height" constant="40" id="VrP-7d-FfY"/>
+                                        </constraints>
+                                    </imageView>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ScanQR2.png" translatesAutoresizingMaskIntoConstraints="NO" id="e8H-yO-W2n">
+                                        <rect key="frame" x="200" y="0.0" width="40" height="40"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="40" id="Kg4-hl-t6O"/>
+                                            <constraint firstAttribute="height" constant="40" id="fjh-Eu-UF6"/>
+                                        </constraints>
+                                    </imageView>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ScanQR3.png" translatesAutoresizingMaskIntoConstraints="NO" id="eMU-4g-L36">
+                                        <rect key="frame" x="0.0" y="200" width="40" height="40"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="40" id="JzI-G9-sup"/>
+                                            <constraint firstAttribute="height" constant="40" id="fVd-DY-oB4"/>
+                                        </constraints>
+                                    </imageView>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ScanQR4.png" translatesAutoresizingMaskIntoConstraints="NO" id="D88-jR-FRL">
+                                        <rect key="frame" x="200" y="200" width="40" height="40"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="40" id="5Xe-HR-FQC"/>
+                                            <constraint firstAttribute="width" constant="40" id="bED-JO-WbN"/>
+                                        </constraints>
+                                    </imageView>
+                                </subviews>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="bottom" secondItem="eMU-4g-L36" secondAttribute="bottom" id="1pC-P8-jQm"/>
+                                    <constraint firstItem="e8H-yO-W2n" firstAttribute="top" secondItem="8Vx-8T-PeQ" secondAttribute="top" id="LAX-yg-Eim"/>
+                                    <constraint firstAttribute="width" constant="240" id="U7X-qL-LBk"/>
+                                    <constraint firstItem="ku5-mf-UFt" firstAttribute="top" secondItem="8Vx-8T-PeQ" secondAttribute="top" id="aIe-RJ-DWU"/>
+                                    <constraint firstAttribute="height" constant="240" id="dS8-bY-9CD"/>
+                                    <constraint firstAttribute="trailing" secondItem="D88-jR-FRL" secondAttribute="trailing" id="hnk-pt-jYF"/>
+                                    <constraint firstAttribute="bottom" secondItem="D88-jR-FRL" secondAttribute="bottom" id="nD3-sA-zAr"/>
+                                    <constraint firstAttribute="trailing" secondItem="e8H-yO-W2n" secondAttribute="trailing" id="pGM-Qp-q6B"/>
+                                    <constraint firstItem="ku5-mf-UFt" firstAttribute="leading" secondItem="8Vx-8T-PeQ" secondAttribute="leading" id="sFo-hi-i8T"/>
+                                    <constraint firstItem="eMU-4g-L36" firstAttribute="leading" secondItem="8Vx-8T-PeQ" secondAttribute="leading" id="xZH-a9-jTy"/>
+                                </constraints>
+                            </view>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wOe-5i-htr">
+                                <rect key="frame" x="93.5" y="473.5" width="189" height="34"/>
+                                <state key="normal" title="将条码/二维码放入框内">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="wOe-5i-htr" firstAttribute="centerX" secondItem="xAB-WY-uCC" secondAttribute="centerX" id="CxU-uB-h0c"/>
+                            <constraint firstItem="wOe-5i-htr" firstAttribute="top" secondItem="8Vx-8T-PeQ" secondAttribute="bottom" constant="20" id="U3c-MQ-IdE"/>
+                            <constraint firstItem="8Vx-8T-PeQ" firstAttribute="centerX" secondItem="xAB-WY-uCC" secondAttribute="centerX" id="gM9-Pe-UUg"/>
+                            <constraint firstItem="8Vx-8T-PeQ" firstAttribute="centerY" secondItem="xAB-WY-uCC" secondAttribute="centerY" id="nAJ-3H-dT0"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="flashBtn" destination="wOe-5i-htr" id="oGx-Au-ekl"/>
+                        <outlet property="scanView" destination="8Vx-8T-PeQ" id="CTe-2r-N8f"/>
+                        <outlet property="scanViewH" destination="dS8-bY-9CD" id="k6f-S5-HkT"/>
+                        <outlet property="scanViewW" destination="U7X-qL-LBk" id="mfN-aK-XC2"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="M3h-aY-36h" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="128.80000000000001" y="-44.527736131934034"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="ScanQR1.png" width="16" height="16"/>
+        <image name="ScanQR2.png" width="16" height="16"/>
+        <image name="ScanQR3.png" width="16" height="16"/>
+        <image name="ScanQR4.png" width="16" height="16"/>
+    </resources>
+</document>

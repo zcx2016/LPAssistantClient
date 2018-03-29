@@ -9,6 +9,9 @@
 #import "LPAHomeVC.h"
 #import "ATCarouselView.h"
 #import "LPAHomeCollectionCell.h"
+//跳转控制器
+#import "LPAFindCommodityVC.h"
+#import "SCScanCodeVC.h"
 
 @interface LPAHomeVC ()<UICollectionViewDelegate,UICollectionViewDataSource,ATCarouselViewDelegate>
 
@@ -45,7 +48,7 @@
         [cell.imgView setImage:[UIImage imageNamed:@"bigFindCommodity"]];
         cell.nameLabel.text = @"找商品";
     }else if (indexPath.item == 2){
-        [cell.imgView setImage:[UIImage imageNamed:@"bigVip"]];
+        [cell.imgView setImage:[UIImage imageNamed:@"bigAddVip"]];
         cell.nameLabel.text = @"添加会员";
     }else{
         [cell.imgView setImage:[UIImage imageNamed:@"bigVip"]];
@@ -70,7 +73,17 @@
 }
 
 - (void)collectionView:(UICollectionView *)collectionView didSelectItemAtIndexPath:(NSIndexPath *)indexPath{
-
+    if (indexPath.item == 0) {
+        SCScanCodeVC *vc = [SCScanCodeVC new];
+        [self.navigationController pushViewController:vc animated:YES];
+    }else if (indexPath.item == 1){
+        LPAFindCommodityVC *vc = [LPAFindCommodityVC new];
+        [self.navigationController pushViewController:vc animated:YES];
+    }else if (indexPath.item == 2){
+        
+    }else{
+        
+    }
 }
 
 -(UICollectionReusableView *)collectionView:(UICollectionView *)collectionView viewForSupplementaryElementOfKind:(NSString *)kind atIndexPath:(NSIndexPath *)indexPath{

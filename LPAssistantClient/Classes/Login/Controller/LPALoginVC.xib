@@ -130,7 +130,7 @@
                         <constraint firstAttribute="height" constant="25" id="L7X-Nr-MSs"/>
                         <constraint firstAttribute="width" constant="15" id="wa7-u1-Cjy"/>
                     </constraints>
-                    <state key="normal" image="unSelected.png"/>
+                    <state key="normal" image="selected.png"/>
                 </button>
                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="f1L-BI-aqZ">
                     <rect key="frame" x="45" y="383" width="184" height="24"/>
@@ -176,6 +176,6 @@
         <image name="logo.png" width="120" height="120"/>
         <image name="pwd.png" width="15" height="17"/>
         <image name="redBtnBg.png" width="347" height="40"/>
-        <image name="unSelected.png" width="12" height="12"/>
+        <image name="selected.png" width="12" height="12"/>
     </resources>
 </document>
