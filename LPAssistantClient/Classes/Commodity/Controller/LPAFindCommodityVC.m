@@ -11,6 +11,8 @@
 #import "LPAFCHeadPickerView.h"
 #import "LPPNavSearchView.h"
 
+#import "LPAPayOnlineVC.h"
+
 @interface LPAFindCommodityVC ()<UICollectionViewDelegate,UICollectionViewDataSource>
 
 @property (nonatomic, strong) UICollectionView *collectionView;
@@ -27,9 +29,6 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-
-    //1.去除导航栏下面边界黑线
-    self.navigationController.navigationBar.subviews[0].subviews[0].hidden = YES;
     
     //2.导航栏右侧 扩展 按钮
     UIButton *btn = [[UIButton alloc] initWithFrame:CGRectMake(0, 0, 30, 30)];
@@ -42,6 +41,18 @@
     //
     [self collectionView];
     [self headPickerView];
+}
+
+- (void)viewWillAppear:(BOOL)animated{
+    [super viewWillAppear:animated];
+    //1.去除 导航栏下面边界黑线
+    self.navigationController.navigationBar.subviews[0].subviews[0].hidden = YES;
+}
+
+- (void)viewWillDisappear:(BOOL)animated{
+    [super viewWillDisappear:animated];
+    //1.显示 导航栏下面边界黑线
+    self.navigationController.navigationBar.subviews[0].subviews[0].hidden = NO;
 }
 
 - (LPPNavSearchView *)navSearchView{
@@ -101,8 +112,8 @@
 }
 
 - (void)collectionView:(UICollectionView *)collectionView didSelectItemAtIndexPath:(NSIndexPath *)indexPath{
-//    LPPCommodityDetailVC *detailVc = [LPPCommodityDetailVC new];
-//    [self.navigationController pushViewController:detailVc animated:YES];
+    LPAPayOnlineVC *vc = [LPAPayOnlineVC new];
+    [self.navigationController pushViewController:vc animated:YES];
 }
 
 -(UICollectionReusableView *)collectionView:(UICollectionView *)collectionView viewForSupplementaryElementOfKind:(NSString *)kind atIndexPath:(NSIndexPath *)indexPath{

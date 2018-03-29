@@ -74,7 +74,7 @@
 
 - (void)collectionView:(UICollectionView *)collectionView didSelectItemAtIndexPath:(NSIndexPath *)indexPath{
     if (indexPath.item == 0) {
-        SCScanCodeVC *vc = [SCScanCodeVC new];
+        SCScanCodeVC *vc = [[UIStoryboard storyboardWithName:@"SCScanCodeVC" bundle:nil] instantiateViewControllerWithIdentifier:@"SCScanCodeVC"];
         [self.navigationController pushViewController:vc animated:YES];
     }else if (indexPath.item == 1){
         LPAFindCommodityVC *vc = [LPAFindCommodityVC new];

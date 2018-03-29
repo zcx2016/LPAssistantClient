@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="68" id="KGk-i7-Jjw" customClass="LPACommonSearchCell">
+            <rect key="frame" x="0.0" y="0.0" width="353" height="68"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="353" height="67.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="6IM-kl-uPB">
+                        <rect key="frame" x="40" y="10" width="273" height="47.5"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="search.png" translatesAutoresizingMaskIntoConstraints="NO" id="2Dn-gM-2Og">
+                                <rect key="frame" x="10" y="14" width="20" height="20"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="20" id="1dO-by-8ZZ"/>
+                                    <constraint firstAttribute="height" constant="20" id="HTx-ga-LSn"/>
+                                </constraints>
+                            </imageView>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="请输入顾客账号查询优惠劵" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="jMU-CA-ej6">
+                                <rect key="frame" x="35" y="14" width="228" height="20"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
+                            </textField>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="jMU-CA-ej6" firstAttribute="leading" secondItem="2Dn-gM-2Og" secondAttribute="trailing" constant="5" id="71Y-da-Yj9"/>
+                            <constraint firstItem="2Dn-gM-2Og" firstAttribute="leading" secondItem="6IM-kl-uPB" secondAttribute="leading" constant="10" id="KxE-Bs-pdi"/>
+                            <constraint firstItem="2Dn-gM-2Og" firstAttribute="centerY" secondItem="6IM-kl-uPB" secondAttribute="centerY" id="NmN-Bl-WO1"/>
+                            <constraint firstAttribute="trailing" secondItem="jMU-CA-ej6" secondAttribute="trailing" constant="10" id="fBH-R6-7Vr"/>
+                            <constraint firstItem="jMU-CA-ej6" firstAttribute="centerY" secondItem="6IM-kl-uPB" secondAttribute="centerY" id="njH-zb-j0m"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="trailing" secondItem="6IM-kl-uPB" secondAttribute="trailing" constant="40" id="99X-8P-9Ry"/>
+                    <constraint firstItem="6IM-kl-uPB" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="40" id="JYR-c8-ppL"/>
+                    <constraint firstItem="6IM-kl-uPB" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="10" id="WjF-ct-XZI"/>
+                    <constraint firstAttribute="bottom" secondItem="6IM-kl-uPB" secondAttribute="bottom" constant="10" id="yW7-Ei-zzc"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="outView" destination="6IM-kl-uPB" id="hh7-qP-jhg"/>
+                <outlet property="searchTF" destination="jMU-CA-ej6" id="ECf-Kl-bZO"/>
+            </connections>
+            <point key="canvasLocation" x="50.5" y="56"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="search.png" width="12" height="12"/>
+    </resources>
+</document>

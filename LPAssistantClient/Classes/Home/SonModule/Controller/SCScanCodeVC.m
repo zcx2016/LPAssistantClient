@@ -36,10 +36,10 @@
 /** 非扫描区域的蒙版 */
 @property(nonatomic, strong) CALayer *maskLayer;
 
-@property (nonatomic, strong) NSUserDefaults *userDefaults;
-
 //图片数组
 @property (nonatomic, strong) NSArray *imgArray;
+
+@property (nonatomic, strong) UIButton *lightBtn;
 
 @end
 
@@ -47,22 +47,24 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    
-    self.navigationItem.title = @"扫描二维码";
+
+    self.navigationItem.title = @"扫一扫";
     // 设置扫描二维码
     [self setupScanQRCode];
-    
-    self.userDefaults = [NSUserDefaults standardUserDefaults];
-    
-    [self.flashBtn addTarget:self action:@selector(flashBtnClick:) forControlEvents:UIControlEventTouchUpInside];
+
+    self.lightBtn = [[UIButton alloc] initWithFrame:CGRectMake(0, 0, 30, 30)];
+    [self.lightBtn setImage:[UIImage imageNamed:@"light_close"] forState:UIControlStateNormal];
+    self.navigationItem.rightBarButtonItem = [[UIBarButtonItem alloc] initWithCustomView:self.lightBtn];
+
+    [self.lightBtn addTarget:self action:@selector(lightBtnClick:) forControlEvents:UIControlEventTouchUpInside];
 }
 
 - (void)viewWillAppear:(BOOL)animated {
     [super viewWillAppear:animated];
-    
+
     // 添加扫描线以及开启扫描线的动画
     [self startAnimate];
-    
+
     // 开启二维码扫描
     [_session startRunning];
 }
@@ -113,14 +115,14 @@
  */
 - (void)startAnimate {
     CGFloat scanImageViewX = self.scanView.frame.origin.x - 70;
-    CGFloat scanImageViewY = self.scanView.frame.origin.y - 220 + 3;
+    CGFloat scanImageViewY = self.scanView.frame.origin.y - 220 + 95;
     CGFloat scanImageViewW = self.scanViewW.constant + 8;
     CGFloat scanImageViewH = 7;
-    
-    _scanImageView = [[UIImageView alloc] initWithImage:[UIImage imageNamed:@"scanLine"]];
+
+    _scanImageView = [[UIImageView alloc] initWithImage:[UIImage imageNamed:@"badge"]];
     _scanImageView.frame = CGRectMake(scanImageViewX, scanImageViewY, scanImageViewW, scanImageViewH);
     [self.scanView addSubview:_scanImageView];
-    
+
     [UIView animateWithDuration:2.0 delay:0 options:UIViewAnimationOptionRepeat animations:^{
         _scanImageView.frame = CGRectMake(scanImageViewX, scanImageViewY + self.scanViewH.constant, scanImageViewW, scanImageViewH);
     } completion:nil];
@@ -133,7 +135,7 @@
     // 1、创建设备会话对象，用来设置设备数据输入
     _session = [[AVCaptureSession alloc] init];
     [_session setSessionPreset: AVCaptureSessionPresetHigh];    //高质量采集
-    
+
     if ([_session canAddInput:self.input]) {
         [_session addInput:self.input];
     }
@@ -142,20 +144,20 @@
     }
     // 设置条码类型为二维码
     [self.output setMetadataObjectTypes:self.output.availableMetadataObjectTypes];
-    
+
     // 设置扫描范围
     [self setOutputInterest];
-    
+
     // 3、实时获取摄像头原始数据显示在屏幕上
     _previewLayer = [AVCaptureVideoPreviewLayer layerWithSession:_session];
     _previewLayer.videoGravity = AVLayerVideoGravityResizeAspectFill;
-    //    _previewLayer.frame = self.view.layer.bounds;
+//    _previewLayer.frame = self.view.layer.bounds;
     _previewLayer.frame = CGRectMake(0, 0, kScreenWidth, kScreenHeight - 64);
     self.view.layer.backgroundColor = [[UIColor blackColor] CGColor];
     [self.view.layer insertSublayer:_previewLayer atIndex:0];
-    
+
     self.maskLayer = [[CALayer alloc]init];
-    //    self.maskLayer.frame = self.view.layer.bounds;
+//    self.maskLayer.frame = self.view.layer.bounds;
     self.maskLayer.frame =  CGRectMake(0, 0, kScreenWidth, kScreenHeight - 64);
     self.maskLayer.delegate = self;
     [self.view.layer insertSublayer:self.maskLayer above:_previewLayer];
@@ -192,116 +194,38 @@
 
 #pragma mark - <AVCaptureMetadataOutputObjectsDelegate - 扫描二维码的回调方法>
 - (void)captureOutput:(AVCaptureOutput *)captureOutput didOutputMetadataObjects:(NSArray *)metadataObjects fromConnection:(AVCaptureConnection *)connection {
-    
+
     NSString *stringValue;
     // 显示遮盖
 //    [SVProgressHUD showProgress:-1 status:@"读取数据中..."];
-    
+
     if ([metadataObjects count ] > 0 ) {
         // 当扫描到数据时，停止扫描
         [ _session stopRunning ];
-        
+
         // 将扫描的线从父控件中移除
         [_scanImageView removeFromSuperview];
-        
+
         AVMetadataMachineReadableCodeObject *metadataObject = [metadataObjects objectAtIndex:0];
-        
+
         if ([metadataObject.type isEqualToString:AVMetadataObjectTypeQRCode]) {
             NSLog(@"--------%@-----",metadataObject.stringValue);
-            
+
             stringValue = metadataObject.stringValue;
-            // 当前延迟2.0秒
-            dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(2.0 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
-                // 隐藏遮盖
-//                [SVProgressHUD dismiss];
-                
-                //处理扫描结果，将扫描后的结果转换格式
-                if (self.isFromSmallScanCodeBtn == YES) {
-                    [self dealSmallScanResult:stringValue];
-                }else{
-                    [self dealScanResult:stringValue];
-                }
-            });
+            [self dealScanResult:stringValue];
         }else{
-//            [SVProgressHUD showWithStatus:@"请扫描正确的二维码！"];
-            dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(1.0 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
-                [self.navigationController popViewControllerAnimated:YES];
-//                [SVProgressHUD dismiss];
-            });
+
         }
     }
 }
 
-#pragma mark - 二级界面的小扫码
-- (void)dealSmallScanResult:(NSString *)stringValue{
-    NSDictionary *dict;
-    NSLog(@"dict=====%@",dict);
-    NSString *TPMItemID = dict[@"TPMItemID"];
-    
-    if ([TPMItemID isEqualToString:self.TPM_Item_ID]) {
-        NSLog(@"扫描btn====%@",self.tempBtn);
-        dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(0.5 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
-//            [SVProgressHUD showSuccessWithStatus:@"扫描成功!"];
-            
-            [[NSNotificationCenter defaultCenter] postNotificationName:@"scanBtnClicked" object:self.tempBtn];
-            dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(1.0 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
-                [self.navigationController popViewControllerAnimated:YES];
-            });
-        });
-    }else{
-        dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(0.5 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
-//            [SVProgressHUD showErrorWithStatus:@"请扫描正确的二维码!"];
-            NSLog(@"11");
-            dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(1.0 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
-                [self.navigationController popViewControllerAnimated:YES];
-            });
-        });
-    }
-}
-
-#pragma mark - 一级界面的大扫码
+#pragma mark - 处理扫描结果
 - (void)dealScanResult:(NSString *)stringValue{
-    NSDictionary *dict;
-    NSLog(@"dict+++++%@",dict);
-    NSString *tpmItemGroupId = dict[@"TPMItemGroupID"];
-    
-    NSString *registerId = [self.userDefaults objectForKey:@"registerId"];
-    NSString *finderId = [self.userDefaults objectForKey:@"finderId"];
-    if (tpmItemGroupId.length != 0) {
-        NSDictionary *paramDict = @{@"registerId": registerId , @"employeeId" : finderId , @"tpmItemGroupId" : tpmItemGroupId};
-        
-//        [[LCHTTPSessionManager sharedInstance] POST:[kUrlReqHead stringByAppendingString:@"/app/check/tpmPlanDetail.html"] parameters:paramDict progress:nil success:^(NSURLSessionDataTask * _Nonnull task, id  _Nullable responseObject) {
-//
-//            if (responseObject[@"data"] != nil) {
-//                NSArray *dataArray = responseObject[@"data"];
-//
-//                NSLog(@"--dataDict---%lu-----%@",(unsigned long)dataArray.count,dataArray);
-//                SCAfterScanWriteVC *afterScanWriteVc = [SCAfterScanWriteVC new];
-//                afterScanWriteVc.dataArray = dataArray;
-//                [self.navigationController pushViewController:afterScanWriteVc animated:YES];
-//
-//            }else{
-//                UIAlertController *alertVc = [UIAlertController alertControllerWithTitle:@"注意" message:responseObject[@"msg"] preferredStyle:UIAlertControllerStyleAlert];
-//                UIAlertAction *actionYes = [UIAlertAction actionWithTitle:@"知道了" style:UIAlertActionStyleDestructive handler:^(UIAlertAction * _Nonnull action) {
-//                    [self.navigationController popViewControllerAnimated:YES];
-//                }];
-//                [alertVc addAction:actionYes];
-//                [self presentViewController:alertVc animated:YES completion:nil];
-//            }
-//
-//        } failure:^(NSURLSessionDataTask * _Nullable task, NSError * _Nonnull error) {
-//            NSLog(@"----%@",error);
-//        }];
-    }else{
-//        [SVProgressHUD showWithStatus:@"请扫描正确的二维码！"];
-        dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(1.0 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
-            [self.navigationController popViewControllerAnimated:YES];
-        });
-    }
+
 }
 
 #pragma mark - <CALayerDelegate - 图层的代理方法>
-//   蒙板生成,需设置代理，并在退出页面时取消代理
+ //   蒙板生成,需设置代理，并在退出页面时取消代理
 -(void)drawLayer:(CALayer *)layer inContext:(CGContextRef)ctx{
     if (layer == self.maskLayer) {
         UIGraphicsBeginImageContextWithOptions(self.maskLayer.frame.size, NO, 1.0);
@@ -313,13 +237,13 @@
 }
 
 #pragma mark - 手电筒
-- (void)flashBtnClick:(UIButton *)btn{
+- (void)lightBtnClick:(UIButton *)btn{
     if (btn.selected == NO) {
-        [btn setImage:[UIImage imageNamed:@"openFlash"] forState:UIControlStateNormal];
+        [btn setImage:[UIImage imageNamed:@"light_open"] forState:UIControlStateNormal];
         btn.selected = !btn.selected;
         [self turnTorchOn:YES];
     }else{
-        [btn setImage:[UIImage imageNamed:@"closeFlash"] forState:UIControlStateNormal];
+        [btn setImage:[UIImage imageNamed:@"light_close"] forState:UIControlStateNormal];
         btn.selected = !btn.selected;
         [self turnTorchOn:NO];
     }
@@ -330,7 +254,7 @@
     if (captureDeviceClass != nil) {
         AVCaptureDevice *device = [AVCaptureDevice defaultDeviceWithMediaType:AVMediaTypeVideo];
         if ([device hasTorch] && [device hasFlash]){
-            
+
             [device lockForConfiguration:nil];
             if (on) {
                 [device setTorchMode:AVCaptureTorchModeOn];
@@ -345,4 +269,5 @@
 }
 
 @end
+
 

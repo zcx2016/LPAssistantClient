@@ -38,9 +38,9 @@
                             <nil key="textColor"/>
                             <nil key="highlightedColor"/>
                         </label>
-                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Gm9-pA-aGc">
-                            <rect key="frame" x="15" y="25" width="46" height="30"/>
-                            <state key="normal" title="Button"/>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Gm9-pA-aGc">
+                            <rect key="frame" x="15" y="29" width="32" height="22"/>
+                            <state key="normal" title="     " image="return.png"/>
                         </button>
                         <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Tzh-kz-MYX">
                             <rect key="frame" x="0.0" y="63" width="375" height="1"/>
@@ -196,5 +196,6 @@
     </objects>
     <resources>
         <image name="blackBtnBg.png" width="290" height="40"/>
+        <image name="return.png" width="8" height="15"/>
     </resources>
 </document>
