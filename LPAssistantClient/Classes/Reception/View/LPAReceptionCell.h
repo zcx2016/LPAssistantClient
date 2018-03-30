@@ -15,4 +15,6 @@
 @property (weak, nonatomic) IBOutlet UILabel *nameLabel;
 @property (weak, nonatomic) IBOutlet UILabel *moneyLabel;
 
+@property (weak, nonatomic) IBOutlet UIButton *indicatorBtn;
+
 @end

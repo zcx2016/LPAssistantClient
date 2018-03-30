@@ -63,6 +63,7 @@
             </tableViewCellContentView>
             <connections>
                 <outlet property="headImgView" destination="VZ2-g6-kLn" id="P6e-a6-0nM"/>
+                <outlet property="indicatorBtn" destination="mLZ-gn-PXY" id="wsA-vr-l5N"/>
                 <outlet property="moneyLabel" destination="fgs-Q5-vav" id="IPd-73-FIR"/>
                 <outlet property="nameLabel" destination="our-F7-ztA" id="6M5-dB-NP0"/>
                 <outlet property="nickNameLabel" destination="MFM-rf-sDC" id="1E2-lR-s1t"/>

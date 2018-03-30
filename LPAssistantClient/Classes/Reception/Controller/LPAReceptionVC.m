@@ -9,6 +9,7 @@
 #import "LPAReceptionVC.h"
 #import "LPAReceptionCell.h"
 #import "LPACommonSearchView.h"
+#import "LPAVipDetailVC.h"
 
 @interface LPAReceptionVC ()<UITableViewDataSource,UITableViewDelegate>
 
@@ -66,6 +67,11 @@
     LPAReceptionCell *cell = [tableView dequeueReusableCellWithIdentifier:@"LPAReceptionCell" forIndexPath:indexPath];
     
     return cell;
+}
+
+- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath{
+    LPAVipDetailVC *vc = [LPAVipDetailVC new];
+    [self.navigationController pushViewController:vc animated:YES];
 }
 
 #pragma mark - 设置行高

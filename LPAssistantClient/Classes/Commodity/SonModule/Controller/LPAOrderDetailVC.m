@@ -60,19 +60,37 @@
 }
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section{
-    return 1;
+    if (section == 0) {
+        return 1;
+    }
+    return 2;
 }
 
 #pragma mark - tableView DataSource
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath{
-    LPAPayOnlineCell *cell = [tableView dequeueReusableCellWithIdentifier:@"LPAPayOnlineCell" forIndexPath:indexPath];
-    
-    return cell;
+    if (indexPath.section == 0) {
+        LPAPayOnlineCell *cell = [tableView dequeueReusableCellWithIdentifier:@"LPAPayOnlineCell" forIndexPath:indexPath];
+        
+        return cell;
+    }else{
+        UITableViewCell *cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleValue1 reuseIdentifier:@"cell"];
+        if (indexPath.row == 0) {
+            cell.textLabel.text = @"优惠券";
+            cell.detailTextLabel.text = @"￥300";
+        }else{
+            cell.textLabel.text = @"实付款";
+            cell.detailTextLabel.text = @"￥630";
+        }
+        return cell;
+    }
 }
 
 #pragma mark - 设置行高
 - (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath{
-    return 150;
+    if (indexPath.section == 0) {
+        return 150;
+    }
+    return 50;
 }
 
 - (CGFloat)tableView:(UITableView *)tableView heightForHeaderInSection:(NSInteger)section{
@@ -96,7 +114,6 @@
         _tableView = [[UITableView alloc] initWithFrame:CGRectMake(0, 0, kScreenWidth, kScreenHeight) style:UITableViewStyleGrouped];
         _tableView.delegate = self;
         _tableView.dataSource = self;
-        _tableView.separatorStyle = UITableViewCellSeparatorStyleNone;
         //去掉ios7 的separatorInset边距
         _tableView.separatorInset = UIEdgeInsetsMake(0, 0, 0, 0);
         //注册cell

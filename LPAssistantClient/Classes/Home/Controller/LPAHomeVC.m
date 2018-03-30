@@ -10,8 +10,10 @@
 #import "ATCarouselView.h"
 #import "LPAHomeCollectionCell.h"
 //跳转控制器
-#import "LPAFindCommodityVC.h"
 #import "SCScanCodeVC.h"
+#import "LPAFindCommodityVC.h"
+#import "LPAAddVipVC.h"
+#import "LPAFindMyVipVC.h"
 
 @interface LPAHomeVC ()<UICollectionViewDelegate,UICollectionViewDataSource,ATCarouselViewDelegate>
 
@@ -80,9 +82,11 @@
         LPAFindCommodityVC *vc = [LPAFindCommodityVC new];
         [self.navigationController pushViewController:vc animated:YES];
     }else if (indexPath.item == 2){
-        
+        LPAAddVipVC *vc = [LPAAddVipVC new];
+        [self.navigationController pushViewController:vc animated:YES];
     }else{
-        
+        LPAFindMyVipVC *vc = [LPAFindMyVipVC new];
+        [self.navigationController pushViewController:vc animated:YES];
     }
 }
 

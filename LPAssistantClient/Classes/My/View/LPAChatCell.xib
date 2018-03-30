@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="88" id="KGk-i7-Jjw" customClass="LPAChatCell">
+            <rect key="frame" x="0.0" y="0.0" width="363" height="88"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="363" height="87.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="headImg.png" translatesAutoresizingMaskIntoConstraints="NO" id="wJe-J7-IYP">
+                        <rect key="frame" x="15" y="9" width="70" height="70"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="70" id="mxR-Ke-UDr"/>
+                            <constraint firstAttribute="width" constant="70" id="q6A-Jo-0LE"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Tiffany (孟小欢)" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GkQ-0V-hAu">
+                        <rect key="frame" x="95" y="14" width="114.5" height="19.5"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="亲，我的包包配着大衣真漂亮！" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zlY-Bg-eRI">
+                        <rect key="frame" x="95" y="58" width="186" height="16"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                        <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="下午3:40" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gE5-Wk-FKs">
+                        <rect key="frame" x="298" y="14" width="55" height="16"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                        <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="GkQ-0V-hAu" firstAttribute="top" secondItem="wJe-J7-IYP" secondAttribute="top" constant="5" id="6Fe-zg-3Y6"/>
+                    <constraint firstItem="GkQ-0V-hAu" firstAttribute="leading" secondItem="wJe-J7-IYP" secondAttribute="trailing" constant="10" id="9JJ-hd-nFK"/>
+                    <constraint firstItem="gE5-Wk-FKs" firstAttribute="top" secondItem="GkQ-0V-hAu" secondAttribute="top" id="SAe-Fm-FM2"/>
+                    <constraint firstItem="zlY-Bg-eRI" firstAttribute="leading" secondItem="GkQ-0V-hAu" secondAttribute="leading" id="UuU-uz-qar"/>
+                    <constraint firstAttribute="trailing" secondItem="gE5-Wk-FKs" secondAttribute="trailing" constant="10" id="Voa-XF-oq2"/>
+                    <constraint firstItem="wJe-J7-IYP" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="ne6-Gp-S6I"/>
+                    <constraint firstItem="zlY-Bg-eRI" firstAttribute="bottom" secondItem="wJe-J7-IYP" secondAttribute="bottom" constant="-5" id="obb-QZ-WQb"/>
+                    <constraint firstItem="wJe-J7-IYP" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="15" id="vms-j8-4Ut"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="contentLabel" destination="zlY-Bg-eRI" id="wve-8h-dMS"/>
+                <outlet property="headImgView" destination="wJe-J7-IYP" id="ydo-Ai-e83"/>
+                <outlet property="nameLabel" destination="GkQ-0V-hAu" id="kQw-15-pzd"/>
+                <outlet property="timeLabel" destination="gE5-Wk-FKs" id="Qog-Pa-ZbU"/>
+            </connections>
+            <point key="canvasLocation" x="92.5" y="-33"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="headImg.png" width="47" height="47"/>
+    </resources>
+</document>

@@ -11,6 +11,7 @@
 #import "LPPCommonTBCell.h"
 //点击事件
 #import "LPAMyInfoVC.h"
+#import "LPAChatRemindVC.h"
 
 @interface LPAMyVC ()<UITableViewDelegate,UITableViewDataSource>
 
@@ -33,7 +34,8 @@
 }
 
 - (void)bellBtnClick:(UIButton *)btn{
-    NSLog(@"11");
+    LPAChatRemindVC *vc = [LPAChatRemindVC new];
+    [self.navigationController pushViewController:vc animated:YES];
 }
 
 #pragma mark - tableView Delegate
