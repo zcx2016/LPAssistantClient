@@ -70,8 +70,8 @@
 }
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath{
-    LPAVipDetailVC *vc = [LPAVipDetailVC new];
-    [self.navigationController pushViewController:vc animated:YES];
+//    LPAVipDetailVC *vc = [LPAVipDetailVC new];
+//    [self.navigationController pushViewController:vc animated:YES];
 }
 
 #pragma mark - 设置行高

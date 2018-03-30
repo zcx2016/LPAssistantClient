@@ -12,6 +12,10 @@
 //点击事件
 #import "LPAMyInfoVC.h"
 #import "LPAChatRemindVC.h"
+#import "LPAStoreRankVC.h"
+#import "LPAMyBillingVC.h"
+#import "LPAMyKPIVC.h"
+#import "LPAMyCMRVC.h"
 
 @interface LPAMyVC ()<UITableViewDelegate,UITableViewDataSource>
 
@@ -99,8 +103,20 @@
 
 #pragma mark - cell点击事件
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath{
-    if(indexPath.section == 0){
+    if(indexPath.section == 0){  //个人信息
         LPAMyInfoVC *vc = [LPAMyInfoVC new];
+        [self.navigationController pushViewController:vc animated:YES];
+    }else if (indexPath.section == 1) {   //门店排名
+        LPAStoreRankVC *vc = [LPAStoreRankVC new];
+        [self.navigationController pushViewController:vc animated:YES];
+    }else if (indexPath.section == 2){  //我的开单
+        LPAMyBillingVC *vc = [LPAMyBillingVC new];
+        [self.navigationController pushViewController:vc animated:YES];
+    }else if (indexPath.section == 3){  //我的KPI
+        LPAMyKPIVC *vc = [LPAMyKPIVC new];
+        [self.navigationController pushViewController:vc animated:YES];
+    }else { //我的CMR
+        LPAMyCMRVC *vc = [LPAMyCMRVC new];
         [self.navigationController pushViewController:vc animated:YES];
     }
 }

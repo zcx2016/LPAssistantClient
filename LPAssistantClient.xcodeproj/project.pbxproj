@@ -88,6 +88,22 @@
 		3572FD4F206DE4AB006836ED /* LPAVipDetailCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3572FD4D206DE4AB006836ED /* LPAVipDetailCell.xib */; };
 		3572FD54206E141D006836ED /* SCTimePickerView.m in Sources */ = {isa = PBXBuildFile; fileRef = 3572FD51206E141C006836ED /* SCTimePickerView.m */; };
 		3572FD55206E141D006836ED /* SCTimePickerView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3572FD53206E141D006836ED /* SCTimePickerView.xib */; };
+		3572FD58206E202A006836ED /* LPAStoreRankVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 3572FD57206E202A006836ED /* LPAStoreRankVC.m */; };
+		3572FD5B206E205E006836ED /* LPAMyBillingVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 3572FD5A206E205E006836ED /* LPAMyBillingVC.m */; };
+		3572FD5E206E2079006836ED /* LPAMyKPIVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 3572FD5D206E2079006836ED /* LPAMyKPIVC.m */; };
+		3572FD61206E208E006836ED /* LPAMyCMRVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 3572FD60206E208E006836ED /* LPAMyCMRVC.m */; };
+		3572FD6A206E258A006836ED /* checkBtnBg@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 3572FD67206E258A006836ED /* checkBtnBg@3x.png */; };
+		3572FD6B206E258A006836ED /* checkBtnBg.png in Resources */ = {isa = PBXBuildFile; fileRef = 3572FD68206E258A006836ED /* checkBtnBg.png */; };
+		3572FD6C206E258A006836ED /* checkBtnBg@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 3572FD69206E258A006836ED /* checkBtnBg@2x.png */; };
+		3572FD70206E26DB006836ED /* LPAStoreRankCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 3572FD6E206E26DB006836ED /* LPAStoreRankCell.m */; };
+		3572FD71206E26DB006836ED /* LPAStoreRankCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3572FD6F206E26DB006836ED /* LPAStoreRankCell.xib */; };
+		3572FD74206E28C7006836ED /* LPATimeSelectView.m in Sources */ = {isa = PBXBuildFile; fileRef = 3572FD73206E28C7006836ED /* LPATimeSelectView.m */; };
+		3572FD76206E28D8006836ED /* LPATimeSelectView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3572FD75206E28D8006836ED /* LPATimeSelectView.xib */; };
+		3572FD79206E2D2F006836ED /* LPAStoreRankBottomView.m in Sources */ = {isa = PBXBuildFile; fileRef = 3572FD78206E2D2F006836ED /* LPAStoreRankBottomView.m */; };
+		3572FD7B206E2D43006836ED /* LPAStoreRankBottomView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3572FD7A206E2D43006836ED /* LPAStoreRankBottomView.xib */; };
+		3572FD82206E38A3006836ED /* LPAMyStoreVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 3572FD81206E38A3006836ED /* LPAMyStoreVC.m */; };
+		3572FD86206E3CAC006836ED /* LPABindVipResultCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 3572FD84206E3CAC006836ED /* LPABindVipResultCell.m */; };
+		3572FD87206E3CAC006836ED /* LPABindVipResultCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3572FD85206E3CAC006836ED /* LPABindVipResultCell.xib */; };
 		3590DA15206B39EE00504520 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 3590DA14206B39EE00504520 /* AppDelegate.m */; };
 		3590DA18206B39EE00504520 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3590DA17206B39EE00504520 /* ViewController.m */; };
 		3590DA1B206B39EE00504520 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3590DA19206B39EE00504520 /* Main.storyboard */; };
@@ -297,6 +313,31 @@
 		3572FD51206E141C006836ED /* SCTimePickerView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SCTimePickerView.m; sourceTree = "<group>"; };
 		3572FD52206E141D006836ED /* SCTimePickerView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SCTimePickerView.h; sourceTree = "<group>"; };
 		3572FD53206E141D006836ED /* SCTimePickerView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SCTimePickerView.xib; sourceTree = "<group>"; };
+		3572FD56206E202A006836ED /* LPAStoreRankVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LPAStoreRankVC.h; sourceTree = "<group>"; };
+		3572FD57206E202A006836ED /* LPAStoreRankVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LPAStoreRankVC.m; sourceTree = "<group>"; };
+		3572FD59206E205E006836ED /* LPAMyBillingVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LPAMyBillingVC.h; sourceTree = "<group>"; };
+		3572FD5A206E205E006836ED /* LPAMyBillingVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LPAMyBillingVC.m; sourceTree = "<group>"; };
+		3572FD5C206E2079006836ED /* LPAMyKPIVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LPAMyKPIVC.h; sourceTree = "<group>"; };
+		3572FD5D206E2079006836ED /* LPAMyKPIVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LPAMyKPIVC.m; sourceTree = "<group>"; };
+		3572FD5F206E208E006836ED /* LPAMyCMRVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LPAMyCMRVC.h; sourceTree = "<group>"; };
+		3572FD60206E208E006836ED /* LPAMyCMRVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LPAMyCMRVC.m; sourceTree = "<group>"; };
+		3572FD67206E258A006836ED /* checkBtnBg@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "checkBtnBg@3x.png"; sourceTree = "<group>"; };
+		3572FD68206E258A006836ED /* checkBtnBg.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = checkBtnBg.png; sourceTree = "<group>"; };
+		3572FD69206E258A006836ED /* checkBtnBg@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "checkBtnBg@2x.png"; sourceTree = "<group>"; };
+		3572FD6D206E26DB006836ED /* LPAStoreRankCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LPAStoreRankCell.h; sourceTree = "<group>"; };
+		3572FD6E206E26DB006836ED /* LPAStoreRankCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LPAStoreRankCell.m; sourceTree = "<group>"; };
+		3572FD6F206E26DB006836ED /* LPAStoreRankCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LPAStoreRankCell.xib; sourceTree = "<group>"; };
+		3572FD72206E28C7006836ED /* LPATimeSelectView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LPATimeSelectView.h; sourceTree = "<group>"; };
+		3572FD73206E28C7006836ED /* LPATimeSelectView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LPATimeSelectView.m; sourceTree = "<group>"; };
+		3572FD75206E28D8006836ED /* LPATimeSelectView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LPATimeSelectView.xib; sourceTree = "<group>"; };
+		3572FD77206E2D2F006836ED /* LPAStoreRankBottomView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LPAStoreRankBottomView.h; sourceTree = "<group>"; };
+		3572FD78206E2D2F006836ED /* LPAStoreRankBottomView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LPAStoreRankBottomView.m; sourceTree = "<group>"; };
+		3572FD7A206E2D43006836ED /* LPAStoreRankBottomView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LPAStoreRankBottomView.xib; sourceTree = "<group>"; };
+		3572FD80206E38A3006836ED /* LPAMyStoreVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LPAMyStoreVC.h; sourceTree = "<group>"; };
+		3572FD81206E38A3006836ED /* LPAMyStoreVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LPAMyStoreVC.m; sourceTree = "<group>"; };
+		3572FD83206E3CAC006836ED /* LPABindVipResultCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LPABindVipResultCell.h; sourceTree = "<group>"; };
+		3572FD84206E3CAC006836ED /* LPABindVipResultCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LPABindVipResultCell.m; sourceTree = "<group>"; };
+		3572FD85206E3CAC006836ED /* LPABindVipResultCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LPABindVipResultCell.xib; sourceTree = "<group>"; };
 		3590DA10206B39EE00504520 /* LPAssistantClient.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LPAssistantClient.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3590DA13206B39EE00504520 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		3590DA14206B39EE00504520 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -554,6 +595,36 @@
 			path = Commodity;
 			sourceTree = "<group>";
 		};
+		3572FD7C206E3884006836ED /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		3572FD7D206E3884006836ED /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				3572FD80206E38A3006836ED /* LPAMyStoreVC.h */,
+				3572FD81206E38A3006836ED /* LPAMyStoreVC.m */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		3572FD7E206E3884006836ED /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		3572FD7F206E3884006836ED /* SonModule */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = SonModule;
+			sourceTree = "<group>";
+		};
 		3590DA07206B39EE00504520 = {
 			isa = PBXGroup;
 			children = (
@@ -691,6 +762,9 @@
 		35B04E70206B432B002D563F /* View */ = {
 			isa = PBXGroup;
 			children = (
+				3572FD83206E3CAC006836ED /* LPABindVipResultCell.h */,
+				3572FD84206E3CAC006836ED /* LPABindVipResultCell.m */,
+				3572FD85206E3CAC006836ED /* LPABindVipResultCell.xib */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -884,6 +958,14 @@
 			children = (
 				35B04F30206B92AB002D563F /* LPAMyInfoVC.h */,
 				35B04F31206B92AB002D563F /* LPAMyInfoVC.m */,
+				3572FD56206E202A006836ED /* LPAStoreRankVC.h */,
+				3572FD57206E202A006836ED /* LPAStoreRankVC.m */,
+				3572FD59206E205E006836ED /* LPAMyBillingVC.h */,
+				3572FD5A206E205E006836ED /* LPAMyBillingVC.m */,
+				3572FD5C206E2079006836ED /* LPAMyKPIVC.h */,
+				3572FD5D206E2079006836ED /* LPAMyKPIVC.m */,
+				3572FD5F206E208E006836ED /* LPAMyCMRVC.h */,
+				3572FD60206E208E006836ED /* LPAMyCMRVC.m */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -898,6 +980,15 @@
 		35B04E85206B432B002D563F /* View */ = {
 			isa = PBXGroup;
 			children = (
+				3572FD6D206E26DB006836ED /* LPAStoreRankCell.h */,
+				3572FD6E206E26DB006836ED /* LPAStoreRankCell.m */,
+				3572FD6F206E26DB006836ED /* LPAStoreRankCell.xib */,
+				3572FD72206E28C7006836ED /* LPATimeSelectView.h */,
+				3572FD73206E28C7006836ED /* LPATimeSelectView.m */,
+				3572FD75206E28D8006836ED /* LPATimeSelectView.xib */,
+				3572FD77206E2D2F006836ED /* LPAStoreRankBottomView.h */,
+				3572FD78206E2D2F006836ED /* LPAStoreRankBottomView.m */,
+				3572FD7A206E2D43006836ED /* LPAStoreRankBottomView.xib */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -905,6 +996,10 @@
 		35B04E86206B432B002D563F /* SonModule */ = {
 			isa = PBXGroup;
 			children = (
+				3572FD7D206E3884006836ED /* Controller */,
+				3572FD7C206E3884006836ED /* Model */,
+				3572FD7F206E3884006836ED /* SonModule */,
+				3572FD7E206E3884006836ED /* View */,
 			);
 			path = SonModule;
 			sourceTree = "<group>";
@@ -1077,6 +1172,9 @@
 		35B04EA5206B6AC5002D563F /* My */ = {
 			isa = PBXGroup;
 			children = (
+				3572FD68206E258A006836ED /* checkBtnBg.png */,
+				3572FD69206E258A006836ED /* checkBtnBg@2x.png */,
+				3572FD67206E258A006836ED /* checkBtnBg@3x.png */,
 				3572FCAB206CBF99006836ED /* bell.png */,
 				3572FCAD206CBF99006836ED /* bell@2x.png */,
 				3572FCAC206CBF99006836ED /* bell@3x.png */,
@@ -1217,6 +1315,7 @@
 				3572FD28206CF473006836ED /* smallRedBtn@2x.png in Resources */,
 				35B04EFF206B7CD2002D563F /* light_open@3x.png in Resources */,
 				35B04EB7206B6F1A002D563F /* main_reception_highlight@2x.png in Resources */,
+				3572FD76206E28D8006836ED /* LPATimeSelectView.xib in Resources */,
 				35B04F20206B86CF002D563F /* headImg.png in Resources */,
 				3572FCC2206CBFC5006836ED /* return.png in Resources */,
 				35B04EF1206B7CB8002D563F /* headIcon@2x.png in Resources */,
@@ -1248,6 +1347,7 @@
 				3572FD24206CF473006836ED /* select.png in Resources */,
 				35B04EBB206B6F1A002D563F /* main_my.png in Resources */,
 				3572FCDB206CC65A006836ED /* bannerCloth.png in Resources */,
+				3572FD7B206E2D43006836ED /* LPAStoreRankBottomView.xib in Resources */,
 				3572FCC0206CBFC5006836ED /* return@2x.png in Resources */,
 				3572FCF2206CCC43006836ED /* extern@3x.png in Resources */,
 				35B04EF0206B7CB8002D563F /* badge.png in Resources */,
@@ -1270,6 +1370,7 @@
 				35B04EBA206B6F1A002D563F /* main_reception_highlight@3x.png in Resources */,
 				35B04F1E206B86CF002D563F /* headImg@3x.png in Resources */,
 				35B04EB9206B6F1A002D563F /* main_my@2x.png in Resources */,
+				3572FD71206E26DB006836ED /* LPAStoreRankCell.xib in Resources */,
 				3590DA1B206B39EE00504520 /* Main.storyboard in Resources */,
 				3572FCC1206CBFC5006836ED /* return@3x.png in Resources */,
 				3572FCAE206CBF99006836ED /* bell.png in Resources */,
@@ -1279,6 +1380,7 @@
 				3572FCE6206CCA14006836ED /* LPPNavSearchView.xib in Resources */,
 				3572FCB7206CBFB1006836ED /* bindVip@2x.png in Resources */,
 				35B04ECC206B6F2C002D563F /* bigVip@3x.png in Resources */,
+				3572FD6B206E258A006836ED /* checkBtnBg.png in Resources */,
 				35B04F5F206BA580002D563F /* loginBg@3x.png in Resources */,
 				35B04EFE206B7CD2002D563F /* light_open@2x.png in Resources */,
 				3572FCF1206CCC43006836ED /* extern@2x.png in Resources */,
@@ -1286,10 +1388,12 @@
 				3572FCE0206CC737006836ED /* goods@3x.png in Resources */,
 				35B04F54206BA580002D563F /* unSelected@2x.png in Resources */,
 				3572FD14206CF320006836ED /* LPABottomBtnView.xib in Resources */,
+				3572FD6A206E258A006836ED /* checkBtnBg@3x.png in Resources */,
 				3572FCAA206CBF71006836ED /* selected@3x.png in Resources */,
 				355A15CE206C9824007DBF87 /* blackBtnBg@2x.png in Resources */,
 				35B04F5E206BA580002D563F /* logo@3x.png in Resources */,
 				35B04F25206B86CF002D563F /* headImg@2x.png in Resources */,
+				3572FD87206E3CAC006836ED /* LPABindVipResultCell.xib in Resources */,
 				35B04EF5206B7CB8002D563F /* rightArrow@3x.png in Resources */,
 				3572FCEC206CCC39006836ED /* main_home@3x.png in Resources */,
 				35B04F1F206B86CF002D563F /* scan@2x.png in Resources */,
@@ -1307,6 +1411,7 @@
 				35B04EED206B7CB8002D563F /* badge@3x.png in Resources */,
 				3572FCE1206CC737006836ED /* goods@2x.png in Resources */,
 				35B04F5B206BA580002D563F /* logo@2x.png in Resources */,
+				3572FD6C206E258A006836ED /* checkBtnBg@2x.png in Resources */,
 				3572FCB9206CBFB1006836ED /* bindVip.png in Resources */,
 				35B04EFD206B7CD2002D563F /* light_close@3x.png in Resources */,
 				35B04F4F206BA580002D563F /* delete.png in Resources */,
@@ -1389,7 +1494,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3572FD5B206E205E006836ED /* LPAMyBillingVC.m in Sources */,
 				35B04E99206B43BC002D563F /* LPAMyVC.m in Sources */,
+				3572FD5E206E2079006836ED /* LPAMyKPIVC.m in Sources */,
 				3572FD40206DD2E9006836ED /* LPARemindCell.m in Sources */,
 				3572FCE7206CCA14006836ED /* LPPNavSearchView.m in Sources */,
 				3572FD05206CEAC7006836ED /* LPAPayOnlineVC.m in Sources */,
@@ -1397,9 +1504,11 @@
 				35B04E9F206B4511002D563F /* LPAMainNavC.m in Sources */,
 				3572FD30206CF97A006836ED /* LPACouponCell.m in Sources */,
 				35B04F0B206B7E67002D563F /* LPAMyFirstCell.m in Sources */,
+				3572FD82206E38A3006836ED /* LPAMyStoreVC.m in Sources */,
 				35B04F2C206B8A4E002D563F /* LPACommonSearchView.m in Sources */,
 				3572FD37206DD07D006836ED /* LPAChatRemindVC.m in Sources */,
 				35B04E9E206B4511002D563F /* LPAMainTabBarC.m in Sources */,
+				3572FD86206E3CAC006836ED /* LPABindVipResultCell.m in Sources */,
 				3590DA18206B39EE00504520 /* ViewController.m in Sources */,
 				3572FD34206CFD92006836ED /* LPAOrderDetailVC.m in Sources */,
 				35B04F3B206BA2FD002D563F /* LPALoginVC.m in Sources */,
@@ -1411,18 +1520,23 @@
 				3572FCCB206CC1B7006836ED /* LPAFCHeadPickerView.m in Sources */,
 				35B04F10206B844C002D563F /* LPAReceptionCell.m in Sources */,
 				3572FD4A206DE29E006836ED /* LPAVipDetailVC.m in Sources */,
+				3572FD79206E2D2F006836ED /* LPAStoreRankBottomView.m in Sources */,
 				35B04E96206B43A9002D563F /* LPAReceptionVC.m in Sources */,
 				35B04E93206B4394002D563F /* LPAHomeVC.m in Sources */,
 				3572FD4E206DE4AB006836ED /* LPAVipDetailCell.m in Sources */,
 				3572FD44206DE0DD006836ED /* LPAFindMyVipVC.m in Sources */,
 				3572FD47206DE153006836ED /* LPAAddVipVC.m in Sources */,
 				3572FD54206E141D006836ED /* SCTimePickerView.m in Sources */,
+				3572FD70206E26DB006836ED /* LPAStoreRankCell.m in Sources */,
 				3572FD09206CEBB1006836ED /* LPAPayOnlineCell.m in Sources */,
+				3572FD58206E202A006836ED /* LPAStoreRankVC.m in Sources */,
 				35B04F32206B92AB002D563F /* LPAMyInfoVC.m in Sources */,
 				35B04ED9206B7605002D563F /* ATCarouselView.m in Sources */,
+				3572FD74206E28C7006836ED /* LPATimeSelectView.m in Sources */,
 				3572FCD5206CC38D006836ED /* LPPCommodityCell.m in Sources */,
 				3572FD0E206CF089006836ED /* LPACommonSearchCell.m in Sources */,
 				3572FC9E206CBC2B006836ED /* LPAFindCommodityVC.m in Sources */,
+				3572FD61206E208E006836ED /* LPAMyCMRVC.m in Sources */,
 				3590DA23206B39EE00504520 /* main.m in Sources */,
 				3590DA15206B39EE00504520 /* AppDelegate.m in Sources */,
 			);
