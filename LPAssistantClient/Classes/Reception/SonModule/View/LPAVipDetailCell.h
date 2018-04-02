@@ -16,4 +16,6 @@
 
 @property (weak, nonatomic) IBOutlet UISwitch *remindSwitch;
 
+@property (weak, nonatomic) IBOutlet UILabel *diyDetailLabel;
+
 @end

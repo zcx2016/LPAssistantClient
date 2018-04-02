@@ -7,6 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		354D62CE2071F19B00534D1E /* LPAMyBillingVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 354D62CD2071F19B00534D1E /* LPAMyBillingVC.m */; };
+		354D62D1207203D800534D1E /* LPAMyCMRHeadView.m in Sources */ = {isa = PBXBuildFile; fileRef = 354D62D0207203D800534D1E /* LPAMyCMRHeadView.m */; };
+		354D62D3207203EB00534D1E /* LPAMyCMRHeadView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 354D62D2207203EB00534D1E /* LPAMyCMRHeadView.xib */; };
+		354D62D62072089000534D1E /* LPA_CRM_VipDetailVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 354D62D52072089000534D1E /* LPA_CRM_VipDetailVC.m */; };
+		354D62D920720FD500534D1E /* LPA_CRM_bottomView.m in Sources */ = {isa = PBXBuildFile; fileRef = 354D62D820720FD500534D1E /* LPA_CRM_bottomView.m */; };
+		354D62DB20720FF600534D1E /* LPA_CRM_bottomView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 354D62DA20720FF600534D1E /* LPA_CRM_bottomView.xib */; };
 		355A15C4206C8ADA007DBF87 /* LPAFindPwdVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 355A15C2206C8ADA007DBF87 /* LPAFindPwdVC.m */; };
 		355A15C5206C8ADA007DBF87 /* LPAFindPwdVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 355A15C3206C8ADA007DBF87 /* LPAFindPwdVC.xib */; };
 		355A15CE206C9824007DBF87 /* blackBtnBg@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 355A15CB206C9824007DBF87 /* blackBtnBg@2x.png */; };
@@ -89,7 +95,6 @@
 		3572FD54206E141D006836ED /* SCTimePickerView.m in Sources */ = {isa = PBXBuildFile; fileRef = 3572FD51206E141C006836ED /* SCTimePickerView.m */; };
 		3572FD55206E141D006836ED /* SCTimePickerView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3572FD53206E141D006836ED /* SCTimePickerView.xib */; };
 		3572FD58206E202A006836ED /* LPAStoreRankVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 3572FD57206E202A006836ED /* LPAStoreRankVC.m */; };
-		3572FD5B206E205E006836ED /* LPAMyBillingVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 3572FD5A206E205E006836ED /* LPAMyBillingVC.m */; };
 		3572FD5E206E2079006836ED /* LPAMyKPIVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 3572FD5D206E2079006836ED /* LPAMyKPIVC.m */; };
 		3572FD61206E208E006836ED /* LPAMyCMRVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 3572FD60206E208E006836ED /* LPAMyCMRVC.m */; };
 		3572FD6A206E258A006836ED /* checkBtnBg@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 3572FD67206E258A006836ED /* checkBtnBg@3x.png */; };
@@ -104,6 +109,8 @@
 		3572FD82206E38A3006836ED /* LPAMyStoreVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 3572FD81206E38A3006836ED /* LPAMyStoreVC.m */; };
 		3572FD86206E3CAC006836ED /* LPABindVipResultCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 3572FD84206E3CAC006836ED /* LPABindVipResultCell.m */; };
 		3572FD87206E3CAC006836ED /* LPABindVipResultCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3572FD85206E3CAC006836ED /* LPABindVipResultCell.xib */; };
+		3572FD8B206E3E5B006836ED /* LPAMyBillingCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 3572FD89206E3E5B006836ED /* LPAMyBillingCell.m */; };
+		3572FD8C206E3E5B006836ED /* LPAMyBillingCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3572FD8A206E3E5B006836ED /* LPAMyBillingCell.xib */; };
 		3590DA15206B39EE00504520 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 3590DA14206B39EE00504520 /* AppDelegate.m */; };
 		3590DA18206B39EE00504520 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3590DA17206B39EE00504520 /* ViewController.m */; };
 		3590DA1B206B39EE00504520 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3590DA19206B39EE00504520 /* Main.storyboard */; };
@@ -199,11 +206,25 @@
 		35B04F5E206BA580002D563F /* logo@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 35B04F4C206BA57F002D563F /* logo@3x.png */; };
 		35B04F5F206BA580002D563F /* loginBg@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 35B04F4D206BA57F002D563F /* loginBg@3x.png */; };
 		35B04F60206BA580002D563F /* account@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 35B04F4E206BA57F002D563F /* account@3x.png */; };
+		35F8DBA92071C44A0058D33F /* LPAMyKPICell.m in Sources */ = {isa = PBXBuildFile; fileRef = 35F8DBA72071C44A0058D33F /* LPAMyKPICell.m */; };
+		35F8DBAA2071C44A0058D33F /* LPAMyKPICell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 35F8DBA82071C44A0058D33F /* LPAMyKPICell.xib */; };
+		35F8DBAD2071C5300058D33F /* LPAMyKPIHeadView.m in Sources */ = {isa = PBXBuildFile; fileRef = 35F8DBAC2071C5300058D33F /* LPAMyKPIHeadView.m */; };
+		35F8DBAF2071C5480058D33F /* LPAMyKPIHeadView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 35F8DBAE2071C5480058D33F /* LPAMyKPIHeadView.xib */; };
 		FC59A5C84391C97BE5F8D7D8 /* libPods-LPAssistantClient.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 35703C3E079E563CE2920E02 /* libPods-LPAssistantClient.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		041FBE0BD556FE20BAA7BEB1 /* Pods-LPAssistantClient.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LPAssistantClient.release.xcconfig"; path = "Pods/Target Support Files/Pods-LPAssistantClient/Pods-LPAssistantClient.release.xcconfig"; sourceTree = "<group>"; };
+		354D62CC2071F19B00534D1E /* LPAMyBillingVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LPAMyBillingVC.h; sourceTree = "<group>"; };
+		354D62CD2071F19B00534D1E /* LPAMyBillingVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LPAMyBillingVC.m; sourceTree = "<group>"; };
+		354D62CF207203D800534D1E /* LPAMyCMRHeadView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LPAMyCMRHeadView.h; sourceTree = "<group>"; };
+		354D62D0207203D800534D1E /* LPAMyCMRHeadView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LPAMyCMRHeadView.m; sourceTree = "<group>"; };
+		354D62D2207203EB00534D1E /* LPAMyCMRHeadView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LPAMyCMRHeadView.xib; sourceTree = "<group>"; };
+		354D62D42072089000534D1E /* LPA_CRM_VipDetailVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LPA_CRM_VipDetailVC.h; sourceTree = "<group>"; };
+		354D62D52072089000534D1E /* LPA_CRM_VipDetailVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LPA_CRM_VipDetailVC.m; sourceTree = "<group>"; };
+		354D62D720720FD500534D1E /* LPA_CRM_bottomView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LPA_CRM_bottomView.h; sourceTree = "<group>"; };
+		354D62D820720FD500534D1E /* LPA_CRM_bottomView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LPA_CRM_bottomView.m; sourceTree = "<group>"; };
+		354D62DA20720FF600534D1E /* LPA_CRM_bottomView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LPA_CRM_bottomView.xib; sourceTree = "<group>"; };
 		355A15C1206C8ADA007DBF87 /* LPAFindPwdVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LPAFindPwdVC.h; sourceTree = "<group>"; };
 		355A15C2206C8ADA007DBF87 /* LPAFindPwdVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LPAFindPwdVC.m; sourceTree = "<group>"; };
 		355A15C3206C8ADA007DBF87 /* LPAFindPwdVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LPAFindPwdVC.xib; sourceTree = "<group>"; };
@@ -315,8 +336,6 @@
 		3572FD53206E141D006836ED /* SCTimePickerView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SCTimePickerView.xib; sourceTree = "<group>"; };
 		3572FD56206E202A006836ED /* LPAStoreRankVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LPAStoreRankVC.h; sourceTree = "<group>"; };
 		3572FD57206E202A006836ED /* LPAStoreRankVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LPAStoreRankVC.m; sourceTree = "<group>"; };
-		3572FD59206E205E006836ED /* LPAMyBillingVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LPAMyBillingVC.h; sourceTree = "<group>"; };
-		3572FD5A206E205E006836ED /* LPAMyBillingVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LPAMyBillingVC.m; sourceTree = "<group>"; };
 		3572FD5C206E2079006836ED /* LPAMyKPIVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LPAMyKPIVC.h; sourceTree = "<group>"; };
 		3572FD5D206E2079006836ED /* LPAMyKPIVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LPAMyKPIVC.m; sourceTree = "<group>"; };
 		3572FD5F206E208E006836ED /* LPAMyCMRVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LPAMyCMRVC.h; sourceTree = "<group>"; };
@@ -338,6 +357,9 @@
 		3572FD83206E3CAC006836ED /* LPABindVipResultCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LPABindVipResultCell.h; sourceTree = "<group>"; };
 		3572FD84206E3CAC006836ED /* LPABindVipResultCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LPABindVipResultCell.m; sourceTree = "<group>"; };
 		3572FD85206E3CAC006836ED /* LPABindVipResultCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LPABindVipResultCell.xib; sourceTree = "<group>"; };
+		3572FD88206E3E5B006836ED /* LPAMyBillingCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LPAMyBillingCell.h; sourceTree = "<group>"; };
+		3572FD89206E3E5B006836ED /* LPAMyBillingCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LPAMyBillingCell.m; sourceTree = "<group>"; };
+		3572FD8A206E3E5B006836ED /* LPAMyBillingCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LPAMyBillingCell.xib; sourceTree = "<group>"; };
 		3590DA10206B39EE00504520 /* LPAssistantClient.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LPAssistantClient.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3590DA13206B39EE00504520 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		3590DA14206B39EE00504520 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -451,6 +473,12 @@
 		35B04F4C206BA57F002D563F /* logo@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "logo@3x.png"; sourceTree = "<group>"; };
 		35B04F4D206BA57F002D563F /* loginBg@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "loginBg@3x.png"; sourceTree = "<group>"; };
 		35B04F4E206BA57F002D563F /* account@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "account@3x.png"; sourceTree = "<group>"; };
+		35F8DBA62071C44A0058D33F /* LPAMyKPICell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LPAMyKPICell.h; sourceTree = "<group>"; };
+		35F8DBA72071C44A0058D33F /* LPAMyKPICell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LPAMyKPICell.m; sourceTree = "<group>"; };
+		35F8DBA82071C44A0058D33F /* LPAMyKPICell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LPAMyKPICell.xib; sourceTree = "<group>"; };
+		35F8DBAB2071C5300058D33F /* LPAMyKPIHeadView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LPAMyKPIHeadView.h; sourceTree = "<group>"; };
+		35F8DBAC2071C5300058D33F /* LPAMyKPIHeadView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LPAMyKPIHeadView.m; sourceTree = "<group>"; };
+		35F8DBAE2071C5480058D33F /* LPAMyKPIHeadView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LPAMyKPIHeadView.xib; sourceTree = "<group>"; };
 		9F61451494118A245547AFAB /* Pods-LPAssistantClient.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LPAssistantClient.debug.xcconfig"; path = "Pods/Target Support Files/Pods-LPAssistantClient/Pods-LPAssistantClient.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -607,6 +635,8 @@
 			children = (
 				3572FD80206E38A3006836ED /* LPAMyStoreVC.h */,
 				3572FD81206E38A3006836ED /* LPAMyStoreVC.m */,
+				354D62D42072089000534D1E /* LPA_CRM_VipDetailVC.h */,
+				354D62D52072089000534D1E /* LPA_CRM_VipDetailVC.m */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -614,6 +644,9 @@
 		3572FD7E206E3884006836ED /* View */ = {
 			isa = PBXGroup;
 			children = (
+				354D62D720720FD500534D1E /* LPA_CRM_bottomView.h */,
+				354D62D820720FD500534D1E /* LPA_CRM_bottomView.m */,
+				354D62DA20720FF600534D1E /* LPA_CRM_bottomView.xib */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -960,12 +993,12 @@
 				35B04F31206B92AB002D563F /* LPAMyInfoVC.m */,
 				3572FD56206E202A006836ED /* LPAStoreRankVC.h */,
 				3572FD57206E202A006836ED /* LPAStoreRankVC.m */,
-				3572FD59206E205E006836ED /* LPAMyBillingVC.h */,
-				3572FD5A206E205E006836ED /* LPAMyBillingVC.m */,
 				3572FD5C206E2079006836ED /* LPAMyKPIVC.h */,
 				3572FD5D206E2079006836ED /* LPAMyKPIVC.m */,
 				3572FD5F206E208E006836ED /* LPAMyCMRVC.h */,
 				3572FD60206E208E006836ED /* LPAMyCMRVC.m */,
+				354D62CC2071F19B00534D1E /* LPAMyBillingVC.h */,
+				354D62CD2071F19B00534D1E /* LPAMyBillingVC.m */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -989,6 +1022,18 @@
 				3572FD77206E2D2F006836ED /* LPAStoreRankBottomView.h */,
 				3572FD78206E2D2F006836ED /* LPAStoreRankBottomView.m */,
 				3572FD7A206E2D43006836ED /* LPAStoreRankBottomView.xib */,
+				3572FD88206E3E5B006836ED /* LPAMyBillingCell.h */,
+				3572FD89206E3E5B006836ED /* LPAMyBillingCell.m */,
+				3572FD8A206E3E5B006836ED /* LPAMyBillingCell.xib */,
+				35F8DBA62071C44A0058D33F /* LPAMyKPICell.h */,
+				35F8DBA72071C44A0058D33F /* LPAMyKPICell.m */,
+				35F8DBA82071C44A0058D33F /* LPAMyKPICell.xib */,
+				35F8DBAB2071C5300058D33F /* LPAMyKPIHeadView.h */,
+				35F8DBAC2071C5300058D33F /* LPAMyKPIHeadView.m */,
+				35F8DBAE2071C5480058D33F /* LPAMyKPIHeadView.xib */,
+				354D62CF207203D800534D1E /* LPAMyCMRHeadView.h */,
+				354D62D0207203D800534D1E /* LPAMyCMRHeadView.m */,
+				354D62D2207203EB00534D1E /* LPAMyCMRHeadView.xib */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -1290,6 +1335,7 @@
 				3590DA20206B39EE00504520 /* LaunchScreen.storyboard in Resources */,
 				35B04F22206B86CF002D563F /* redBtnBg.png in Resources */,
 				35B04EBC206B6F1A002D563F /* main_reception_highlight.png in Resources */,
+				354D62DB20720FF600534D1E /* LPA_CRM_bottomView.xib in Resources */,
 				35B04EB4206B6F19002D563F /* main_home_highlight@2x.png in Resources */,
 				355A15CF206C9824007DBF87 /* blackBtnBg@3x.png in Resources */,
 				35B04F60206BA580002D563F /* account@3x.png in Resources */,
@@ -1329,6 +1375,7 @@
 				35B04F23206B86CF002D563F /* redBtnBg@3x.png in Resources */,
 				3572FD41206DD2E9006836ED /* LPARemindCell.xib in Resources */,
 				35B04F26206B86CF002D563F /* search@2x.png in Resources */,
+				35F8DBAF2071C5480058D33F /* LPAMyKPIHeadView.xib in Resources */,
 				3572FD23206CF473006836ED /* coupon@2x.png in Resources */,
 				3572FCDC206CC65A006836ED /* bannerCloth@3x.png in Resources */,
 				3572FD22206CF473006836ED /* coupon@3x.png in Resources */,
@@ -1339,6 +1386,7 @@
 				35B04EEE206B7CB8002D563F /* headIcon.png in Resources */,
 				3572FD0F206CF089006836ED /* LPACommonSearchCell.xib in Resources */,
 				35B04EB3206B6F19002D563F /* main_home_highlight.png in Resources */,
+				35F8DBAA2071C44A0058D33F /* LPAMyKPICell.xib in Resources */,
 				35B04F0C206B7E67002D563F /* LPAMyFirstCell.xib in Resources */,
 				35B04F5A206BA580002D563F /* unSelected@3x.png in Resources */,
 				3572FCCD206CC1D1006836ED /* LPAFCHeadPickerView.xib in Resources */,
@@ -1410,11 +1458,13 @@
 				35B04ED6206B6F2C002D563F /* bigFindCommodity@3x.png in Resources */,
 				35B04EED206B7CB8002D563F /* badge@3x.png in Resources */,
 				3572FCE1206CC737006836ED /* goods@2x.png in Resources */,
+				354D62D3207203EB00534D1E /* LPAMyCMRHeadView.xib in Resources */,
 				35B04F5B206BA580002D563F /* logo@2x.png in Resources */,
 				3572FD6C206E258A006836ED /* checkBtnBg@2x.png in Resources */,
 				3572FCB9206CBFB1006836ED /* bindVip.png in Resources */,
 				35B04EFD206B7CD2002D563F /* light_close@3x.png in Resources */,
 				35B04F4F206BA580002D563F /* delete.png in Resources */,
+				3572FD8C206E3E5B006836ED /* LPAMyBillingCell.xib in Resources */,
 				3572FCD4206CC38D006836ED /* LPPCommodityCell.xib in Resources */,
 				3572FD55206E141D006836ED /* SCTimePickerView.xib in Resources */,
 				3572FCBB206CBFB1006836ED /* add@3x.png in Resources */,
@@ -1494,7 +1544,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3572FD5B206E205E006836ED /* LPAMyBillingVC.m in Sources */,
 				35B04E99206B43BC002D563F /* LPAMyVC.m in Sources */,
 				3572FD5E206E2079006836ED /* LPAMyKPIVC.m in Sources */,
 				3572FD40206DD2E9006836ED /* LPARemindCell.m in Sources */,
@@ -1513,12 +1562,15 @@
 				3572FD34206CFD92006836ED /* LPAOrderDetailVC.m in Sources */,
 				35B04F3B206BA2FD002D563F /* LPALoginVC.m in Sources */,
 				3572FD3B206DD2B1006836ED /* LPAChatCell.m in Sources */,
+				35F8DBA92071C44A0058D33F /* LPAMyKPICell.m in Sources */,
 				35B04EDD206B76CF002D563F /* LPAHomeCollectionCell.m in Sources */,
 				35B04F07206B7D15002D563F /* LPPCommonTBCell.m in Sources */,
 				3572FD12206CF30A006836ED /* LPABottomBtnView.m in Sources */,
 				355A15C4206C8ADA007DBF87 /* LPAFindPwdVC.m in Sources */,
 				3572FCCB206CC1B7006836ED /* LPAFCHeadPickerView.m in Sources */,
+				354D62CE2071F19B00534D1E /* LPAMyBillingVC.m in Sources */,
 				35B04F10206B844C002D563F /* LPAReceptionCell.m in Sources */,
+				3572FD8B206E3E5B006836ED /* LPAMyBillingCell.m in Sources */,
 				3572FD4A206DE29E006836ED /* LPAVipDetailVC.m in Sources */,
 				3572FD79206E2D2F006836ED /* LPAStoreRankBottomView.m in Sources */,
 				35B04E96206B43A9002D563F /* LPAReceptionVC.m in Sources */,
@@ -1529,15 +1581,19 @@
 				3572FD54206E141D006836ED /* SCTimePickerView.m in Sources */,
 				3572FD70206E26DB006836ED /* LPAStoreRankCell.m in Sources */,
 				3572FD09206CEBB1006836ED /* LPAPayOnlineCell.m in Sources */,
+				354D62D920720FD500534D1E /* LPA_CRM_bottomView.m in Sources */,
 				3572FD58206E202A006836ED /* LPAStoreRankVC.m in Sources */,
 				35B04F32206B92AB002D563F /* LPAMyInfoVC.m in Sources */,
+				35F8DBAD2071C5300058D33F /* LPAMyKPIHeadView.m in Sources */,
 				35B04ED9206B7605002D563F /* ATCarouselView.m in Sources */,
 				3572FD74206E28C7006836ED /* LPATimeSelectView.m in Sources */,
+				354D62D1207203D800534D1E /* LPAMyCMRHeadView.m in Sources */,
 				3572FCD5206CC38D006836ED /* LPPCommodityCell.m in Sources */,
 				3572FD0E206CF089006836ED /* LPACommonSearchCell.m in Sources */,
 				3572FC9E206CBC2B006836ED /* LPAFindCommodityVC.m in Sources */,
 				3572FD61206E208E006836ED /* LPAMyCMRVC.m in Sources */,
 				3590DA23206B39EE00504520 /* main.m in Sources */,
+				354D62D62072089000534D1E /* LPA_CRM_VipDetailVC.m in Sources */,
 				3590DA15206B39EE00504520 /* AppDelegate.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -1674,7 +1730,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 46MPV3NQ8S;
+				DEVELOPMENT_TEAM = 3YBNGWV52F;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "LPAssistantClient/LPA-Prefix.pch";
 				INFOPLIST_FILE = LPAssistantClient/Info.plist;
@@ -1692,7 +1748,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 46MPV3NQ8S;
+				DEVELOPMENT_TEAM = 3YBNGWV52F;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "LPAssistantClient/LPA-Prefix.pch";
 				INFOPLIST_FILE = LPAssistantClient/Info.plist;

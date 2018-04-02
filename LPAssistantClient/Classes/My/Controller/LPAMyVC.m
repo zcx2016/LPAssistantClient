@@ -112,7 +112,7 @@
     }else if (indexPath.section == 2){  //我的开单
         LPAMyBillingVC *vc = [LPAMyBillingVC new];
         [self.navigationController pushViewController:vc animated:YES];
-    }else if (indexPath.section == 3){  //我的KPI
+    }else if (indexPath.section == 3 && indexPath.row == 0){  //我的KPI
         LPAMyKPIVC *vc = [LPAMyKPIVC new];
         [self.navigationController pushViewController:vc animated:YES];
     }else { //我的CMR

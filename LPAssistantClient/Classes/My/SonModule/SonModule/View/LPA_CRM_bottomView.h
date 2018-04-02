@@ -1,5 +1,5 @@
 //
-//  LPAMyBillingVC.h
+//  LPA_CRM_bottomView.h
 //  LPAssistantClient
 //
 //  Created by 张晨曦 on 2018/4/2.
@@ -8,6 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface LPAMyBillingVC : UIViewController
+@interface LPA_CRM_bottomView : UIView
 
 @end

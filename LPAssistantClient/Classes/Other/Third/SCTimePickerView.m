@@ -35,11 +35,11 @@
 
 - (void)doneBtnClick{
     //  将新的日期传过去
-//    if (self.timeString != nil) {
+    if (self.timeString != nil) {
         [[NSNotificationCenter defaultCenter] postNotificationName:@"vipBirthday" object:nil userInfo:@{@"time" : self.timeString}];
 //    }else{
 //        [[NSNotificationCenter defaultCenter] postNotificationName:@"viewMoveDown" object:nil];
-//    }
+    }
     [self removeFromSuperview];
 }
 

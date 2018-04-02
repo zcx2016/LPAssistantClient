@@ -55,7 +55,7 @@
 - (LPATimeSelectView *)timeSelectView{
     if (!_timeSelectView) {
         _timeSelectView = [[NSBundle mainBundle] loadNibNamed:@"LPATimeSelectView" owner:nil options:nil].lastObject;
-        _timeSelectView.frame = CGRectMake(0, 60, kScreenWidth, 64);
+        _timeSelectView.frame = CGRectMake(0, 64, kScreenWidth, 60);
         [self.view addSubview:_timeSelectView];
     }
     return _timeSelectView;

@@ -15,6 +15,8 @@
  
     self.selectionStyle = UITableViewCellSelectionStyleNone;
     
+    self.diyDetailLabel.hidden = YES;
+    
     self.inputTF.returnKeyType = UIReturnKeyDone;
     self.inputTF.delegate = self;
     //进入后台时取消键盘响应事件
