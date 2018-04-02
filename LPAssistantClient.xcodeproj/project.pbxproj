@@ -25,6 +25,8 @@
 		354D62F7207237EE00534D1E /* LPAChangePwdVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 354D62F6207237EE00534D1E /* LPAChangePwdVC.m */; };
 		354D62F92072381400534D1E /* LPAChangePwdView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 354D62F82072381400534D1E /* LPAChangePwdView.xib */; };
 		354D62FC2072383300534D1E /* LPAChangePwdView.m in Sources */ = {isa = PBXBuildFile; fileRef = 354D62FB2072383300534D1E /* LPAChangePwdView.m */; };
+		354D630020723E1100534D1E /* LPA_CRM_BuyDetailCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 354D62FE20723E1100534D1E /* LPA_CRM_BuyDetailCell.m */; };
+		354D630120723E1100534D1E /* LPA_CRM_BuyDetailCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 354D62FF20723E1100534D1E /* LPA_CRM_BuyDetailCell.xib */; };
 		355A15C4206C8ADA007DBF87 /* LPAFindPwdVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 355A15C2206C8ADA007DBF87 /* LPAFindPwdVC.m */; };
 		355A15C5206C8ADA007DBF87 /* LPAFindPwdVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 355A15C3206C8ADA007DBF87 /* LPAFindPwdVC.xib */; };
 		355A15CE206C9824007DBF87 /* blackBtnBg@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 355A15CB206C9824007DBF87 /* blackBtnBg@2x.png */; };
@@ -254,6 +256,9 @@
 		354D62F82072381400534D1E /* LPAChangePwdView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LPAChangePwdView.xib; sourceTree = "<group>"; };
 		354D62FA2072383300534D1E /* LPAChangePwdView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LPAChangePwdView.h; sourceTree = "<group>"; };
 		354D62FB2072383300534D1E /* LPAChangePwdView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LPAChangePwdView.m; sourceTree = "<group>"; };
+		354D62FD20723E1100534D1E /* LPA_CRM_BuyDetailCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LPA_CRM_BuyDetailCell.h; sourceTree = "<group>"; };
+		354D62FE20723E1100534D1E /* LPA_CRM_BuyDetailCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LPA_CRM_BuyDetailCell.m; sourceTree = "<group>"; };
+		354D62FF20723E1100534D1E /* LPA_CRM_BuyDetailCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LPA_CRM_BuyDetailCell.xib; sourceTree = "<group>"; };
 		355A15C1206C8ADA007DBF87 /* LPAFindPwdVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LPAFindPwdVC.h; sourceTree = "<group>"; };
 		355A15C2206C8ADA007DBF87 /* LPAFindPwdVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LPAFindPwdVC.m; sourceTree = "<group>"; };
 		355A15C3206C8ADA007DBF87 /* LPAFindPwdVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LPAFindPwdVC.xib; sourceTree = "<group>"; };
@@ -546,6 +551,9 @@
 		354D62EC207234D300534D1E /* View */ = {
 			isa = PBXGroup;
 			children = (
+				354D62FD20723E1100534D1E /* LPA_CRM_BuyDetailCell.h */,
+				354D62FE20723E1100534D1E /* LPA_CRM_BuyDetailCell.m */,
+				354D62FF20723E1100534D1E /* LPA_CRM_BuyDetailCell.xib */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -1419,6 +1427,7 @@
 				35B04EB4206B6F19002D563F /* main_home_highlight@2x.png in Resources */,
 				355A15CF206C9824007DBF87 /* blackBtnBg@3x.png in Resources */,
 				35B04F60206BA580002D563F /* account@3x.png in Resources */,
+				354D630120723E1100534D1E /* LPA_CRM_BuyDetailCell.xib in Resources */,
 				354D62E2207225F800534D1E /* blackBg.png in Resources */,
 				35B04ED4206B6F2C002D563F /* bigFindCommodity@2x.png in Resources */,
 				3572FCE2206CC737006836ED /* goods.png in Resources */,
@@ -1657,6 +1666,7 @@
 				3572FCCB206CC1B7006836ED /* LPAFCHeadPickerView.m in Sources */,
 				354D62CE2071F19B00534D1E /* LPAMyBillingVC.m in Sources */,
 				35B04F10206B844C002D563F /* LPAReceptionCell.m in Sources */,
+				354D630020723E1100534D1E /* LPA_CRM_BuyDetailCell.m in Sources */,
 				3572FD8B206E3E5B006836ED /* LPAMyBillingCell.m in Sources */,
 				3572FD4A206DE29E006836ED /* LPAVipDetailVC.m in Sources */,
 				3572FD79206E2D2F006836ED /* LPAStoreRankBottomView.m in Sources */,

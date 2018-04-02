@@ -10,6 +10,9 @@
 #import "LPAReceptionCell.h"
 #import "LPAVipDetailCell.h"
 #import "LPA_CRM_bottomView.h"
+//跳转
+#import "LPA_CRM_BuyDetailVC.h"
+#import "LPA_CRM_OrderDetailVC.h"
 
 @interface LPA_CRM_VipDetailVC ()<UITableViewDelegate,UITableViewDataSource>
 
@@ -44,9 +47,21 @@
     if (!_bottomView) {
         _bottomView = [[NSBundle mainBundle] loadNibNamed:@"LPA_CRM_bottomView" owner:nil options:nil].lastObject;
         _bottomView.frame = CGRectMake(0, kScreenHeight-55, kScreenWidth, 55);
+        [_bottomView.buyDetailBtn addTarget:self action:@selector(buyDetailBtnClick:) forControlEvents:UIControlEventTouchUpInside];
+        [_bottomView.orderDetailBtn addTarget:self action:@selector(orderDetailBtnClick:) forControlEvents:UIControlEventTouchUpInside];
         [self.view addSubview:_bottomView];
     }
     return _bottomView;
+}
+
+- (void)buyDetailBtnClick:(UIButton *)btn{
+    LPA_CRM_BuyDetailVC *vc = [LPA_CRM_BuyDetailVC new];
+    [self.navigationController pushViewController:vc animated:YES];
+}
+
+- (void)orderDetailBtnClick:(UIButton *)btn{
+    LPA_CRM_OrderDetailVC *vc = [LPA_CRM_OrderDetailVC new];
+    [self.navigationController pushViewController:vc animated:YES];
 }
 
 #pragma mark - tableView Delegate

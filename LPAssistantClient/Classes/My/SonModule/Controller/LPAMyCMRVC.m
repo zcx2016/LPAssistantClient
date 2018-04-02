@@ -92,22 +92,17 @@
 #pragma mark - 懒加载tableView
 - (UITableView *)tableView{
     if (!_tableView) {
-        _tableView = [[UITableView alloc] initWithFrame:CGRectMake(0, 60, kScreenWidth, kScreenHeight - 60) style:UITableViewStyleGrouped];
+        _tableView = [[UITableView alloc] initWithFrame:CGRectMake(0, 60, kScreenWidth, kScreenHeight - 60-64) style:UITableViewStyleGrouped];
         _tableView.delegate = self;
         _tableView.dataSource = self;
         //去掉ios7 的separatorInset边距
         _tableView.separatorInset = UIEdgeInsetsMake(0, 0, 0, 0);
         //注册cell
         [_tableView registerNib:[UINib nibWithNibName:NSStringFromClass([LPAReceptionCell class]) bundle:[NSBundle mainBundle]] forCellReuseIdentifier:@"LPAReceptionCell"];
-//        //注册headView
-//        [_tableView registerNib:[UINib nibWithNibName:NSStringFromClass([<#type#> class]) bundle:[NSBundle mainBundle]] forHeaderFooterViewReuseIdentifier:@"<#type#>"];
         
         [self.view addSubview:_tableView];
     }
     return _tableView;
 }
-
-
-
 
 @end
