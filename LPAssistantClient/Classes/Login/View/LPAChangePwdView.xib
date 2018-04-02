@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="LPAChangePwdView">
+            <rect key="frame" x="0.0" y="0.0" width="490" height="306"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Amt-18-h47">
+                    <rect key="frame" x="40" y="20" width="410" height="50"/>
+                    <subviews>
+                        <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="请填写旧密码" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Ze9-uu-oRo">
+                            <rect key="frame" x="10" y="0.0" width="400" height="50"/>
+                            <nil key="textColor"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                            <textInputTraits key="textInputTraits" keyboardType="numbersAndPunctuation" secureTextEntry="YES"/>
+                        </textField>
+                    </subviews>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstAttribute="bottom" secondItem="Ze9-uu-oRo" secondAttribute="bottom" id="8PJ-RV-5sF"/>
+                        <constraint firstItem="Ze9-uu-oRo" firstAttribute="leading" secondItem="Amt-18-h47" secondAttribute="leading" constant="10" id="Lfz-PF-jir"/>
+                        <constraint firstAttribute="height" constant="50" id="T4r-8D-3xC"/>
+                        <constraint firstItem="Ze9-uu-oRo" firstAttribute="top" secondItem="Amt-18-h47" secondAttribute="top" id="l2q-2j-9kA"/>
+                        <constraint firstAttribute="trailing" secondItem="Ze9-uu-oRo" secondAttribute="trailing" id="nRx-Yt-HJV"/>
+                    </constraints>
+                </view>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Wlh-fY-ASS">
+                    <rect key="frame" x="40" y="90" width="410" height="50"/>
+                    <subviews>
+                        <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="请输入新密码" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="vvB-Be-oxl">
+                            <rect key="frame" x="10" y="0.0" width="400" height="50"/>
+                            <nil key="textColor"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                            <textInputTraits key="textInputTraits" keyboardType="numbersAndPunctuation" secureTextEntry="YES"/>
+                        </textField>
+                    </subviews>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstItem="vvB-Be-oxl" firstAttribute="leading" secondItem="Wlh-fY-ASS" secondAttribute="leading" constant="10" id="0l5-WN-Xe7"/>
+                        <constraint firstItem="vvB-Be-oxl" firstAttribute="top" secondItem="Wlh-fY-ASS" secondAttribute="top" id="7ui-Ed-2ko"/>
+                        <constraint firstAttribute="height" constant="50" id="874-wG-oY4"/>
+                        <constraint firstAttribute="trailing" secondItem="vvB-Be-oxl" secondAttribute="trailing" id="cwr-fa-NGh"/>
+                        <constraint firstAttribute="bottom" secondItem="vvB-Be-oxl" secondAttribute="bottom" id="wFK-vt-rqM"/>
+                    </constraints>
+                </view>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="W3r-Tw-16Q">
+                    <rect key="frame" x="40" y="160" width="410" height="50"/>
+                    <subviews>
+                        <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="请确认新密码" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="f14-69-91h">
+                            <rect key="frame" x="10" y="0.0" width="400" height="50"/>
+                            <nil key="textColor"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                            <textInputTraits key="textInputTraits" keyboardType="numbersAndPunctuation" secureTextEntry="YES"/>
+                        </textField>
+                    </subviews>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstAttribute="bottom" secondItem="f14-69-91h" secondAttribute="bottom" id="BJR-D4-0jr"/>
+                        <constraint firstItem="f14-69-91h" firstAttribute="leading" secondItem="W3r-Tw-16Q" secondAttribute="leading" constant="10" id="Grn-u4-hUC"/>
+                        <constraint firstAttribute="trailing" secondItem="f14-69-91h" secondAttribute="trailing" id="Zvi-ug-JlB"/>
+                        <constraint firstAttribute="height" constant="50" id="jT5-cn-3ZG"/>
+                        <constraint firstItem="f14-69-91h" firstAttribute="top" secondItem="W3r-Tw-16Q" secondAttribute="top" id="ofY-iX-Dkm"/>
+                    </constraints>
+                </view>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3C3-5D-o9u">
+                    <rect key="frame" x="40" y="240" width="410" height="45"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="45" id="BHH-iD-ZYQ"/>
+                    </constraints>
+                    <state key="normal" title="保存" backgroundImage="blackBtnBg.png">
+                        <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </state>
+                </button>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="Wlh-fY-ASS" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="40" id="1so-Ro-rt5"/>
+                <constraint firstItem="W3r-Tw-16Q" firstAttribute="trailing" secondItem="Wlh-fY-ASS" secondAttribute="trailing" id="20A-yQ-98r"/>
+                <constraint firstItem="3C3-5D-o9u" firstAttribute="trailing" secondItem="W3r-Tw-16Q" secondAttribute="trailing" id="5Dp-oq-FFE"/>
+                <constraint firstAttribute="trailing" secondItem="Wlh-fY-ASS" secondAttribute="trailing" constant="40" id="ACE-L2-6Qq"/>
+                <constraint firstItem="W3r-Tw-16Q" firstAttribute="leading" secondItem="Wlh-fY-ASS" secondAttribute="leading" id="BTH-Xb-7ys"/>
+                <constraint firstItem="Wlh-fY-ASS" firstAttribute="top" secondItem="Amt-18-h47" secondAttribute="bottom" constant="20" id="Bg3-iQ-4pm"/>
+                <constraint firstItem="W3r-Tw-16Q" firstAttribute="top" secondItem="Wlh-fY-ASS" secondAttribute="bottom" constant="20" id="IwM-x7-PaO"/>
+                <constraint firstAttribute="trailing" secondItem="Amt-18-h47" secondAttribute="trailing" constant="40" id="K1c-SB-xCM"/>
+                <constraint firstItem="Amt-18-h47" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="eS3-8w-1nH"/>
+                <constraint firstItem="Amt-18-h47" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="40" id="hxl-Ij-ghc"/>
+                <constraint firstItem="Amt-18-h47" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="20" id="quP-9D-qMg"/>
+                <constraint firstItem="Wlh-fY-ASS" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="rZh-P8-AlQ"/>
+                <constraint firstItem="3C3-5D-o9u" firstAttribute="leading" secondItem="W3r-Tw-16Q" secondAttribute="leading" id="vk9-GU-WYb"/>
+                <constraint firstItem="3C3-5D-o9u" firstAttribute="top" secondItem="W3r-Tw-16Q" secondAttribute="bottom" constant="30" id="xwD-GB-oip"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="newsPwdTF" destination="vvB-Be-oxl" id="9F2-xn-Bpr"/>
+                <outlet property="newsPwdView" destination="Wlh-fY-ASS" id="0Zb-1Y-Oxr"/>
+                <outlet property="oldPwdTF" destination="Ze9-uu-oRo" id="GFQ-Iz-xVx"/>
+                <outlet property="oldPwdView" destination="Amt-18-h47" id="3a7-Gd-AOg"/>
+                <outlet property="saveBtn" destination="3C3-5D-o9u" id="Hiy-Db-YEK"/>
+                <outlet property="sureNewsPwdTF" destination="f14-69-91h" id="wtV-Z3-gmp"/>
+                <outlet property="sureNewsPwdView" destination="W3r-Tw-16Q" id="bCD-1X-Bfi"/>
+            </connections>
+            <point key="canvasLocation" x="141" y="339"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="blackBtnBg.png" width="290" height="40"/>
+    </resources>
+</document>

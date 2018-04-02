@@ -9,14 +9,27 @@
 #import "LPA_CRM_VipDetailVC.h"
 #import "LPAReceptionCell.h"
 #import "LPAVipDetailCell.h"
+#import "LPA_CRM_bottomView.h"
 
 @interface LPA_CRM_VipDetailVC ()<UITableViewDelegate,UITableViewDataSource>
 
 @property (nonatomic, strong) UITableView *tableView;
 
+@property (nonatomic, strong) LPA_CRM_bottomView *bottomView;
+
 @end
 
 @implementation LPA_CRM_VipDetailVC
+
+- (void)viewWillAppear:(BOOL)animated{
+    [super viewWillAppear:animated];
+    self.navigationController.navigationBar.translucent = YES;
+}
+
+- (void)viewWillDisappear:(BOOL)animated{
+    [super viewWillDisappear:animated];
+    self.navigationController.navigationBar.translucent = NO;
+}
 
 - (void)viewDidLoad {
     [super viewDidLoad];
@@ -24,6 +37,16 @@
     self.navigationItem.title = @"会员详情";
     
     [self tableView];
+    [self bottomView];
+}
+
+- (LPA_CRM_bottomView *)bottomView{
+    if (!_bottomView) {
+        _bottomView = [[NSBundle mainBundle] loadNibNamed:@"LPA_CRM_bottomView" owner:nil options:nil].lastObject;
+        _bottomView.frame = CGRectMake(0, kScreenHeight-55, kScreenWidth, 55);
+        [self.view addSubview:_bottomView];
+    }
+    return _bottomView;
 }
 
 #pragma mark - tableView Delegate
@@ -125,6 +148,5 @@
     }
     return _tableView;
 }
-
 
 @end

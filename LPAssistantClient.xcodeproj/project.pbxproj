@@ -13,6 +13,18 @@
 		354D62D62072089000534D1E /* LPA_CRM_VipDetailVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 354D62D52072089000534D1E /* LPA_CRM_VipDetailVC.m */; };
 		354D62D920720FD500534D1E /* LPA_CRM_bottomView.m in Sources */ = {isa = PBXBuildFile; fileRef = 354D62D820720FD500534D1E /* LPA_CRM_bottomView.m */; };
 		354D62DB20720FF600534D1E /* LPA_CRM_bottomView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 354D62DA20720FF600534D1E /* LPA_CRM_bottomView.xib */; };
+		354D62E2207225F800534D1E /* blackBg.png in Resources */ = {isa = PBXBuildFile; fileRef = 354D62DC207225F700534D1E /* blackBg.png */; };
+		354D62E3207225F800534D1E /* redBg.png in Resources */ = {isa = PBXBuildFile; fileRef = 354D62DD207225F700534D1E /* redBg.png */; };
+		354D62E4207225F800534D1E /* blackBg@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 354D62DE207225F700534D1E /* blackBg@3x.png */; };
+		354D62E5207225F800534D1E /* redBg@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 354D62DF207225F700534D1E /* redBg@2x.png */; };
+		354D62E6207225F800534D1E /* blackBg@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 354D62E0207225F700534D1E /* blackBg@2x.png */; };
+		354D62E7207225F800534D1E /* redBg@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 354D62E1207225F800534D1E /* redBg@3x.png */; };
+		354D62EA20722F4200534D1E /* LPA_My_OrderDetailVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 354D62E920722F4200534D1E /* LPA_My_OrderDetailVC.m */; };
+		354D62F12072352400534D1E /* LPA_CRM_BuyDetailVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 354D62F02072352400534D1E /* LPA_CRM_BuyDetailVC.m */; };
+		354D62F42072357D00534D1E /* LPA_CRM_OrderDetailVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 354D62F32072357D00534D1E /* LPA_CRM_OrderDetailVC.m */; };
+		354D62F7207237EE00534D1E /* LPAChangePwdVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 354D62F6207237EE00534D1E /* LPAChangePwdVC.m */; };
+		354D62F92072381400534D1E /* LPAChangePwdView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 354D62F82072381400534D1E /* LPAChangePwdView.xib */; };
+		354D62FC2072383300534D1E /* LPAChangePwdView.m in Sources */ = {isa = PBXBuildFile; fileRef = 354D62FB2072383300534D1E /* LPAChangePwdView.m */; };
 		355A15C4206C8ADA007DBF87 /* LPAFindPwdVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 355A15C2206C8ADA007DBF87 /* LPAFindPwdVC.m */; };
 		355A15C5206C8ADA007DBF87 /* LPAFindPwdVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 355A15C3206C8ADA007DBF87 /* LPAFindPwdVC.xib */; };
 		355A15CE206C9824007DBF87 /* blackBtnBg@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 355A15CB206C9824007DBF87 /* blackBtnBg@2x.png */; };
@@ -225,6 +237,23 @@
 		354D62D720720FD500534D1E /* LPA_CRM_bottomView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LPA_CRM_bottomView.h; sourceTree = "<group>"; };
 		354D62D820720FD500534D1E /* LPA_CRM_bottomView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LPA_CRM_bottomView.m; sourceTree = "<group>"; };
 		354D62DA20720FF600534D1E /* LPA_CRM_bottomView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LPA_CRM_bottomView.xib; sourceTree = "<group>"; };
+		354D62DC207225F700534D1E /* blackBg.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = blackBg.png; sourceTree = "<group>"; };
+		354D62DD207225F700534D1E /* redBg.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = redBg.png; sourceTree = "<group>"; };
+		354D62DE207225F700534D1E /* blackBg@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "blackBg@3x.png"; sourceTree = "<group>"; };
+		354D62DF207225F700534D1E /* redBg@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "redBg@2x.png"; sourceTree = "<group>"; };
+		354D62E0207225F700534D1E /* blackBg@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "blackBg@2x.png"; sourceTree = "<group>"; };
+		354D62E1207225F800534D1E /* redBg@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "redBg@3x.png"; sourceTree = "<group>"; };
+		354D62E820722F4200534D1E /* LPA_My_OrderDetailVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LPA_My_OrderDetailVC.h; sourceTree = "<group>"; };
+		354D62E920722F4200534D1E /* LPA_My_OrderDetailVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LPA_My_OrderDetailVC.m; sourceTree = "<group>"; };
+		354D62EF2072352400534D1E /* LPA_CRM_BuyDetailVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LPA_CRM_BuyDetailVC.h; sourceTree = "<group>"; };
+		354D62F02072352400534D1E /* LPA_CRM_BuyDetailVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LPA_CRM_BuyDetailVC.m; sourceTree = "<group>"; };
+		354D62F22072357D00534D1E /* LPA_CRM_OrderDetailVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LPA_CRM_OrderDetailVC.h; sourceTree = "<group>"; };
+		354D62F32072357D00534D1E /* LPA_CRM_OrderDetailVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LPA_CRM_OrderDetailVC.m; sourceTree = "<group>"; };
+		354D62F5207237EE00534D1E /* LPAChangePwdVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LPAChangePwdVC.h; sourceTree = "<group>"; };
+		354D62F6207237EE00534D1E /* LPAChangePwdVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LPAChangePwdVC.m; sourceTree = "<group>"; };
+		354D62F82072381400534D1E /* LPAChangePwdView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LPAChangePwdView.xib; sourceTree = "<group>"; };
+		354D62FA2072383300534D1E /* LPAChangePwdView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LPAChangePwdView.h; sourceTree = "<group>"; };
+		354D62FB2072383300534D1E /* LPAChangePwdView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LPAChangePwdView.m; sourceTree = "<group>"; };
 		355A15C1206C8ADA007DBF87 /* LPAFindPwdVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LPAFindPwdVC.h; sourceTree = "<group>"; };
 		355A15C2206C8ADA007DBF87 /* LPAFindPwdVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LPAFindPwdVC.m; sourceTree = "<group>"; };
 		355A15C3206C8ADA007DBF87 /* LPAFindPwdVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LPAFindPwdVC.xib; sourceTree = "<group>"; };
@@ -503,6 +532,38 @@
 			name = Pods;
 			sourceTree = "<group>";
 		};
+		354D62EB207234D300534D1E /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				354D62EF2072352400534D1E /* LPA_CRM_BuyDetailVC.h */,
+				354D62F02072352400534D1E /* LPA_CRM_BuyDetailVC.m */,
+				354D62F22072357D00534D1E /* LPA_CRM_OrderDetailVC.h */,
+				354D62F32072357D00534D1E /* LPA_CRM_OrderDetailVC.m */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		354D62EC207234D300534D1E /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		354D62ED207234D300534D1E /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		354D62EE207234D300534D1E /* SonModule */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = SonModule;
+			sourceTree = "<group>";
+		};
 		3572FC93206CBC04006836ED /* Commodity */ = {
 			isa = PBXGroup;
 			children = (
@@ -637,6 +698,8 @@
 				3572FD81206E38A3006836ED /* LPAMyStoreVC.m */,
 				354D62D42072089000534D1E /* LPA_CRM_VipDetailVC.h */,
 				354D62D52072089000534D1E /* LPA_CRM_VipDetailVC.m */,
+				354D62E820722F4200534D1E /* LPA_My_OrderDetailVC.h */,
+				354D62E920722F4200534D1E /* LPA_My_OrderDetailVC.m */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -654,6 +717,10 @@
 		3572FD7F206E3884006836ED /* SonModule */ = {
 			isa = PBXGroup;
 			children = (
+				354D62EB207234D300534D1E /* Controller */,
+				354D62ED207234D300534D1E /* Model */,
+				354D62EC207234D300534D1E /* View */,
+				354D62EE207234D300534D1E /* SonModule */,
 			);
 			path = SonModule;
 			sourceTree = "<group>";
@@ -1043,8 +1110,8 @@
 			children = (
 				3572FD7D206E3884006836ED /* Controller */,
 				3572FD7C206E3884006836ED /* Model */,
-				3572FD7F206E3884006836ED /* SonModule */,
 				3572FD7E206E3884006836ED /* View */,
+				3572FD7F206E3884006836ED /* SonModule */,
 			);
 			path = SonModule;
 			sourceTree = "<group>";
@@ -1103,6 +1170,8 @@
 				355A15C1206C8ADA007DBF87 /* LPAFindPwdVC.h */,
 				355A15C2206C8ADA007DBF87 /* LPAFindPwdVC.m */,
 				355A15C3206C8ADA007DBF87 /* LPAFindPwdVC.xib */,
+				354D62F5207237EE00534D1E /* LPAChangePwdVC.h */,
+				354D62F6207237EE00534D1E /* LPAChangePwdVC.m */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -1117,6 +1186,9 @@
 		35B04E8E206B432B002D563F /* View */ = {
 			isa = PBXGroup;
 			children = (
+				354D62FA2072383300534D1E /* LPAChangePwdView.h */,
+				354D62FB2072383300534D1E /* LPAChangePwdView.m */,
+				354D62F82072381400534D1E /* LPAChangePwdView.xib */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -1217,6 +1289,12 @@
 		35B04EA5206B6AC5002D563F /* My */ = {
 			isa = PBXGroup;
 			children = (
+				354D62DC207225F700534D1E /* blackBg.png */,
+				354D62E0207225F700534D1E /* blackBg@2x.png */,
+				354D62DE207225F700534D1E /* blackBg@3x.png */,
+				354D62DD207225F700534D1E /* redBg.png */,
+				354D62DF207225F700534D1E /* redBg@2x.png */,
+				354D62E1207225F800534D1E /* redBg@3x.png */,
 				3572FD68206E258A006836ED /* checkBtnBg.png */,
 				3572FD69206E258A006836ED /* checkBtnBg@2x.png */,
 				3572FD67206E258A006836ED /* checkBtnBg@3x.png */,
@@ -1335,10 +1413,13 @@
 				3590DA20206B39EE00504520 /* LaunchScreen.storyboard in Resources */,
 				35B04F22206B86CF002D563F /* redBtnBg.png in Resources */,
 				35B04EBC206B6F1A002D563F /* main_reception_highlight.png in Resources */,
+				354D62F92072381400534D1E /* LPAChangePwdView.xib in Resources */,
 				354D62DB20720FF600534D1E /* LPA_CRM_bottomView.xib in Resources */,
+				354D62E5207225F800534D1E /* redBg@2x.png in Resources */,
 				35B04EB4206B6F19002D563F /* main_home_highlight@2x.png in Resources */,
 				355A15CF206C9824007DBF87 /* blackBtnBg@3x.png in Resources */,
 				35B04F60206BA580002D563F /* account@3x.png in Resources */,
+				354D62E2207225F800534D1E /* blackBg.png in Resources */,
 				35B04ED4206B6F2C002D563F /* bigFindCommodity@2x.png in Resources */,
 				3572FCE2206CC737006836ED /* goods.png in Resources */,
 				35B04F11206B844C002D563F /* LPAReceptionCell.xib in Resources */,
@@ -1412,12 +1493,14 @@
 				3572FCF8206CCE07006836ED /* SCScanCodeVC.storyboard in Resources */,
 				35B04EEF206B7CB8002D563F /* rightArrow.png in Resources */,
 				35B04F57206BA580002D563F /* pwd@2x.png in Resources */,
+				354D62E4207225F800534D1E /* blackBg@3x.png in Resources */,
 				35B04EF3206B7CB8002D563F /* badge@2x.png in Resources */,
 				3572FCC7206CC071006836ED /* main_my_highlight@3x.png in Resources */,
 				35B04F56206BA580002D563F /* account@2x.png in Resources */,
 				35B04EBA206B6F1A002D563F /* main_reception_highlight@3x.png in Resources */,
 				35B04F1E206B86CF002D563F /* headImg@3x.png in Resources */,
 				35B04EB9206B6F1A002D563F /* main_my@2x.png in Resources */,
+				354D62E7207225F800534D1E /* redBg@3x.png in Resources */,
 				3572FD71206E26DB006836ED /* LPAStoreRankCell.xib in Resources */,
 				3590DA1B206B39EE00504520 /* Main.storyboard in Resources */,
 				3572FCC1206CBFC5006836ED /* return@3x.png in Resources */,
@@ -1462,6 +1545,7 @@
 				35B04F5B206BA580002D563F /* logo@2x.png in Resources */,
 				3572FD6C206E258A006836ED /* checkBtnBg@2x.png in Resources */,
 				3572FCB9206CBFB1006836ED /* bindVip.png in Resources */,
+				354D62E3207225F800534D1E /* redBg.png in Resources */,
 				35B04EFD206B7CD2002D563F /* light_close@3x.png in Resources */,
 				35B04F4F206BA580002D563F /* delete.png in Resources */,
 				3572FD8C206E3E5B006836ED /* LPAMyBillingCell.xib in Resources */,
@@ -1475,6 +1559,7 @@
 				35B04F53206BA580002D563F /* unSelected.png in Resources */,
 				3572FCBA206CBFB1006836ED /* bindVip@3x.png in Resources */,
 				35B04F02206B7CD2002D563F /* light_close.png in Resources */,
+				354D62E6207225F800534D1E /* blackBg@2x.png in Resources */,
 				3572FD27206CF473006836ED /* select@3x.png in Resources */,
 				3572FD29206CF473006836ED /* disSelect@2x.png in Resources */,
 				355A15C5206C8ADA007DBF87 /* LPAFindPwdVC.xib in Resources */,
@@ -1546,7 +1631,9 @@
 			files = (
 				35B04E99206B43BC002D563F /* LPAMyVC.m in Sources */,
 				3572FD5E206E2079006836ED /* LPAMyKPIVC.m in Sources */,
+				354D62F7207237EE00534D1E /* LPAChangePwdVC.m in Sources */,
 				3572FD40206DD2E9006836ED /* LPARemindCell.m in Sources */,
+				354D62F42072357D00534D1E /* LPA_CRM_OrderDetailVC.m in Sources */,
 				3572FCE7206CCA14006836ED /* LPPNavSearchView.m in Sources */,
 				3572FD05206CEAC7006836ED /* LPAPayOnlineVC.m in Sources */,
 				3572FCF9206CCE07006836ED /* SCScanCodeVC.m in Sources */,
@@ -1576,12 +1663,15 @@
 				35B04E96206B43A9002D563F /* LPAReceptionVC.m in Sources */,
 				35B04E93206B4394002D563F /* LPAHomeVC.m in Sources */,
 				3572FD4E206DE4AB006836ED /* LPAVipDetailCell.m in Sources */,
+				354D62F12072352400534D1E /* LPA_CRM_BuyDetailVC.m in Sources */,
 				3572FD44206DE0DD006836ED /* LPAFindMyVipVC.m in Sources */,
 				3572FD47206DE153006836ED /* LPAAddVipVC.m in Sources */,
 				3572FD54206E141D006836ED /* SCTimePickerView.m in Sources */,
+				354D62FC2072383300534D1E /* LPAChangePwdView.m in Sources */,
 				3572FD70206E26DB006836ED /* LPAStoreRankCell.m in Sources */,
 				3572FD09206CEBB1006836ED /* LPAPayOnlineCell.m in Sources */,
 				354D62D920720FD500534D1E /* LPA_CRM_bottomView.m in Sources */,
+				354D62EA20722F4200534D1E /* LPA_My_OrderDetailVC.m in Sources */,
 				3572FD58206E202A006836ED /* LPAStoreRankVC.m in Sources */,
 				35B04F32206B92AB002D563F /* LPAMyInfoVC.m in Sources */,
 				35F8DBAD2071C5300058D33F /* LPAMyKPIHeadView.m in Sources */,

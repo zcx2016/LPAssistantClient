@@ -12,11 +12,53 @@
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
         <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="LPA_CRM_bottomView">
-            <rect key="frame" x="0.0" y="0.0" width="424" height="79"/>
+            <rect key="frame" x="0.0" y="0.0" width="427" height="45"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="25Z-Rf-8WT">
+                    <rect key="frame" x="208.5" y="0.0" width="10" height="45"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="10" id="w7C-6L-pFL"/>
+                    </constraints>
+                </view>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="o7R-TQ-pLb">
+                    <rect key="frame" x="15" y="5" width="193.5" height="35"/>
+                    <state key="normal" title="消费明细" backgroundImage="blackBg.png">
+                        <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </state>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Itq-An-jZx">
+                    <rect key="frame" x="218.5" y="5" width="193.5" height="35"/>
+                    <state key="normal" title="订单明细" backgroundImage="redBg.png">
+                        <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </state>
+                </button>
+            </subviews>
             <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="Itq-An-jZx" secondAttribute="trailing" constant="15" id="0Fo-sH-Ns1"/>
+                <constraint firstItem="o7R-TQ-pLb" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="5" id="0iF-H9-m9Z"/>
+                <constraint firstAttribute="bottom" secondItem="o7R-TQ-pLb" secondAttribute="bottom" constant="5" id="3mc-rm-kO2"/>
+                <constraint firstItem="o7R-TQ-pLb" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="15" id="4Iq-dY-ZQZ"/>
+                <constraint firstAttribute="bottom" secondItem="25Z-Rf-8WT" secondAttribute="bottom" id="552-AO-dbs"/>
+                <constraint firstItem="Itq-An-jZx" firstAttribute="leading" secondItem="25Z-Rf-8WT" secondAttribute="trailing" id="HPE-FZ-XgQ"/>
+                <constraint firstItem="Itq-An-jZx" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="5" id="SQj-UC-qKr"/>
+                <constraint firstItem="25Z-Rf-8WT" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="Zh0-nn-neS"/>
+                <constraint firstAttribute="bottom" secondItem="Itq-An-jZx" secondAttribute="bottom" constant="5" id="cAR-WU-ciL"/>
+                <constraint firstItem="25Z-Rf-8WT" firstAttribute="leading" secondItem="o7R-TQ-pLb" secondAttribute="trailing" id="lFp-tM-J6N"/>
+                <constraint firstItem="25Z-Rf-8WT" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="lT0-F6-gEz"/>
+            </constraints>
             <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
-            <point key="canvasLocation" x="81" y="223"/>
+            <connections>
+                <outlet property="buyDetailBtn" destination="o7R-TQ-pLb" id="DuK-18-t0w"/>
+                <outlet property="orderDetailBtn" destination="Itq-An-jZx" id="lTc-Zv-noB"/>
+            </connections>
+            <point key="canvasLocation" x="40.5" y="239.5"/>
         </view>
     </objects>
+    <resources>
+        <image name="blackBg.png" width="170" height="45"/>
+        <image name="redBg.png" width="170" height="45"/>
+    </resources>
 </document>

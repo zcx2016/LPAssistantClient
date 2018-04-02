@@ -13,6 +13,7 @@
 - (void)awakeFromNib{
     [super awakeFromNib];
     
+    self.frame = CGRectMake(0, 0, kScreenWidth, 55);
 }
 
 @end

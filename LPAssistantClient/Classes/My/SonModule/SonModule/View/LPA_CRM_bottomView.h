@@ -10,4 +10,8 @@
 
 @interface LPA_CRM_bottomView : UIView
 
+@property (weak, nonatomic) IBOutlet UIButton *buyDetailBtn;
+
+@property (weak, nonatomic) IBOutlet UIButton *orderDetailBtn;
+
 @end

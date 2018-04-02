@@ -7,16 +7,45 @@
 //
 #import "LPAMyBillingVC.h"
 #import "LPAMyBillingCell.h"
-@interface LPAMyBillingVC ()<UITableViewDelegate,UITableViewDataSource>
+#import "LPACommonSearchView.h"
+#import "LPA_My_OrderDetailVC.h"
+
+@interface LPAMyBillingVC ()<UITableViewDelegate,UITableViewDataSource,UITextFieldDelegate>
+
 @property (nonatomic, strong) UITableView *tableView;
+
+@property (nonatomic, strong) LPACommonSearchView *searchView;
+
 @end
+
 @implementation LPAMyBillingVC
+
 - (void)viewDidLoad {
     [super viewDidLoad];
     self.navigationItem.title = @"订单列表";
     
     [self tableView];
+    [self searchView];
 }
+
+- (LPACommonSearchView *)searchView{
+    if (!_searchView) {
+        _searchView = [[NSBundle mainBundle] loadNibNamed:@"LPACommonSearchView" owner:nil options:nil].lastObject;
+        _searchView.frame = CGRectMake(0, 0, kScreenWidth, 114);
+        _searchView.backgroundColor =ZCXColor(245, 245, 245);
+        _searchView.searchTF.placeholder = @"点击选择用户姓名";
+        _searchView.searchTF.delegate = self;
+        [self.view addSubview:_searchView];
+    }
+    return _searchView;
+}
+
+- (BOOL)textFieldShouldBeginEditing:(UITextField *)textField{
+    //写你要实现的：页面跳转的相关代码----注意：此处要return  NO
+    NSLog(@"1111");
+    return NO;
+}
+
 #pragma mark - tableView Delegate
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView{
     return 5;
@@ -30,6 +59,12 @@
     
     return cell;
 }
+
+- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath{
+    LPA_My_OrderDetailVC *vc = [LPA_My_OrderDetailVC new];
+    [self.navigationController pushViewController:vc animated:YES];
+}
+
 #pragma mark - 设置行高
 - (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath{
     return 230;
@@ -50,7 +85,7 @@
 #pragma mark - 懒加载tableView
 - (UITableView *)tableView{
     if (!_tableView) {
-        _tableView = [[UITableView alloc] initWithFrame:CGRectMake(0, 0, kScreenWidth, kScreenHeight) style:UITableViewStyleGrouped];
+        _tableView = [[UITableView alloc] initWithFrame:CGRectMake(0, 50, kScreenWidth, kScreenHeight - 50 - 64) style:UITableViewStyleGrouped];
         _tableView.delegate = self;
         _tableView.dataSource = self;
         _tableView.separatorStyle = UITableViewCellSeparatorStyleNone;

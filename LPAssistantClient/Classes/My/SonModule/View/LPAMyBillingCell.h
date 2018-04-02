@@ -20,4 +20,8 @@
 @property (weak, nonatomic) IBOutlet UILabel *payStyleLabel;
 @property (weak, nonatomic) IBOutlet UILabel *clientNameLabel;
 
+
+@property (weak, nonatomic) IBOutlet UILabel *clientTitleLabel;
+@property (weak, nonatomic) IBOutlet UIView *clientLineView;
+
 @end

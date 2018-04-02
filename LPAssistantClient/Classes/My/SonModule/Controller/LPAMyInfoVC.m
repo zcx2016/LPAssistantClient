@@ -10,6 +10,7 @@
 #import "LPAReceptionCell.h"
 #import "LPPCommonTBCell.h"
 #import "LPALoginVC.h"
+#import "LPAChangePwdVC.h"
 
 @interface LPAMyInfoVC ()<UITableViewDelegate,UITableViewDataSource>
 
@@ -105,6 +106,13 @@
             }
         }
         return cell;
+    }
+}
+
+- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath{
+    if (indexPath.section == 1 && indexPath.row == 2) {
+        LPAChangePwdVC * vc = [LPAChangePwdVC new];
+        [self.navigationController pushViewController:vc animated:YES];
     }
 }
 

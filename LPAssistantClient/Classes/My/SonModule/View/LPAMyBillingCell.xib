@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <objects>
@@ -135,7 +135,9 @@
                 </constraints>
             </tableViewCellContentView>
             <connections>
+                <outlet property="clientLineView" destination="foX-cv-aWB" id="xX3-gg-Vph"/>
                 <outlet property="clientNameLabel" destination="BEd-rd-ZJf" id="3rI-zf-8Ib"/>
+                <outlet property="clientTitleLabel" destination="43g-K4-rF0" id="aju-vB-vcD"/>
                 <outlet property="goodsImgView" destination="cP6-PG-iUg" id="TYR-mF-TaC"/>
                 <outlet property="goodsNameLabel" destination="22F-7S-Zma" id="0r7-5s-CgL"/>
                 <outlet property="goodsNumLabel" destination="zfv-IJ-5Zi" id="wHR-7y-pgu"/>
