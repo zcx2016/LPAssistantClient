@@ -9,6 +9,8 @@
 #import "LPAOrderDetailVC.h"
 #import "LPAPayOnlineCell.h"
 #import "LPABottomBtnView.h"
+//跳转
+#import "LPAPayVC.h"
 
 @interface LPAOrderDetailVC ()<UITableViewDelegate,UITableViewDataSource>
 
@@ -51,7 +53,8 @@
 }
 
 - (void)redBtnClick:(UIButton *)btn{
-    NSLog(@"弹出view");
+    LPAPayVC *vc = [LPAPayVC new];
+    [self.navigationController pushViewController:vc animated:YES];
 }
 
 #pragma mark - tableView Delegate

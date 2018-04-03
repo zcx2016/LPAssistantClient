@@ -32,7 +32,7 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
   
-    self.navigationItem.title = @"线上支付";
+    self.navigationItem.title = @"优惠券选择";
     [self tableView];
     [self bottomBtnView];
 }

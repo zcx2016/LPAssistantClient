@@ -33,5 +33,4 @@
     [self.inputMoneyTF resignFirstResponder];
 }
 
-
 @end

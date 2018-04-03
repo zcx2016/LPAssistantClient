@@ -65,6 +65,26 @@
 		354D635A2073717600534D1E /* lowPrice@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 354D63572073717600534D1E /* lowPrice@2x.png */; };
 		354D636620737BA000534D1E /* YCXMenu.m in Sources */ = {isa = PBXBuildFile; fileRef = 354D636220737BA000534D1E /* YCXMenu.m */; };
 		354D636720737BA000534D1E /* YCXMenuItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 354D636320737BA000534D1E /* YCXMenuItem.m */; };
+		354D636A2073837200534D1E /* LPAPayVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 354D63692073837200534D1E /* LPAPayVC.m */; };
+		354D636E2073847E00534D1E /* LPAPayTopCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 354D636C2073847E00534D1E /* LPAPayTopCell.m */; };
+		354D636F2073847E00534D1E /* LPAPayTopCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 354D636D2073847E00534D1E /* LPAPayTopCell.xib */; };
+		354D637320738C3B00534D1E /* zfbCode@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 354D637020738C3B00534D1E /* zfbCode@2x.png */; };
+		354D637420738C3B00534D1E /* zfbCode@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 354D637120738C3B00534D1E /* zfbCode@3x.png */; };
+		354D637520738C3B00534D1E /* zfbCode.png in Resources */ = {isa = PBXBuildFile; fileRef = 354D637220738C3B00534D1E /* zfbCode.png */; };
+		354D63792073939300534D1E /* LPAPayPopView.m in Sources */ = {isa = PBXBuildFile; fileRef = 354D63782073939300534D1E /* LPAPayPopView.m */; };
+		354D637B207393A600534D1E /* LPAPayPopView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 354D637A207393A600534D1E /* LPAPayPopView.xib */; };
+		354D63882073985D00534D1E /* bankCardIcon.png in Resources */ = {isa = PBXBuildFile; fileRef = 354D637C2073985B00534D1E /* bankCardIcon.png */; };
+		354D63892073985D00534D1E /* bankCardIcon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 354D637D2073985B00534D1E /* bankCardIcon@2x.png */; };
+		354D638A2073985D00534D1E /* cash.png in Resources */ = {isa = PBXBuildFile; fileRef = 354D637E2073985B00534D1E /* cash.png */; };
+		354D638B2073985D00534D1E /* wxIcon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 354D637F2073985C00534D1E /* wxIcon@2x.png */; };
+		354D638C2073985D00534D1E /* cash@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 354D63802073985C00534D1E /* cash@2x.png */; };
+		354D638D2073985D00534D1E /* bankCardIcon@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 354D63812073985C00534D1E /* bankCardIcon@3x.png */; };
+		354D638E2073985D00534D1E /* wxIcon@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 354D63822073985C00534D1E /* wxIcon@3x.png */; };
+		354D638F2073985D00534D1E /* zfbIcon@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 354D63832073985C00534D1E /* zfbIcon@3x.png */; };
+		354D63902073985D00534D1E /* cash@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 354D63842073985D00534D1E /* cash@3x.png */; };
+		354D63912073985D00534D1E /* wxIcon.png in Resources */ = {isa = PBXBuildFile; fileRef = 354D63852073985D00534D1E /* wxIcon.png */; };
+		354D63922073985D00534D1E /* zfbIcon.png in Resources */ = {isa = PBXBuildFile; fileRef = 354D63862073985D00534D1E /* zfbIcon.png */; };
+		354D63932073985D00534D1E /* zfbIcon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 354D63872073985D00534D1E /* zfbIcon@2x.png */; };
 		355A15C4206C8ADA007DBF87 /* LPAFindPwdVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 355A15C2206C8ADA007DBF87 /* LPAFindPwdVC.m */; };
 		355A15C5206C8ADA007DBF87 /* LPAFindPwdVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 355A15C3206C8ADA007DBF87 /* LPAFindPwdVC.xib */; };
 		355A15CE206C9824007DBF87 /* blackBtnBg@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 355A15CB206C9824007DBF87 /* blackBtnBg@2x.png */; };
@@ -354,6 +374,29 @@
 		354D636320737BA000534D1E /* YCXMenuItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YCXMenuItem.m; sourceTree = "<group>"; };
 		354D636420737BA000534D1E /* YCXMenuItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YCXMenuItem.h; sourceTree = "<group>"; };
 		354D636520737BA000534D1E /* YCXMenu.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YCXMenu.h; sourceTree = "<group>"; };
+		354D63682073837200534D1E /* LPAPayVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LPAPayVC.h; sourceTree = "<group>"; };
+		354D63692073837200534D1E /* LPAPayVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LPAPayVC.m; sourceTree = "<group>"; };
+		354D636B2073847E00534D1E /* LPAPayTopCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LPAPayTopCell.h; sourceTree = "<group>"; };
+		354D636C2073847E00534D1E /* LPAPayTopCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LPAPayTopCell.m; sourceTree = "<group>"; };
+		354D636D2073847E00534D1E /* LPAPayTopCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LPAPayTopCell.xib; sourceTree = "<group>"; };
+		354D637020738C3B00534D1E /* zfbCode@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "zfbCode@2x.png"; sourceTree = "<group>"; };
+		354D637120738C3B00534D1E /* zfbCode@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "zfbCode@3x.png"; sourceTree = "<group>"; };
+		354D637220738C3B00534D1E /* zfbCode.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = zfbCode.png; sourceTree = "<group>"; };
+		354D63772073939300534D1E /* LPAPayPopView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LPAPayPopView.h; sourceTree = "<group>"; };
+		354D63782073939300534D1E /* LPAPayPopView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LPAPayPopView.m; sourceTree = "<group>"; };
+		354D637A207393A600534D1E /* LPAPayPopView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LPAPayPopView.xib; sourceTree = "<group>"; };
+		354D637C2073985B00534D1E /* bankCardIcon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = bankCardIcon.png; sourceTree = "<group>"; };
+		354D637D2073985B00534D1E /* bankCardIcon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "bankCardIcon@2x.png"; sourceTree = "<group>"; };
+		354D637E2073985B00534D1E /* cash.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = cash.png; sourceTree = "<group>"; };
+		354D637F2073985C00534D1E /* wxIcon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "wxIcon@2x.png"; sourceTree = "<group>"; };
+		354D63802073985C00534D1E /* cash@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "cash@2x.png"; sourceTree = "<group>"; };
+		354D63812073985C00534D1E /* bankCardIcon@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "bankCardIcon@3x.png"; sourceTree = "<group>"; };
+		354D63822073985C00534D1E /* wxIcon@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "wxIcon@3x.png"; sourceTree = "<group>"; };
+		354D63832073985C00534D1E /* zfbIcon@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "zfbIcon@3x.png"; sourceTree = "<group>"; };
+		354D63842073985D00534D1E /* cash@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "cash@3x.png"; sourceTree = "<group>"; };
+		354D63852073985D00534D1E /* wxIcon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = wxIcon.png; sourceTree = "<group>"; };
+		354D63862073985D00534D1E /* zfbIcon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = zfbIcon.png; sourceTree = "<group>"; };
+		354D63872073985D00534D1E /* zfbIcon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "zfbIcon@2x.png"; sourceTree = "<group>"; };
 		355A15C1206C8ADA007DBF87 /* LPAFindPwdVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LPAFindPwdVC.h; sourceTree = "<group>"; };
 		355A15C2206C8ADA007DBF87 /* LPAFindPwdVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LPAFindPwdVC.m; sourceTree = "<group>"; };
 		355A15C3206C8ADA007DBF87 /* LPAFindPwdVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LPAFindPwdVC.xib; sourceTree = "<group>"; };
@@ -766,6 +809,8 @@
 				3572FD33206CFD92006836ED /* LPAOrderDetailVC.m */,
 				354D633E2073658900534D1E /* LPAGoodsDetailVC.h */,
 				354D633F2073658900534D1E /* LPAGoodsDetailVC.m */,
+				354D63682073837200534D1E /* LPAPayVC.h */,
+				354D63692073837200534D1E /* LPAPayVC.m */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -798,6 +843,12 @@
 				3572FD2D206CF97A006836ED /* LPACouponCell.h */,
 				3572FD2E206CF97A006836ED /* LPACouponCell.m */,
 				3572FD2F206CF97A006836ED /* LPACouponCell.xib */,
+				354D636B2073847E00534D1E /* LPAPayTopCell.h */,
+				354D636C2073847E00534D1E /* LPAPayTopCell.m */,
+				354D636D2073847E00534D1E /* LPAPayTopCell.xib */,
+				354D63772073939300534D1E /* LPAPayPopView.h */,
+				354D63782073939300534D1E /* LPAPayPopView.m */,
+				354D637A207393A600534D1E /* LPAPayPopView.xib */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -812,6 +863,21 @@
 		3572FCD6206CC65A006836ED /* Commodity */ = {
 			isa = PBXGroup;
 			children = (
+				354D637C2073985B00534D1E /* bankCardIcon.png */,
+				354D637D2073985B00534D1E /* bankCardIcon@2x.png */,
+				354D63812073985C00534D1E /* bankCardIcon@3x.png */,
+				354D637E2073985B00534D1E /* cash.png */,
+				354D63802073985C00534D1E /* cash@2x.png */,
+				354D63842073985D00534D1E /* cash@3x.png */,
+				354D63852073985D00534D1E /* wxIcon.png */,
+				354D637F2073985C00534D1E /* wxIcon@2x.png */,
+				354D63822073985C00534D1E /* wxIcon@3x.png */,
+				354D63862073985D00534D1E /* zfbIcon.png */,
+				354D63872073985D00534D1E /* zfbIcon@2x.png */,
+				354D63832073985C00534D1E /* zfbIcon@3x.png */,
+				354D637220738C3B00534D1E /* zfbCode.png */,
+				354D637020738C3B00534D1E /* zfbCode@2x.png */,
+				354D637120738C3B00534D1E /* zfbCode@3x.png */,
 				354D63562073717600534D1E /* lowPrice.png */,
 				354D63572073717600534D1E /* lowPrice@2x.png */,
 				354D63552073717600534D1E /* lowPrice@3x.png */,
@@ -1601,6 +1667,7 @@
 				3572FD26206CF473006836ED /* disSelect@3x.png in Resources */,
 				35B04EF6206B7CB8002D563F /* headIcon@3x.png in Resources */,
 				35B04F51206BA580002D563F /* delete@2x.png in Resources */,
+				354D638A2073985D00534D1E /* cash.png in Resources */,
 				3572FCC6206CC071006836ED /* main_my_highlight.png in Resources */,
 				3590DA1D206B39EE00504520 /* Assets.xcassets in Resources */,
 				3572FCB8206CBFB1006836ED /* add@2x.png in Resources */,
@@ -1629,17 +1696,22 @@
 				35B04F23206B86CF002D563F /* redBtnBg@3x.png in Resources */,
 				3572FD41206DD2E9006836ED /* LPARemindCell.xib in Resources */,
 				35B04F26206B86CF002D563F /* search@2x.png in Resources */,
+				354D636F2073847E00534D1E /* LPAPayTopCell.xib in Resources */,
 				35F8DBAF2071C5480058D33F /* LPAMyKPIHeadView.xib in Resources */,
+				354D638F2073985D00534D1E /* zfbIcon@3x.png in Resources */,
 				3572FD23206CF473006836ED /* coupon@2x.png in Resources */,
 				3572FCDC206CC65A006836ED /* bannerCloth@3x.png in Resources */,
 				3572FD22206CF473006836ED /* coupon@3x.png in Resources */,
+				354D638C2073985D00534D1E /* cash@2x.png in Resources */,
 				3572FCA9206CBF71006836ED /* selected.png in Resources */,
 				35B04EBD206B6F1A002D563F /* main_reception@2x.png in Resources */,
 				355A15D0206C9824007DBF87 /* blackBtnBg.png in Resources */,
 				3572FCEB206CCC39006836ED /* main_home@2x.png in Resources */,
+				354D63882073985D00534D1E /* bankCardIcon.png in Resources */,
 				354D6306207313C900534D1E /* LPA_CRM_OrderDetailCell.xib in Resources */,
 				35B04EEE206B7CB8002D563F /* headIcon.png in Resources */,
 				354D63142073187600534D1E /* order_disSel@2x.png in Resources */,
+				354D63922073985D00534D1E /* zfbIcon.png in Resources */,
 				3572FD0F206CF089006836ED /* LPACommonSearchCell.xib in Resources */,
 				35B04EB3206B6F19002D563F /* main_home_highlight.png in Resources */,
 				35F8DBAA2071C44A0058D33F /* LPAMyKPICell.xib in Resources */,
@@ -1648,10 +1720,12 @@
 				3572FCCD206CC1D1006836ED /* LPAFCHeadPickerView.xib in Resources */,
 				35B04F59206BA580002D563F /* delete@3x.png in Resources */,
 				35B04EB6206B6F1A002D563F /* main_my@3x.png in Resources */,
+				354D638E2073985D00534D1E /* wxIcon@3x.png in Resources */,
 				3572FD24206CF473006836ED /* select.png in Resources */,
 				354D63582073717600534D1E /* lowPrice@3x.png in Resources */,
 				35B04EBB206B6F1A002D563F /* main_my.png in Resources */,
 				3572FCDB206CC65A006836ED /* bannerCloth.png in Resources */,
+				354D63892073985D00534D1E /* bankCardIcon@2x.png in Resources */,
 				3572FD7B206E2D43006836ED /* LPAStoreRankBottomView.xib in Resources */,
 				3572FCC0206CBFC5006836ED /* return@2x.png in Resources */,
 				3572FCF2206CCC43006836ED /* extern@3x.png in Resources */,
@@ -1671,6 +1745,7 @@
 				3572FD2C206CF473006836ED /* disSelect.png in Resources */,
 				3572FCF8206CCE07006836ED /* SCScanCodeVC.storyboard in Resources */,
 				35B04EEF206B7CB8002D563F /* rightArrow.png in Resources */,
+				354D63912073985D00534D1E /* wxIcon.png in Resources */,
 				35B04F57206BA580002D563F /* pwd@2x.png in Resources */,
 				354D62E4207225F800534D1E /* blackBg@3x.png in Resources */,
 				35B04EF3206B7CB8002D563F /* badge@2x.png in Resources */,
@@ -1695,23 +1770,28 @@
 				3572FCB7206CBFB1006836ED /* bindVip@2x.png in Resources */,
 				35B04ECC206B6F2C002D563F /* bigVip@3x.png in Resources */,
 				3572FD6B206E258A006836ED /* checkBtnBg.png in Resources */,
+				354D637420738C3B00534D1E /* zfbCode@3x.png in Resources */,
 				354D63122073187600534D1E /* order_disSel@3x.png in Resources */,
 				35B04F5F206BA580002D563F /* loginBg@3x.png in Resources */,
 				354D6354207369F900534D1E /* LPPCDCommodityStyleCell.xib in Resources */,
 				35B04EFE206B7CD2002D563F /* light_open@2x.png in Resources */,
 				3572FCF1206CCC43006836ED /* extern@2x.png in Resources */,
+				354D63902073985D00534D1E /* cash@3x.png in Resources */,
 				35B04F3C206BA2FD002D563F /* LPALoginVC.xib in Resources */,
 				3572FCE0206CC737006836ED /* goods@3x.png in Resources */,
 				35B04F54206BA580002D563F /* unSelected@2x.png in Resources */,
 				3572FD14206CF320006836ED /* LPABottomBtnView.xib in Resources */,
 				3572FD6A206E258A006836ED /* checkBtnBg@3x.png in Resources */,
 				3572FCAA206CBF71006836ED /* selected@3x.png in Resources */,
+				354D637B207393A600534D1E /* LPAPayPopView.xib in Resources */,
 				354D63162073187600534D1E /* order_sel@2x.png in Resources */,
 				355A15CE206C9824007DBF87 /* blackBtnBg@2x.png in Resources */,
 				35B04F5E206BA580002D563F /* logo@3x.png in Resources */,
 				35B04F25206B86CF002D563F /* headImg@2x.png in Resources */,
 				3572FD87206E3CAC006836ED /* LPABindVipResultCell.xib in Resources */,
+				354D637320738C3B00534D1E /* zfbCode@2x.png in Resources */,
 				35B04EF5206B7CB8002D563F /* rightArrow@3x.png in Resources */,
+				354D638B2073985D00534D1E /* wxIcon@2x.png in Resources */,
 				3572FCEC206CCC39006836ED /* main_home@3x.png in Resources */,
 				35B04F1F206B86CF002D563F /* scan@2x.png in Resources */,
 				35B04ECE206B6F2C002D563F /* bigVip.png in Resources */,
@@ -1725,6 +1805,7 @@
 				3572FD25206CF473006836ED /* select@2x.png in Resources */,
 				3572FD4F206DE4AB006836ED /* LPAVipDetailCell.xib in Resources */,
 				35B04ED6206B6F2C002D563F /* bigFindCommodity@3x.png in Resources */,
+				354D63932073985D00534D1E /* zfbIcon@2x.png in Resources */,
 				35B04EED206B7CB8002D563F /* badge@3x.png in Resources */,
 				3572FCE1206CC737006836ED /* goods@2x.png in Resources */,
 				354D62D3207203EB00534D1E /* LPAMyCMRHeadView.xib in Resources */,
@@ -1736,11 +1817,13 @@
 				35B04F4F206BA580002D563F /* delete.png in Resources */,
 				3572FD8C206E3E5B006836ED /* LPAMyBillingCell.xib in Resources */,
 				3572FCD4206CC38D006836ED /* LPPCommodityCell.xib in Resources */,
+				354D637520738C3B00534D1E /* zfbCode.png in Resources */,
 				3572FD55206E141D006836ED /* SCTimePickerView.xib in Resources */,
 				3572FCBB206CBFB1006836ED /* add@3x.png in Resources */,
 				3572FD2A206CF473006836ED /* smallRedBtn.png in Resources */,
 				35B04F27206B86CF002D563F /* search.png in Resources */,
 				3572FCAF206CBF99006836ED /* bell@3x.png in Resources */,
+				354D638D2073985D00534D1E /* bankCardIcon@3x.png in Resources */,
 				3572FCB0206CBF99006836ED /* bell@2x.png in Resources */,
 				35B04F53206BA580002D563F /* unSelected.png in Resources */,
 				3572FCBA206CBFB1006836ED /* bindVip@3x.png in Resources */,
@@ -1849,18 +1932,21 @@
 				35B04F07206B7D15002D563F /* LPPCommonTBCell.m in Sources */,
 				3572FD12206CF30A006836ED /* LPABottomBtnView.m in Sources */,
 				355A15C4206C8ADA007DBF87 /* LPAFindPwdVC.m in Sources */,
+				354D636E2073847E00534D1E /* LPAPayTopCell.m in Sources */,
 				354D63342073482700534D1E /* LPA_LogisticsProgressCell.m in Sources */,
 				354D63382073539100534D1E /* LPACompletePayStyleVC.m in Sources */,
 				3572FCCB206CC1B7006836ED /* LPAFCHeadPickerView.m in Sources */,
 				354D62CE2071F19B00534D1E /* LPAMyBillingVC.m in Sources */,
 				35B04F10206B844C002D563F /* LPAReceptionCell.m in Sources */,
 				354D630020723E1100534D1E /* LPA_CRM_BuyDetailCell.m in Sources */,
+				354D636A2073837200534D1E /* LPAPayVC.m in Sources */,
 				354D632F2073460400534D1E /* LPA_LogisticsTopCell.m in Sources */,
 				3572FD8B206E3E5B006836ED /* LPAMyBillingCell.m in Sources */,
 				354D632820732CFC00534D1E /* LPA_CRM_WaitReceiveVC.m in Sources */,
 				354D636620737BA000534D1E /* YCXMenu.m in Sources */,
 				3572FD4A206DE29E006836ED /* LPAVipDetailVC.m in Sources */,
 				3572FD79206E2D2F006836ED /* LPAStoreRankBottomView.m in Sources */,
+				354D63792073939300534D1E /* LPAPayPopView.m in Sources */,
 				354D636720737BA000534D1E /* YCXMenuItem.m in Sources */,
 				35B04E96206B43A9002D563F /* LPAReceptionVC.m in Sources */,
 				354D631A2073277C00534D1E /* LPA_CRM_OrderDetailTopView.m in Sources */,
