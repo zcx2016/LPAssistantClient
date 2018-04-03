@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="KGk-i7-Jjw" customClass="LPACompletePayStyleCell">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="43.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="￥" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bGB-eP-aN5">
+                        <rect key="frame" x="15" y="11" width="17.5" height="21"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="18" id="ma9-x2-KPI"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GnJ-lI-RdT">
+                        <rect key="frame" x="240" y="10" width="65" height="22"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="65" id="1AA-bP-fxG"/>
+                        </constraints>
+                        <state key="normal" title="保存" backgroundImage="checkBtnBg.png">
+                            <color key="titleColor" red="0.91372549020000005" green="0.38823529410000002" blue="0.4039215686" alpha="1" colorSpace="calibratedRGB"/>
+                        </state>
+                    </button>
+                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="请输入顾客支付金额" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="dE6-XC-9ZU">
+                        <rect key="frame" x="35.5" y="12" width="199.5" height="18"/>
+                        <nil key="textColor"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                        <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
+                    </textField>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="bGB-eP-aN5" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="15" id="2QX-b7-AEr"/>
+                    <constraint firstItem="dE6-XC-9ZU" firstAttribute="leading" secondItem="bGB-eP-aN5" secondAttribute="trailing" constant="3" id="4Cd-He-PUr"/>
+                    <constraint firstAttribute="trailing" secondItem="GnJ-lI-RdT" secondAttribute="trailing" constant="15" id="CKR-qU-TmI"/>
+                    <constraint firstItem="bGB-eP-aN5" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="X7k-SC-Qnd"/>
+                    <constraint firstItem="GnJ-lI-RdT" firstAttribute="leading" secondItem="dE6-XC-9ZU" secondAttribute="trailing" constant="5" id="aXb-7v-hBa"/>
+                    <constraint firstItem="dE6-XC-9ZU" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="vjJ-Db-EZt"/>
+                    <constraint firstItem="GnJ-lI-RdT" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="ycO-yt-A8k"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="inputMoneyTF" destination="dE6-XC-9ZU" id="AN7-mw-w4Y"/>
+                <outlet property="saveBtn" destination="GnJ-lI-RdT" id="huW-jl-tob"/>
+            </connections>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="checkBtnBg.png" width="63" height="22"/>
+    </resources>
+</document>

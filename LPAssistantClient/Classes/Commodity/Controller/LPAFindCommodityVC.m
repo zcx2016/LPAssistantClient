@@ -11,7 +11,8 @@
 #import "LPAFCHeadPickerView.h"
 #import "LPPNavSearchView.h"
 
-#import "LPAPayOnlineVC.h"
+//跳转
+#import "LPAGoodsDetailVC.h"
 
 @interface LPAFindCommodityVC ()<UICollectionViewDelegate,UICollectionViewDataSource>
 
@@ -112,7 +113,7 @@
 }
 
 - (void)collectionView:(UICollectionView *)collectionView didSelectItemAtIndexPath:(NSIndexPath *)indexPath{
-    LPAPayOnlineVC *vc = [LPAPayOnlineVC new];
+    LPAGoodsDetailVC *vc = [LPAGoodsDetailVC new];
     [self.navigationController pushViewController:vc animated:YES];
 }
 

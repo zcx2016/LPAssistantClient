@@ -9,6 +9,8 @@
 #import "LPA_My_OrderDetailVC.h"
 #import "LPPCommonTBCell.h"
 #import "LPAMyBillingCell.h"
+//跳转
+#import "LPACompletePayStyleVC.h"
 
 @interface LPA_My_OrderDetailVC ()<UITableViewDelegate,UITableViewDataSource>
 
@@ -69,7 +71,8 @@
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath{
     if (indexPath.section == 2) {
-        NSLog(@"完善付款方式");
+        LPACompletePayStyleVC *vc = [LPACompletePayStyleVC new];
+        [self.navigationController pushViewController:vc animated:YES];
     }
 }
 

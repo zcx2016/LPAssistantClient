@@ -48,6 +48,23 @@
 		354D63302073460400534D1E /* LPA_LogisticsTopCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 354D632E2073460400534D1E /* LPA_LogisticsTopCell.xib */; };
 		354D63342073482700534D1E /* LPA_LogisticsProgressCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 354D63322073482700534D1E /* LPA_LogisticsProgressCell.m */; };
 		354D63352073482700534D1E /* LPA_LogisticsProgressCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 354D63332073482700534D1E /* LPA_LogisticsProgressCell.xib */; };
+		354D63382073539100534D1E /* LPACompletePayStyleVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 354D63372073539100534D1E /* LPACompletePayStyleVC.m */; };
+		354D633C2073543300534D1E /* LPACompletePayStyleCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 354D633A2073543300534D1E /* LPACompletePayStyleCell.m */; };
+		354D633D2073543300534D1E /* LPACompletePayStyleCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 354D633B2073543300534D1E /* LPACompletePayStyleCell.xib */; };
+		354D63402073658900534D1E /* LPAGoodsDetailVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 354D633F2073658900534D1E /* LPAGoodsDetailVC.m */; };
+		354D634D207369F900534D1E /* LPPCDComparePriceCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 354D6341207369F800534D1E /* LPPCDComparePriceCell.m */; };
+		354D634E207369F900534D1E /* LPPCDComparePriceCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 354D6342207369F800534D1E /* LPPCDComparePriceCell.xib */; };
+		354D634F207369F900534D1E /* LPPCDPriceNameCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 354D6344207369F900534D1E /* LPPCDPriceNameCell.m */; };
+		354D6350207369F900534D1E /* LPPCDPriceNameCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 354D6345207369F900534D1E /* LPPCDPriceNameCell.xib */; };
+		354D6351207369F900534D1E /* LPPCDCommodityStyleCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 354D6347207369F900534D1E /* LPPCDCommodityStyleCell.m */; };
+		354D6352207369F900534D1E /* LPPCDCardCollectionCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 354D6348207369F900534D1E /* LPPCDCardCollectionCell.xib */; };
+		354D6353207369F900534D1E /* LPPCDCardCollectionCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 354D634A207369F900534D1E /* LPPCDCardCollectionCell.m */; };
+		354D6354207369F900534D1E /* LPPCDCommodityStyleCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 354D634B207369F900534D1E /* LPPCDCommodityStyleCell.xib */; };
+		354D63582073717600534D1E /* lowPrice@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 354D63552073717600534D1E /* lowPrice@3x.png */; };
+		354D63592073717600534D1E /* lowPrice.png in Resources */ = {isa = PBXBuildFile; fileRef = 354D63562073717600534D1E /* lowPrice.png */; };
+		354D635A2073717600534D1E /* lowPrice@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 354D63572073717600534D1E /* lowPrice@2x.png */; };
+		354D636620737BA000534D1E /* YCXMenu.m in Sources */ = {isa = PBXBuildFile; fileRef = 354D636220737BA000534D1E /* YCXMenu.m */; };
+		354D636720737BA000534D1E /* YCXMenuItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 354D636320737BA000534D1E /* YCXMenuItem.m */; };
 		355A15C4206C8ADA007DBF87 /* LPAFindPwdVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 355A15C2206C8ADA007DBF87 /* LPAFindPwdVC.m */; };
 		355A15C5206C8ADA007DBF87 /* LPAFindPwdVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 355A15C3206C8ADA007DBF87 /* LPAFindPwdVC.xib */; };
 		355A15CE206C9824007DBF87 /* blackBtnBg@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 355A15CB206C9824007DBF87 /* blackBtnBg@2x.png */; };
@@ -311,6 +328,32 @@
 		354D63312073482700534D1E /* LPA_LogisticsProgressCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LPA_LogisticsProgressCell.h; sourceTree = "<group>"; };
 		354D63322073482700534D1E /* LPA_LogisticsProgressCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LPA_LogisticsProgressCell.m; sourceTree = "<group>"; };
 		354D63332073482700534D1E /* LPA_LogisticsProgressCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LPA_LogisticsProgressCell.xib; sourceTree = "<group>"; };
+		354D63362073539100534D1E /* LPACompletePayStyleVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LPACompletePayStyleVC.h; sourceTree = "<group>"; };
+		354D63372073539100534D1E /* LPACompletePayStyleVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LPACompletePayStyleVC.m; sourceTree = "<group>"; };
+		354D63392073543300534D1E /* LPACompletePayStyleCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LPACompletePayStyleCell.h; sourceTree = "<group>"; };
+		354D633A2073543300534D1E /* LPACompletePayStyleCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LPACompletePayStyleCell.m; sourceTree = "<group>"; };
+		354D633B2073543300534D1E /* LPACompletePayStyleCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LPACompletePayStyleCell.xib; sourceTree = "<group>"; };
+		354D633E2073658900534D1E /* LPAGoodsDetailVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LPAGoodsDetailVC.h; sourceTree = "<group>"; };
+		354D633F2073658900534D1E /* LPAGoodsDetailVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LPAGoodsDetailVC.m; sourceTree = "<group>"; };
+		354D6341207369F800534D1E /* LPPCDComparePriceCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LPPCDComparePriceCell.m; sourceTree = "<group>"; };
+		354D6342207369F800534D1E /* LPPCDComparePriceCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LPPCDComparePriceCell.xib; sourceTree = "<group>"; };
+		354D6343207369F800534D1E /* LPPCDPriceNameCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LPPCDPriceNameCell.h; sourceTree = "<group>"; };
+		354D6344207369F900534D1E /* LPPCDPriceNameCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LPPCDPriceNameCell.m; sourceTree = "<group>"; };
+		354D6345207369F900534D1E /* LPPCDPriceNameCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LPPCDPriceNameCell.xib; sourceTree = "<group>"; };
+		354D6346207369F900534D1E /* LPPCDComparePriceCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LPPCDComparePriceCell.h; sourceTree = "<group>"; };
+		354D6347207369F900534D1E /* LPPCDCommodityStyleCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LPPCDCommodityStyleCell.m; sourceTree = "<group>"; };
+		354D6348207369F900534D1E /* LPPCDCardCollectionCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LPPCDCardCollectionCell.xib; sourceTree = "<group>"; };
+		354D6349207369F900534D1E /* LPPCDCommodityStyleCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LPPCDCommodityStyleCell.h; sourceTree = "<group>"; };
+		354D634A207369F900534D1E /* LPPCDCardCollectionCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LPPCDCardCollectionCell.m; sourceTree = "<group>"; };
+		354D634B207369F900534D1E /* LPPCDCommodityStyleCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LPPCDCommodityStyleCell.xib; sourceTree = "<group>"; };
+		354D634C207369F900534D1E /* LPPCDCardCollectionCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LPPCDCardCollectionCell.h; sourceTree = "<group>"; };
+		354D63552073717600534D1E /* lowPrice@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "lowPrice@3x.png"; sourceTree = "<group>"; };
+		354D63562073717600534D1E /* lowPrice.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = lowPrice.png; sourceTree = "<group>"; };
+		354D63572073717600534D1E /* lowPrice@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "lowPrice@2x.png"; sourceTree = "<group>"; };
+		354D636220737BA000534D1E /* YCXMenu.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YCXMenu.m; sourceTree = "<group>"; };
+		354D636320737BA000534D1E /* YCXMenuItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YCXMenuItem.m; sourceTree = "<group>"; };
+		354D636420737BA000534D1E /* YCXMenuItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YCXMenuItem.h; sourceTree = "<group>"; };
+		354D636520737BA000534D1E /* YCXMenu.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YCXMenu.h; sourceTree = "<group>"; };
 		355A15C1206C8ADA007DBF87 /* LPAFindPwdVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LPAFindPwdVC.h; sourceTree = "<group>"; };
 		355A15C2206C8ADA007DBF87 /* LPAFindPwdVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LPAFindPwdVC.m; sourceTree = "<group>"; };
 		355A15C3206C8ADA007DBF87 /* LPAFindPwdVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LPAFindPwdVC.xib; sourceTree = "<group>"; };
@@ -649,6 +692,17 @@
 			path = SonModule;
 			sourceTree = "<group>";
 		};
+		354D636120737BA000534D1E /* YCXMenu */ = {
+			isa = PBXGroup;
+			children = (
+				354D636520737BA000534D1E /* YCXMenu.h */,
+				354D636220737BA000534D1E /* YCXMenu.m */,
+				354D636420737BA000534D1E /* YCXMenuItem.h */,
+				354D636320737BA000534D1E /* YCXMenuItem.m */,
+			);
+			path = YCXMenu;
+			sourceTree = "<group>";
+		};
 		3572FC93206CBC04006836ED /* Commodity */ = {
 			isa = PBXGroup;
 			children = (
@@ -710,6 +764,8 @@
 				3572FD04206CEAC7006836ED /* LPAPayOnlineVC.m */,
 				3572FD32206CFD92006836ED /* LPAOrderDetailVC.h */,
 				3572FD33206CFD92006836ED /* LPAOrderDetailVC.m */,
+				354D633E2073658900534D1E /* LPAGoodsDetailVC.h */,
+				354D633F2073658900534D1E /* LPAGoodsDetailVC.m */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -724,6 +780,18 @@
 		3572FC9A206CBC04006836ED /* View */ = {
 			isa = PBXGroup;
 			children = (
+				354D634C207369F900534D1E /* LPPCDCardCollectionCell.h */,
+				354D634A207369F900534D1E /* LPPCDCardCollectionCell.m */,
+				354D6348207369F900534D1E /* LPPCDCardCollectionCell.xib */,
+				354D6349207369F900534D1E /* LPPCDCommodityStyleCell.h */,
+				354D6347207369F900534D1E /* LPPCDCommodityStyleCell.m */,
+				354D634B207369F900534D1E /* LPPCDCommodityStyleCell.xib */,
+				354D6346207369F900534D1E /* LPPCDComparePriceCell.h */,
+				354D6341207369F800534D1E /* LPPCDComparePriceCell.m */,
+				354D6342207369F800534D1E /* LPPCDComparePriceCell.xib */,
+				354D6343207369F800534D1E /* LPPCDPriceNameCell.h */,
+				354D6344207369F900534D1E /* LPPCDPriceNameCell.m */,
+				354D6345207369F900534D1E /* LPPCDPriceNameCell.xib */,
 				3572FD06206CEBB1006836ED /* LPAPayOnlineCell.h */,
 				3572FD07206CEBB1006836ED /* LPAPayOnlineCell.m */,
 				3572FD08206CEBB1006836ED /* LPAPayOnlineCell.xib */,
@@ -744,6 +812,9 @@
 		3572FCD6206CC65A006836ED /* Commodity */ = {
 			isa = PBXGroup;
 			children = (
+				354D63562073717600534D1E /* lowPrice.png */,
+				354D63572073717600534D1E /* lowPrice@2x.png */,
+				354D63552073717600534D1E /* lowPrice@3x.png */,
 				3572FD15206CF472006836ED /* coupon.png */,
 				3572FD17206CF472006836ED /* coupon@2x.png */,
 				3572FD16206CF472006836ED /* coupon@3x.png */,
@@ -785,6 +856,8 @@
 				354D62D52072089000534D1E /* LPA_CRM_VipDetailVC.m */,
 				354D62E820722F4200534D1E /* LPA_My_OrderDetailVC.h */,
 				354D62E920722F4200534D1E /* LPA_My_OrderDetailVC.m */,
+				354D63362073539100534D1E /* LPACompletePayStyleVC.h */,
+				354D63372073539100534D1E /* LPACompletePayStyleVC.m */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -795,6 +868,9 @@
 				354D62D720720FD500534D1E /* LPA_CRM_bottomView.h */,
 				354D62D820720FD500534D1E /* LPA_CRM_bottomView.m */,
 				354D62DA20720FF600534D1E /* LPA_CRM_bottomView.xib */,
+				354D63392073543300534D1E /* LPACompletePayStyleCell.h */,
+				354D633A2073543300534D1E /* LPACompletePayStyleCell.m */,
+				354D633B2073543300534D1E /* LPACompletePayStyleCell.xib */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -973,6 +1049,7 @@
 		35B04E73206B432B002D563F /* Tools */ = {
 			isa = PBXGroup;
 			children = (
+				354D636120737BA000534D1E /* YCXMenu */,
 			);
 			path = Tools;
 			sourceTree = "<group>";
@@ -1505,6 +1582,7 @@
 				35B04F22206B86CF002D563F /* redBtnBg.png in Resources */,
 				35B04EBC206B6F1A002D563F /* main_reception_highlight.png in Resources */,
 				354D62F92072381400534D1E /* LPAChangePwdView.xib in Resources */,
+				354D633D2073543300534D1E /* LPACompletePayStyleCell.xib in Resources */,
 				354D62DB20720FF600534D1E /* LPA_CRM_bottomView.xib in Resources */,
 				354D62E5207225F800534D1E /* redBg@2x.png in Resources */,
 				35B04EB4206B6F19002D563F /* main_home_highlight@2x.png in Resources */,
@@ -1571,6 +1649,7 @@
 				35B04F59206BA580002D563F /* delete@3x.png in Resources */,
 				35B04EB6206B6F1A002D563F /* main_my@3x.png in Resources */,
 				3572FD24206CF473006836ED /* select.png in Resources */,
+				354D63582073717600534D1E /* lowPrice@3x.png in Resources */,
 				35B04EBB206B6F1A002D563F /* main_my.png in Resources */,
 				3572FCDB206CC65A006836ED /* bannerCloth.png in Resources */,
 				3572FD7B206E2D43006836ED /* LPAStoreRankBottomView.xib in Resources */,
@@ -1597,24 +1676,28 @@
 				35B04EF3206B7CB8002D563F /* badge@2x.png in Resources */,
 				3572FCC7206CC071006836ED /* main_my_highlight@3x.png in Resources */,
 				35B04F56206BA580002D563F /* account@2x.png in Resources */,
+				354D635A2073717600534D1E /* lowPrice@2x.png in Resources */,
 				354D63132073187600534D1E /* order_sel.png in Resources */,
 				35B04EBA206B6F1A002D563F /* main_reception_highlight@3x.png in Resources */,
 				35B04F1E206B86CF002D563F /* headImg@3x.png in Resources */,
 				35B04EB9206B6F1A002D563F /* main_my@2x.png in Resources */,
 				354D62E7207225F800534D1E /* redBg@3x.png in Resources */,
 				3572FD71206E26DB006836ED /* LPAStoreRankCell.xib in Resources */,
+				354D6350207369F900534D1E /* LPPCDPriceNameCell.xib in Resources */,
 				3590DA1B206B39EE00504520 /* Main.storyboard in Resources */,
 				3572FCC1206CBFC5006836ED /* return@3x.png in Resources */,
 				3572FCAE206CBF99006836ED /* bell.png in Resources */,
 				35B04ECD206B6F2C002D563F /* bigScanNew@3x.png in Resources */,
 				35B04EDE206B76CF002D563F /* LPAHomeCollectionCell.xib in Resources */,
 				35B04ED3206B6F2C002D563F /* bannerHome.png in Resources */,
+				354D63592073717600534D1E /* lowPrice.png in Resources */,
 				3572FCE6206CCA14006836ED /* LPPNavSearchView.xib in Resources */,
 				3572FCB7206CBFB1006836ED /* bindVip@2x.png in Resources */,
 				35B04ECC206B6F2C002D563F /* bigVip@3x.png in Resources */,
 				3572FD6B206E258A006836ED /* checkBtnBg.png in Resources */,
 				354D63122073187600534D1E /* order_disSel@3x.png in Resources */,
 				35B04F5F206BA580002D563F /* loginBg@3x.png in Resources */,
+				354D6354207369F900534D1E /* LPPCDCommodityStyleCell.xib in Resources */,
 				35B04EFE206B7CD2002D563F /* light_open@2x.png in Resources */,
 				3572FCF1206CCC43006836ED /* extern@2x.png in Resources */,
 				35B04F3C206BA2FD002D563F /* LPALoginVC.xib in Resources */,
@@ -1661,6 +1744,7 @@
 				3572FCB0206CBF99006836ED /* bell@2x.png in Resources */,
 				35B04F53206BA580002D563F /* unSelected.png in Resources */,
 				3572FCBA206CBFB1006836ED /* bindVip@3x.png in Resources */,
+				354D6352207369F900534D1E /* LPPCDCardCollectionCell.xib in Resources */,
 				35B04F02206B7CD2002D563F /* light_close.png in Resources */,
 				354D62E6207225F800534D1E /* blackBg@2x.png in Resources */,
 				3572FD27206CF473006836ED /* select@3x.png in Resources */,
@@ -1671,6 +1755,7 @@
 				3572FCA8206CBF71006836ED /* selected@2x.png in Resources */,
 				35B04ED1206B6F2C002D563F /* bigScanNew.png in Resources */,
 				35B04F06206B7D15002D563F /* LPPCommonTBCell.xib in Resources */,
+				354D634E207369F900534D1E /* LPPCDComparePriceCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1733,10 +1818,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				35B04E99206B43BC002D563F /* LPAMyVC.m in Sources */,
+				354D633C2073543300534D1E /* LPACompletePayStyleCell.m in Sources */,
 				3572FD5E206E2079006836ED /* LPAMyKPIVC.m in Sources */,
 				354D62F7207237EE00534D1E /* LPAChangePwdVC.m in Sources */,
 				3572FD40206DD2E9006836ED /* LPARemindCell.m in Sources */,
 				354D62F42072357D00534D1E /* LPA_CRM_OrderDetailVC.m in Sources */,
+				354D634F207369F900534D1E /* LPPCDPriceNameCell.m in Sources */,
 				3572FCE7206CCA14006836ED /* LPPNavSearchView.m in Sources */,
 				3572FD05206CEAC7006836ED /* LPAPayOnlineVC.m in Sources */,
 				3572FCF9206CCE07006836ED /* SCScanCodeVC.m in Sources */,
@@ -1745,12 +1832,15 @@
 				3572FD30206CF97A006836ED /* LPACouponCell.m in Sources */,
 				35B04F0B206B7E67002D563F /* LPAMyFirstCell.m in Sources */,
 				3572FD82206E38A3006836ED /* LPAMyStoreVC.m in Sources */,
+				354D63402073658900534D1E /* LPAGoodsDetailVC.m in Sources */,
 				35B04F2C206B8A4E002D563F /* LPACommonSearchView.m in Sources */,
 				3572FD37206DD07D006836ED /* LPAChatRemindVC.m in Sources */,
+				354D634D207369F900534D1E /* LPPCDComparePriceCell.m in Sources */,
 				35B04E9E206B4511002D563F /* LPAMainTabBarC.m in Sources */,
 				3572FD86206E3CAC006836ED /* LPABindVipResultCell.m in Sources */,
 				3590DA18206B39EE00504520 /* ViewController.m in Sources */,
 				354D631F20732CB400534D1E /* LPA_CRM_AllOrderVC.m in Sources */,
+				354D6353207369F900534D1E /* LPPCDCardCollectionCell.m in Sources */,
 				3572FD34206CFD92006836ED /* LPAOrderDetailVC.m in Sources */,
 				35B04F3B206BA2FD002D563F /* LPALoginVC.m in Sources */,
 				3572FD3B206DD2B1006836ED /* LPAChatCell.m in Sources */,
@@ -1760,6 +1850,7 @@
 				3572FD12206CF30A006836ED /* LPABottomBtnView.m in Sources */,
 				355A15C4206C8ADA007DBF87 /* LPAFindPwdVC.m in Sources */,
 				354D63342073482700534D1E /* LPA_LogisticsProgressCell.m in Sources */,
+				354D63382073539100534D1E /* LPACompletePayStyleVC.m in Sources */,
 				3572FCCB206CC1B7006836ED /* LPAFCHeadPickerView.m in Sources */,
 				354D62CE2071F19B00534D1E /* LPAMyBillingVC.m in Sources */,
 				35B04F10206B844C002D563F /* LPAReceptionCell.m in Sources */,
@@ -1767,8 +1858,10 @@
 				354D632F2073460400534D1E /* LPA_LogisticsTopCell.m in Sources */,
 				3572FD8B206E3E5B006836ED /* LPAMyBillingCell.m in Sources */,
 				354D632820732CFC00534D1E /* LPA_CRM_WaitReceiveVC.m in Sources */,
+				354D636620737BA000534D1E /* YCXMenu.m in Sources */,
 				3572FD4A206DE29E006836ED /* LPAVipDetailVC.m in Sources */,
 				3572FD79206E2D2F006836ED /* LPAStoreRankBottomView.m in Sources */,
+				354D636720737BA000534D1E /* YCXMenuItem.m in Sources */,
 				35B04E96206B43A9002D563F /* LPAReceptionVC.m in Sources */,
 				354D631A2073277C00534D1E /* LPA_CRM_OrderDetailTopView.m in Sources */,
 				35B04E93206B4394002D563F /* LPAHomeVC.m in Sources */,
@@ -1782,6 +1875,7 @@
 				3572FD70206E26DB006836ED /* LPAStoreRankCell.m in Sources */,
 				3572FD09206CEBB1006836ED /* LPAPayOnlineCell.m in Sources */,
 				354D6305207313C900534D1E /* LPA_CRM_OrderDetailCell.m in Sources */,
+				354D6351207369F900534D1E /* LPPCDCommodityStyleCell.m in Sources */,
 				354D632520732CE300534D1E /* LPA_CRM_WaitPostVC.m in Sources */,
 				354D62D920720FD500534D1E /* LPA_CRM_bottomView.m in Sources */,
 				354D62EA20722F4200534D1E /* LPA_My_OrderDetailVC.m in Sources */,

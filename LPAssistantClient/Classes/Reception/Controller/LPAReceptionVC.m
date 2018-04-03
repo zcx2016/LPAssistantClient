@@ -10,6 +10,10 @@
 #import "LPAReceptionCell.h"
 #import "LPACommonSearchView.h"
 #import "LPAVipDetailVC.h"
+#import "YCXMenu.h"
+//跳转
+#import "LPAAddVipVC.h"
+#import "SCScanCodeVC.h"
 
 @interface LPAReceptionVC ()<UITableViewDataSource,UITableViewDelegate>
 
@@ -19,20 +23,26 @@
 
 //自定义 联系电话 的inputAccessoryView
 @property (nonatomic, strong) UIToolbar *customAccessoryView;
-
+//右上角
+@property (nonatomic , strong) NSMutableArray *items;
+//右上角btn
+@property (nonatomic, strong) UIButton *addBtn;
 @end
 
 @implementation LPAReceptionVC
+
+//因为父类中有，此处必须再写一个，来手动生成 成员变量
+@synthesize items = _items;
 
 - (void)viewDidLoad {
     [super viewDidLoad];
    
     self.navigationItem.title = @"客户接待";
     
-    UIButton *btn = [[UIButton alloc] initWithFrame:CGRectMake(0, 0, 30, 30)];
-    [btn setImage:[UIImage imageNamed:@"add"] forState:UIControlStateNormal];
-    [btn addTarget:self action:@selector(addBtnClick:) forControlEvents:UIControlEventTouchUpInside];
-    self.navigationItem.rightBarButtonItem = [[UIBarButtonItem alloc] initWithCustomView:btn];
+    self.addBtn = [[UIButton alloc] initWithFrame:CGRectMake(0, 0, 30, 30)];
+    [self.addBtn setImage:[UIImage imageNamed:@"add"] forState:UIControlStateNormal];
+    [self.addBtn addTarget:self action:@selector(addBtnClick:) forControlEvents:UIControlEventTouchUpInside];
+    self.navigationItem.rightBarButtonItem = [[UIBarButtonItem alloc] initWithCustomView:self.addBtn];
     
     [self tableView];
     [self searchView];
@@ -50,7 +60,51 @@
 }
 
 - (void)addBtnClick:(UIButton *)btn{
-    NSLog(@"11");
+
+    if (!btn.selected) {
+        btn.selected = !btn.selected;
+       [YCXMenu setTintColor:[UIColor whiteColor]];
+        [YCXMenu showMenuInView:self.view fromRect:CGRectMake(kScreenWidth-55, 0, 50, 0) menuItems:self.items selected:^(NSInteger index, YCXMenuItem *item) {
+            NSLog(@"index----%ld,item----%@",(long)index,item);
+        }];
+    }else{
+        btn.selected = !btn.selected;
+        [YCXMenu dismissMenu];
+    }
+
+}
+
+#pragma mark - setter/getter
+- (void)setItems:(NSMutableArray *)items {
+    _items = items;
+}
+
+- (NSMutableArray *)items{
+    if (!_items) {
+        _items = [@[
+                    [YCXMenuItem menuItem:@"绑定会员"
+                                    image:[UIImage imageNamed:@"bindVip"]
+                                   target:self
+                                   action:@selector(clickItemOne)],
+                    [YCXMenuItem menuItem:@"扫一扫开单"
+                                    image:[UIImage imageNamed:@"scan"]
+                                   target:self
+                                   action:@selector(clickItemTwo)]
+                    ] mutableCopy];
+    }
+    return _items;
+}
+
+- (void)clickItemOne{
+    self.addBtn.selected = !self.addBtn.selected;
+    LPAAddVipVC * vc = [LPAAddVipVC new];
+    [self.navigationController pushViewController:vc animated:YES];
+}
+
+- (void)clickItemTwo{
+    self.addBtn.selected = !self.addBtn.selected;
+    SCScanCodeVC *vc = [[UIStoryboard storyboardWithName:@"SCScanCodeVC" bundle:nil] instantiateViewControllerWithIdentifier:@"SCScanCodeVC"];
+    [self.navigationController pushViewController:vc animated:YES];
 }
 
 #pragma mark - tableView Delegate

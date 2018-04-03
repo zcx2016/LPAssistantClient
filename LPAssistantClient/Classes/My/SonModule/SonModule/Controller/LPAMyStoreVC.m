@@ -57,7 +57,7 @@
     if (!_bottomView) {
         _bottomView = [[NSBundle mainBundle] loadNibNamed:@"LPAStoreRankBottomView" owner:nil options:nil].lastObject;
         _bottomView.frame = CGRectMake(0, kScreenHeight-60, kScreenWidth, 60);
-        _bottomView.myStoreTitleLabel.text = @"我:";
+        _bottomView.myStoreTitleLabel.text = @"我";
         _bottomView.myStoreDetailLabel.text = @"周星驰";
         _bottomView.saleDetailLabel.text = @"￥18000";
         _bottomView.rankDetailLabel.text = @"第1名";
