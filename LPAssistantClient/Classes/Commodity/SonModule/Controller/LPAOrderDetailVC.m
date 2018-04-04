@@ -11,12 +11,15 @@
 #import "LPABottomBtnView.h"
 //跳转
 #import "LPAPayVC.h"
+#import "LPAPayRoutePopView.h"
 
-@interface LPAOrderDetailVC ()<UITableViewDelegate,UITableViewDataSource>
+@interface LPAOrderDetailVC ()<UITableViewDelegate,UITableViewDataSource,LPAPayRoutePopViewDelegate>
 
 @property (nonatomic, strong) UITableView *tableView;
 
 @property (nonatomic, strong) LPABottomBtnView *bottomBtnView;
+
+@property (nonatomic, strong) LPAPayRoutePopView *popView;
 
 @end
 
@@ -53,8 +56,28 @@
 }
 
 - (void)redBtnClick:(UIButton *)btn{
-    LPAPayVC *vc = [LPAPayVC new];
-    [self.navigationController pushViewController:vc animated:YES];
+
+    self.popView = [[NSBundle mainBundle] loadNibNamed:@"LPAPayRoutePopView" owner:nil options:nil].firstObject;
+    self.popView.frame = CGRectMake(0, 0, kScreenWidth, kScreenHeight);
+    self.popView.delegate = self;
+    [self.popView showView];
+}
+
+- (void)changePayRouteStyle:(NSString *)string{
+    if ([string isEqualToString:@"online"]) {
+        [self.popView dissMissView];
+        LPAPayVC *vc = [LPAPayVC new];
+        [self.navigationController pushViewController:vc animated:YES];
+    }else{
+        [self.popView dissMissView];
+        UIAlertController *alertC = [UIAlertController alertControllerWithTitle:@"订单已在收银台生成，请前往付款" message:nil preferredStyle:UIAlertControllerStyleAlert];
+        UIAlertAction *okAction = [UIAlertAction actionWithTitle:@"确认" style:UIAlertActionStyleDefault handler:^(UIAlertAction * _Nonnull action) {
+            
+        }];
+        [alertC addAction:okAction];
+        //通过控制器弹出对话框
+        [self presentViewController:alertC animated:YES completion:nil];
+    }
 }
 
 #pragma mark - tableView Delegate

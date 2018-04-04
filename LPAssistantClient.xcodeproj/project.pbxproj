@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		35441F83207479F600759621 /* LPAPayRoutePopView.m in Sources */ = {isa = PBXBuildFile; fileRef = 35441F82207479F600759621 /* LPAPayRoutePopView.m */; };
+		35441F8520747A0900759621 /* LPAPayRoutePopView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 35441F8420747A0900759621 /* LPAPayRoutePopView.xib */; };
 		354D62CE2071F19B00534D1E /* LPAMyBillingVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 354D62CD2071F19B00534D1E /* LPAMyBillingVC.m */; };
 		354D62D1207203D800534D1E /* LPAMyCMRHeadView.m in Sources */ = {isa = PBXBuildFile; fileRef = 354D62D0207203D800534D1E /* LPAMyCMRHeadView.m */; };
 		354D62D3207203EB00534D1E /* LPAMyCMRHeadView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 354D62D2207203EB00534D1E /* LPAMyCMRHeadView.xib */; };
@@ -287,6 +289,9 @@
 
 /* Begin PBXFileReference section */
 		041FBE0BD556FE20BAA7BEB1 /* Pods-LPAssistantClient.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LPAssistantClient.release.xcconfig"; path = "Pods/Target Support Files/Pods-LPAssistantClient/Pods-LPAssistantClient.release.xcconfig"; sourceTree = "<group>"; };
+		35441F81207479F600759621 /* LPAPayRoutePopView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LPAPayRoutePopView.h; sourceTree = "<group>"; };
+		35441F82207479F600759621 /* LPAPayRoutePopView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LPAPayRoutePopView.m; sourceTree = "<group>"; };
+		35441F8420747A0900759621 /* LPAPayRoutePopView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LPAPayRoutePopView.xib; sourceTree = "<group>"; };
 		354D62CC2071F19B00534D1E /* LPAMyBillingVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LPAMyBillingVC.h; sourceTree = "<group>"; };
 		354D62CD2071F19B00534D1E /* LPAMyBillingVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LPAMyBillingVC.m; sourceTree = "<group>"; };
 		354D62CF207203D800534D1E /* LPAMyCMRHeadView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LPAMyCMRHeadView.h; sourceTree = "<group>"; };
@@ -803,12 +808,12 @@
 		3572FC98206CBC04006836ED /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				354D633E2073658900534D1E /* LPAGoodsDetailVC.h */,
+				354D633F2073658900534D1E /* LPAGoodsDetailVC.m */,
 				3572FD03206CEAC7006836ED /* LPAPayOnlineVC.h */,
 				3572FD04206CEAC7006836ED /* LPAPayOnlineVC.m */,
 				3572FD32206CFD92006836ED /* LPAOrderDetailVC.h */,
 				3572FD33206CFD92006836ED /* LPAOrderDetailVC.m */,
-				354D633E2073658900534D1E /* LPAGoodsDetailVC.h */,
-				354D633F2073658900534D1E /* LPAGoodsDetailVC.m */,
 				354D63682073837200534D1E /* LPAPayVC.h */,
 				354D63692073837200534D1E /* LPAPayVC.m */,
 			);
@@ -849,6 +854,9 @@
 				354D63772073939300534D1E /* LPAPayPopView.h */,
 				354D63782073939300534D1E /* LPAPayPopView.m */,
 				354D637A207393A600534D1E /* LPAPayPopView.xib */,
+				35441F81207479F600759621 /* LPAPayRoutePopView.h */,
+				35441F82207479F600759621 /* LPAPayRoutePopView.m */,
+				35441F8420747A0900759621 /* LPAPayRoutePopView.xib */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -1813,6 +1821,7 @@
 				3572FD6C206E258A006836ED /* checkBtnBg@2x.png in Resources */,
 				3572FCB9206CBFB1006836ED /* bindVip.png in Resources */,
 				354D62E3207225F800534D1E /* redBg.png in Resources */,
+				35441F8520747A0900759621 /* LPAPayRoutePopView.xib in Resources */,
 				35B04EFD206B7CD2002D563F /* light_close@3x.png in Resources */,
 				35B04F4F206BA580002D563F /* delete.png in Resources */,
 				3572FD8C206E3E5B006836ED /* LPAMyBillingCell.xib in Resources */,
@@ -1979,6 +1988,7 @@
 				354D62D62072089000534D1E /* LPA_CRM_VipDetailVC.m in Sources */,
 				354D63092073168900534D1E /* LPA_CRM_GoodsView.m in Sources */,
 				3590DA15206B39EE00504520 /* AppDelegate.m in Sources */,
+				35441F83207479F600759621 /* LPAPayRoutePopView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

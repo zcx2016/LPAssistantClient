@@ -12,13 +12,27 @@
 //
 #import "LPAPayPopView.h"
 
-@interface LPAPayVC ()<UITableViewDelegate,UITableViewDataSource>
+@interface LPAPayVC ()<UITableViewDelegate,UITableViewDataSource,LPAPayPopViewDelegate>
 
 @property (nonatomic, strong) UITableView *tableView;
+
+@property (nonatomic, weak) LPAPayTopCell *weak_TopCell;
+
+@property (nonatomic, strong) LPAPayPopView *popView;
 
 @end
 
 @implementation LPAPayVC
+
+- (void)viewWillAppear:(BOOL)animated{
+    [super viewWillAppear:animated];
+    self.navigationController.navigationBar.translucent = YES;
+}
+
+- (void)viewWillDisappear:(BOOL)animated{
+    [super viewWillDisappear:animated];
+    self.navigationController.navigationBar.translucent = NO;
+}
 
 - (void)viewDidLoad {
     [super viewDidLoad];
@@ -34,10 +48,24 @@
     [self tableView];
 }
 
+#pragma mark - 改变支付方式
 - (void)changePayMethod{
-    LPAPayPopView *popView = [[NSBundle mainBundle] loadNibNamed:@"LPAPayPopView" owner:nil options:nil].firstObject;
-    popView.frame = CGRectMake(0, 0, kScreenWidth, kScreenHeight);
-    [popView showView];
+    self.popView = [[NSBundle mainBundle] loadNibNamed:@"LPAPayPopView" owner:nil options:nil].firstObject;
+    self.popView.frame = CGRectMake(0, 0, kScreenWidth, kScreenHeight);
+    self.popView.delegate = self;
+    [self.popView showView];
+}
+
+- (void)changePayStyle:(NSString *)string{
+    if ([string isEqualToString:@"wx"]) {
+         [self.popView dissMissView];
+        [self.weak_TopCell.payStyleImgView setImage:[UIImage imageNamed:@"goods"]];
+        self.weak_TopCell.payStyleLabel.text = @"微信扫一扫，向我付钱";
+    }else{
+         [self.popView dissMissView];
+        [self.weak_TopCell.payStyleImgView setImage:[UIImage imageNamed:@"zfbCode"]];
+        self.weak_TopCell.payStyleLabel.text = @"支付宝扫一扫，向我付钱";
+    }
 }
 
 #pragma mark - tableView Delegate
@@ -53,7 +81,7 @@
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath{
     if (indexPath.section == 0) {
         LPAPayTopCell *cell = [tableView dequeueReusableCellWithIdentifier:@"LPAPayTopCell" forIndexPath:indexPath];
-        
+        self.weak_TopCell = cell;
         return cell;
     }else{
         LPPCommonTBCell *cell = [tableView dequeueReusableCellWithIdentifier:@"LPPCommonTBCell" forIndexPath:indexPath];
