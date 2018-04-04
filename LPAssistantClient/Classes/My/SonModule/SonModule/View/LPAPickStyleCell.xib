@@ -53,6 +53,12 @@
                     <constraint firstItem="sI1-Oy-arw" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="15" id="sJq-6C-CL7"/>
                 </constraints>
             </tableViewCellContentView>
+            <connections>
+                <outlet property="payImgView" destination="sI1-Oy-arw" id="aBH-mR-V11"/>
+                <outlet property="payIndicatorBtn" destination="W1v-gU-2of" id="zBt-bN-Ho6"/>
+                <outlet property="payMoneyLabel" destination="EOq-pv-mkF" id="zNy-Az-Brn"/>
+                <outlet property="payTitleLabel" destination="3rN-W2-n1o" id="FDi-2M-Rqi"/>
+            </connections>
             <point key="canvasLocation" x="42.5" y="216"/>
         </tableViewCell>
     </objects>

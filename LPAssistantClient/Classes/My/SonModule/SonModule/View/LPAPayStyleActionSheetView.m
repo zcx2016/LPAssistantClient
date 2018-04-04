@@ -7,7 +7,7 @@
 //
 
 #import "LPAPayStyleActionSheetView.h"
-
+#import "LPAPickStyleCell.h"
 
 @interface LPAPayStyleActionSheetView()<UITableViewDelegate,UITableViewDataSource>
 
@@ -50,7 +50,7 @@
 //滑动弹出
 - (void)show {
     
-    _tableView.frame = CGRectMake(0, kScreenHeight, kScreenWidth, 500);
+    _tableView.frame = CGRectMake(0, kScreenHeight, kScreenWidth, 200);
     
     [UIView animateWithDuration:0.5 animations:^{
         
@@ -88,23 +88,35 @@
 
 #pragma mark - tableView DataSource
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath{
-    UITableViewCell *cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleValue1 reuseIdentifier:@"cell"];
+    LPAPickStyleCell *cell = [tableView dequeueReusableCellWithIdentifier:@"LPAPickStyleCell" forIndexPath:indexPath];
     if (indexPath.row == 0) {
-        [cell.imageView setImage:[UIImage imageNamed:@""]];
-        cell.textLabel.text = @"微信";
+        [cell.payImgView setImage:[UIImage imageNamed:@"wxIcon"]];
+        cell.payTitleLabel.text = @"微信";
     }else if (indexPath.row == 1){
-        
+        [cell.payImgView setImage:[UIImage imageNamed:@"zfbIcon"]];
+        cell.payTitleLabel.text = @"支付宝";
     }else if (indexPath.row == 2){
-        
+        [cell.payImgView setImage:[UIImage imageNamed:@"bankCardIcon"]];
+        cell.payTitleLabel.text = @"银行卡支付";
     }else{
-        
+        [cell.payImgView setImage:[UIImage imageNamed:@"cash"]];
+        cell.payTitleLabel.text = @"现金支付";
     }
     return cell;
 }
 
+- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath{
+
+    if ([self.delegate respondsToSelector:@selector(addPayStyleCell)]) {
+        [self.delegate addPayStyleCell];
+    }
+    //然后让界面消失
+    [self dismiss];
+}
+
 #pragma mark - 设置行高
 - (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath{
-    return 150;
+    return 50;
 }
 
 - (CGFloat)tableView:(UITableView *)tableView heightForHeaderInSection:(NSInteger)section{
@@ -125,20 +137,17 @@
 #pragma mark - 懒加载tableView
 - (UITableView *)tableView{
     if (!_tableView) {
-        _tableView = [[UITableView alloc] initWithFrame:CGRectMake(0, 0, kScreenWidth, kScreenHeight) style:UITableViewStyleGrouped];
+        _tableView = [[UITableView alloc] initWithFrame:CGRectMake(0, kScreenHeight-200, kScreenWidth, 200) style:UITableViewStyleGrouped];
         _tableView.delegate = self;
         _tableView.dataSource = self;
-        _tableView.separatorStyle = UITableViewCellSeparatorStyleNone;
         //去掉ios7 的separatorInset边距
         _tableView.separatorInset = UIEdgeInsetsMake(0, 0, 0, 0);
         //注册cell
-        [_tableView registerClass:[UITableViewCell class] forCellReuseIdentifier:@"cell"];
-//        [_tableView registerNib:[UINib nibWithNibName:NSStringFromClass([<#type#> class]) bundle:[NSBundle mainBundle]] forCellReuseIdentifier:@"<#type#>"];
+        [_tableView registerNib:[UINib nibWithNibName:NSStringFromClass([LPAPickStyleCell class]) bundle:[NSBundle mainBundle]] forCellReuseIdentifier:@"LPAPickStyleCell"];
 
         [self addSubview:_tableView];
     }
     return _tableView;
 }
-
 
 @end

@@ -10,6 +10,10 @@
 
 @interface LPAPickStyleCell : UITableViewCell
 
+@property (weak, nonatomic) IBOutlet UIImageView *payImgView;
+@property (weak, nonatomic) IBOutlet UILabel *payTitleLabel;
 
+@property (weak, nonatomic) IBOutlet UILabel *payMoneyLabel;
+@property (weak, nonatomic) IBOutlet UIButton *payIndicatorBtn;
 
 @end

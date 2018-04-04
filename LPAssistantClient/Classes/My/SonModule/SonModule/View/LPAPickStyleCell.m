@@ -14,6 +14,8 @@
     [super awakeFromNib];
 
     self.selectionStyle = UITableViewCellSelectionStyleNone;
+    
+    self.payMoneyLabel.hidden = YES;
 }
 
 

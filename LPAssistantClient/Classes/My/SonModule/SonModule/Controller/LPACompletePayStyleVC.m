@@ -9,8 +9,11 @@
 #import "LPACompletePayStyleVC.h"
 #import "LPACompletePayStyleCell.h"
 #import "LPPCommonTBCell.h"
+#import "LPAPayStyleActionSheetView.h"
+//额外增加
+#import "LPAPickStyleCell.h"
 
-@interface LPACompletePayStyleVC ()<UITableViewDelegate,UITableViewDataSource>
+@interface LPACompletePayStyleVC ()<UITableViewDelegate,UITableViewDataSource,LPAPayStyleActionSheetViewDelegate>
 
 @property (nonatomic, strong) UITableView *tableView;
 
@@ -75,8 +78,16 @@
 #pragma mark - cell 点击事件
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath{
     if (indexPath.section == 0 && indexPath.row == 0) {
-        
+        LPAPayStyleActionSheetView  *sheetView = [[LPAPayStyleActionSheetView alloc] initWithActionSheet];
+        //放在最上层
+        sheetView.delegate = self;
+        UIWindow *window = [[UIApplication sharedApplication].delegate window];
+        [window addSubview:sheetView];
     }
+}
+
+- (void)addPayStyleCell{
+    NSLog(@"增加哪一个支付方式？后面可能要传参数进来");
 }
 
 #pragma mark - 设置行高
@@ -111,6 +122,8 @@
         //注册cell
         [_tableView registerNib:[UINib nibWithNibName:NSStringFromClass([LPPCommonTBCell class]) bundle:[NSBundle mainBundle]] forCellReuseIdentifier:@"LPPCommonTBCell"];
         [_tableView registerNib:[UINib nibWithNibName:NSStringFromClass([LPACompletePayStyleCell class]) bundle:[NSBundle mainBundle]] forCellReuseIdentifier:@"LPACompletePayStyleCell"];
+        //
+        [_tableView registerNib:[UINib nibWithNibName:NSStringFromClass([LPAPickStyleCell class]) bundle:[NSBundle mainBundle]] forCellReuseIdentifier:@"LPAPickStyleCell"];
         
         [self.view addSubview:_tableView];
     }

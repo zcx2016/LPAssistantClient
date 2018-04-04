@@ -8,6 +8,17 @@
 
 #import <UIKit/UIKit.h>
 
+@protocol LPAPayStyleActionSheetViewDelegate<NSObject>
+
+@optional
+- (void)addPayStyleCell;
+
+@end
+
 @interface LPAPayStyleActionSheetView : UIView
+
+- (instancetype)initWithActionSheet;
+
+@property (nonatomic, weak) id<LPAPayStyleActionSheetViewDelegate> delegate;
 
 @end

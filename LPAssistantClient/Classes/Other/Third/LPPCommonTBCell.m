@@ -14,7 +14,6 @@
     [super awakeFromNib];
  
     self.selectionStyle = UITableViewCellSelectionStyleNone;
-    self.pickBtn.hidden = YES;
 }
 
 
