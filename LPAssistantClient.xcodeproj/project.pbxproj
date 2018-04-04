@@ -9,6 +9,14 @@
 /* Begin PBXBuildFile section */
 		35441F83207479F600759621 /* LPAPayRoutePopView.m in Sources */ = {isa = PBXBuildFile; fileRef = 35441F82207479F600759621 /* LPAPayRoutePopView.m */; };
 		35441F8520747A0900759621 /* LPAPayRoutePopView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 35441F8420747A0900759621 /* LPAPayRoutePopView.xib */; };
+		35441F88207496BA00759621 /* ZCXActionSheetView.m in Sources */ = {isa = PBXBuildFile; fileRef = 35441F87207496BA00759621 /* ZCXActionSheetView.m */; };
+		35441F8B2074A29800759621 /* ZCXActionSheetTopView.m in Sources */ = {isa = PBXBuildFile; fileRef = 35441F8A2074A29800759621 /* ZCXActionSheetTopView.m */; };
+		35441F8D2074A2E800759621 /* ZCXActionSheetTopView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 35441F8C2074A2E800759621 /* ZCXActionSheetTopView.xib */; };
+		35441F912074A51800759621 /* ZCXActionSheetTBCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 35441F8F2074A51800759621 /* ZCXActionSheetTBCell.m */; };
+		35441F922074A51800759621 /* ZCXActionSheetTBCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 35441F902074A51800759621 /* ZCXActionSheetTBCell.xib */; };
+		35441F952074D0A800759621 /* LPAPayStyleActionSheetView.m in Sources */ = {isa = PBXBuildFile; fileRef = 35441F942074D0A800759621 /* LPAPayStyleActionSheetView.m */; };
+		35441F992074D36700759621 /* LPAPickStyleCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 35441F972074D36700759621 /* LPAPickStyleCell.m */; };
+		35441F9A2074D36700759621 /* LPAPickStyleCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 35441F982074D36700759621 /* LPAPickStyleCell.xib */; };
 		354D62CE2071F19B00534D1E /* LPAMyBillingVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 354D62CD2071F19B00534D1E /* LPAMyBillingVC.m */; };
 		354D62D1207203D800534D1E /* LPAMyCMRHeadView.m in Sources */ = {isa = PBXBuildFile; fileRef = 354D62D0207203D800534D1E /* LPAMyCMRHeadView.m */; };
 		354D62D3207203EB00534D1E /* LPAMyCMRHeadView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 354D62D2207203EB00534D1E /* LPAMyCMRHeadView.xib */; };
@@ -292,6 +300,19 @@
 		35441F81207479F600759621 /* LPAPayRoutePopView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LPAPayRoutePopView.h; sourceTree = "<group>"; };
 		35441F82207479F600759621 /* LPAPayRoutePopView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LPAPayRoutePopView.m; sourceTree = "<group>"; };
 		35441F8420747A0900759621 /* LPAPayRoutePopView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LPAPayRoutePopView.xib; sourceTree = "<group>"; };
+		35441F86207496BA00759621 /* ZCXActionSheetView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZCXActionSheetView.h; sourceTree = "<group>"; };
+		35441F87207496BA00759621 /* ZCXActionSheetView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZCXActionSheetView.m; sourceTree = "<group>"; };
+		35441F892074A29800759621 /* ZCXActionSheetTopView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZCXActionSheetTopView.h; sourceTree = "<group>"; };
+		35441F8A2074A29800759621 /* ZCXActionSheetTopView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZCXActionSheetTopView.m; sourceTree = "<group>"; };
+		35441F8C2074A2E800759621 /* ZCXActionSheetTopView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ZCXActionSheetTopView.xib; sourceTree = "<group>"; };
+		35441F8E2074A51800759621 /* ZCXActionSheetTBCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZCXActionSheetTBCell.h; sourceTree = "<group>"; };
+		35441F8F2074A51800759621 /* ZCXActionSheetTBCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZCXActionSheetTBCell.m; sourceTree = "<group>"; };
+		35441F902074A51800759621 /* ZCXActionSheetTBCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ZCXActionSheetTBCell.xib; sourceTree = "<group>"; };
+		35441F932074D0A800759621 /* LPAPayStyleActionSheetView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LPAPayStyleActionSheetView.h; sourceTree = "<group>"; };
+		35441F942074D0A800759621 /* LPAPayStyleActionSheetView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LPAPayStyleActionSheetView.m; sourceTree = "<group>"; };
+		35441F962074D36700759621 /* LPAPickStyleCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LPAPickStyleCell.h; sourceTree = "<group>"; };
+		35441F972074D36700759621 /* LPAPickStyleCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LPAPickStyleCell.m; sourceTree = "<group>"; };
+		35441F982074D36700759621 /* LPAPickStyleCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LPAPickStyleCell.xib; sourceTree = "<group>"; };
 		354D62CC2071F19B00534D1E /* LPAMyBillingVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LPAMyBillingVC.h; sourceTree = "<group>"; };
 		354D62CD2071F19B00534D1E /* LPAMyBillingVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LPAMyBillingVC.m; sourceTree = "<group>"; };
 		354D62CF207203D800534D1E /* LPAMyCMRHeadView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LPAMyCMRHeadView.h; sourceTree = "<group>"; };
@@ -945,6 +966,11 @@
 				354D63392073543300534D1E /* LPACompletePayStyleCell.h */,
 				354D633A2073543300534D1E /* LPACompletePayStyleCell.m */,
 				354D633B2073543300534D1E /* LPACompletePayStyleCell.xib */,
+				35441F932074D0A800759621 /* LPAPayStyleActionSheetView.h */,
+				35441F942074D0A800759621 /* LPAPayStyleActionSheetView.m */,
+				35441F962074D36700759621 /* LPAPickStyleCell.h */,
+				35441F972074D36700759621 /* LPAPickStyleCell.m */,
+				35441F982074D36700759621 /* LPAPickStyleCell.xib */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -1123,7 +1149,14 @@
 		35B04E73206B432B002D563F /* Tools */ = {
 			isa = PBXGroup;
 			children = (
-				354D636120737BA000534D1E /* YCXMenu */,
+				35441F86207496BA00759621 /* ZCXActionSheetView.h */,
+				35441F87207496BA00759621 /* ZCXActionSheetView.m */,
+				35441F892074A29800759621 /* ZCXActionSheetTopView.h */,
+				35441F8A2074A29800759621 /* ZCXActionSheetTopView.m */,
+				35441F8C2074A2E800759621 /* ZCXActionSheetTopView.xib */,
+				35441F8E2074A51800759621 /* ZCXActionSheetTBCell.h */,
+				35441F8F2074A51800759621 /* ZCXActionSheetTBCell.m */,
+				35441F902074A51800759621 /* ZCXActionSheetTBCell.xib */,
 			);
 			path = Tools;
 			sourceTree = "<group>";
@@ -1131,6 +1164,7 @@
 		35B04E74206B432B002D563F /* Third */ = {
 			isa = PBXGroup;
 			children = (
+				354D636120737BA000534D1E /* YCXMenu */,
 				3572FD52206E141D006836ED /* SCTimePickerView.h */,
 				3572FD51206E141C006836ED /* SCTimePickerView.m */,
 				3572FD53206E141D006836ED /* SCTimePickerView.xib */,
@@ -1719,11 +1753,13 @@
 				354D6306207313C900534D1E /* LPA_CRM_OrderDetailCell.xib in Resources */,
 				35B04EEE206B7CB8002D563F /* headIcon.png in Resources */,
 				354D63142073187600534D1E /* order_disSel@2x.png in Resources */,
+				35441F922074A51800759621 /* ZCXActionSheetTBCell.xib in Resources */,
 				354D63922073985D00534D1E /* zfbIcon.png in Resources */,
 				3572FD0F206CF089006836ED /* LPACommonSearchCell.xib in Resources */,
 				35B04EB3206B6F19002D563F /* main_home_highlight.png in Resources */,
 				35F8DBAA2071C44A0058D33F /* LPAMyKPICell.xib in Resources */,
 				35B04F0C206B7E67002D563F /* LPAMyFirstCell.xib in Resources */,
+				35441F9A2074D36700759621 /* LPAPickStyleCell.xib in Resources */,
 				35B04F5A206BA580002D563F /* unSelected@3x.png in Resources */,
 				3572FCCD206CC1D1006836ED /* LPAFCHeadPickerView.xib in Resources */,
 				35B04F59206BA580002D563F /* delete@3x.png in Resources */,
@@ -1809,6 +1845,7 @@
 				35B04F5C206BA580002D563F /* loginBg@2x.png in Resources */,
 				3572FCED206CCC39006836ED /* main_home.png in Resources */,
 				3572FD21206CF473006836ED /* coupon.png in Resources */,
+				35441F8D2074A2E800759621 /* ZCXActionSheetTopView.xib in Resources */,
 				35B04F28206B86CF002D563F /* scan.png in Resources */,
 				3572FD25206CF473006836ED /* select@2x.png in Resources */,
 				3572FD4F206DE4AB006836ED /* LPAVipDetailCell.xib in Resources */,
@@ -1936,6 +1973,7 @@
 				3572FD34206CFD92006836ED /* LPAOrderDetailVC.m in Sources */,
 				35B04F3B206BA2FD002D563F /* LPALoginVC.m in Sources */,
 				3572FD3B206DD2B1006836ED /* LPAChatCell.m in Sources */,
+				35441F912074A51800759621 /* ZCXActionSheetTBCell.m in Sources */,
 				35F8DBA92071C44A0058D33F /* LPAMyKPICell.m in Sources */,
 				35B04EDD206B76CF002D563F /* LPAHomeCollectionCell.m in Sources */,
 				35B04F07206B7D15002D563F /* LPPCommonTBCell.m in Sources */,
@@ -1946,6 +1984,7 @@
 				354D63382073539100534D1E /* LPACompletePayStyleVC.m in Sources */,
 				3572FCCB206CC1B7006836ED /* LPAFCHeadPickerView.m in Sources */,
 				354D62CE2071F19B00534D1E /* LPAMyBillingVC.m in Sources */,
+				35441F88207496BA00759621 /* ZCXActionSheetView.m in Sources */,
 				35B04F10206B844C002D563F /* LPAReceptionCell.m in Sources */,
 				354D630020723E1100534D1E /* LPA_CRM_BuyDetailCell.m in Sources */,
 				354D636A2073837200534D1E /* LPAPayVC.m in Sources */,
@@ -1963,6 +2002,7 @@
 				3572FD4E206DE4AB006836ED /* LPAVipDetailCell.m in Sources */,
 				354D62F12072352400534D1E /* LPA_CRM_BuyDetailVC.m in Sources */,
 				354D632B2073452100534D1E /* LPA_CRM_LogisticsDetailVC.m in Sources */,
+				35441F992074D36700759621 /* LPAPickStyleCell.m in Sources */,
 				3572FD44206DE0DD006836ED /* LPAFindMyVipVC.m in Sources */,
 				3572FD47206DE153006836ED /* LPAAddVipVC.m in Sources */,
 				3572FD54206E141D006836ED /* SCTimePickerView.m in Sources */,
@@ -1984,10 +2024,12 @@
 				3572FD0E206CF089006836ED /* LPACommonSearchCell.m in Sources */,
 				3572FC9E206CBC2B006836ED /* LPAFindCommodityVC.m in Sources */,
 				3572FD61206E208E006836ED /* LPAMyCMRVC.m in Sources */,
+				35441F952074D0A800759621 /* LPAPayStyleActionSheetView.m in Sources */,
 				3590DA23206B39EE00504520 /* main.m in Sources */,
 				354D62D62072089000534D1E /* LPA_CRM_VipDetailVC.m in Sources */,
 				354D63092073168900534D1E /* LPA_CRM_GoodsView.m in Sources */,
 				3590DA15206B39EE00504520 /* AppDelegate.m in Sources */,
+				35441F8B2074A29800759621 /* ZCXActionSheetTopView.m in Sources */,
 				35441F83207479F600759621 /* LPAPayRoutePopView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

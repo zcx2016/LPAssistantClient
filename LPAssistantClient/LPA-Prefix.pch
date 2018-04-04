@@ -11,7 +11,7 @@
 
 #ifdef __OBJC__  //判断一下， 之后oc文件才会导入下面的头文件
 
-
+#import <Masonry.h>
 #define kUrlReqHead @"http://192.168.6.161:8080"
 
 #define kScreenWidth [UIScreen mainScreen].bounds.size.width

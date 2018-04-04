@@ -14,12 +14,16 @@
 #import "LPPCommonTBCell.h"
 //跳转
 #import "LPAPayOnlineVC.h"
+#import "ZCXActionSheetView.h"
+#import "LPAAddVipVC.h"
 
 @interface LPAGoodsDetailVC ()<UITableViewDelegate,UITableViewDataSource,ATCarouselViewDelegate>
 
 @property (nonatomic, strong) UITableView *tableView;
 //轮播图
 @property (nonatomic, strong) ATCarouselView *carouselView;
+
+@property (nonatomic, strong) ZCXActionSheetView *sheetView;
 
 @end
 
@@ -41,6 +45,8 @@
     self.navigationItem.title = @"商品详情";
     [self tableView];
     [self setBottomBtn];
+    
+    [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(hideViewThenPushVcNoti:) name:@"hideViewThenPushVc" object:nil];
 }
 
 - (void)setBottomBtn{
@@ -56,8 +62,20 @@
 
 - (void)openNewGoods{
     NSLog(@"开单");
-    LPAPayOnlineVC *vc = [LPAPayOnlineVC new];
-    [self.navigationController pushViewController:vc animated:YES];
+//    LPAPayOnlineVC *vc = [LPAPayOnlineVC new];
+//    [self.navigationController pushViewController:vc animated:YES];
+    self.sheetView = [[ZCXActionSheetView alloc] initWithActionSheet];
+    //放在最上层
+    UIWindow *window = [[UIApplication sharedApplication].delegate window];
+    [window addSubview:self.sheetView];
+}
+
+- (void)hideViewThenPushVcNoti:(NSNotification *)noti{
+    [self.sheetView dismiss];
+    dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(0.3 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
+        LPAAddVipVC *vc = [LPAAddVipVC new];
+        [self.navigationController pushViewController:vc animated:YES];
+    });
 }
 
 #pragma mark - tableView Delegate
@@ -76,17 +94,14 @@
         return cell;
     }else if (indexPath.section == 1){
         LPPCDCommodityStyleCell *cell = [tableView dequeueReusableCellWithIdentifier:@"LPPCDCommodityStyleCell" forIndexPath:indexPath];
-//        cell.backgroundColor = [UIColor purpleColor];
         return cell;
     }else if (indexPath.section == 2){
         LPPCDComparePriceCell *cell = [tableView dequeueReusableCellWithIdentifier:@"LPPCDComparePriceCell" forIndexPath:indexPath];
-//        cell.backgroundColor = [UIColor greenColor];
         return cell;
     }else{
         LPPCommonTBCell *cell = [tableView dequeueReusableCellWithIdentifier:@"LPPCommonTBCell" forIndexPath:indexPath];
         cell.diyTitleLabel.text = @"规格";
         cell.diyDetailLabel.text = @"黑色 XL";
-//        cell.backgroundColor = [UIColor blueColor];
         return cell;
     }
 }
