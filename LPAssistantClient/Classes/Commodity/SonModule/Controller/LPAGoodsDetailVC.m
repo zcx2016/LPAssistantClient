@@ -62,8 +62,7 @@
 
 - (void)openNewGoods{
     NSLog(@"开单");
-//    LPAPayOnlineVC *vc = [LPAPayOnlineVC new];
-//    [self.navigationController pushViewController:vc animated:YES];
+
     self.sheetView = [[ZCXActionSheetView alloc] initWithActionSheet];
     //放在最上层
     UIWindow *window = [[UIApplication sharedApplication].delegate window];
@@ -73,8 +72,10 @@
 - (void)hideViewThenPushVcNoti:(NSNotification *)noti{
     [self.sheetView dismiss];
     dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(0.3 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
-        LPAAddVipVC *vc = [LPAAddVipVC new];
-        [self.navigationController pushViewController:vc animated:YES];
+//        LPAAddVipVC *vc = [LPAAddVipVC new];
+//        [self.navigationController pushViewController:vc animated:YES];
+            LPAPayOnlineVC *vc = [LPAPayOnlineVC new];
+            [self.navigationController pushViewController:vc animated:YES];
     });
 }
 

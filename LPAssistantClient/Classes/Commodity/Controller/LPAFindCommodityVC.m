@@ -13,8 +13,9 @@
 
 //跳转
 #import "LPAGoodsDetailVC.h"
+#import "ZCXPullDownFilterView.h"
 
-@interface LPAFindCommodityVC ()<UICollectionViewDelegate,UICollectionViewDataSource>
+@interface LPAFindCommodityVC ()<UICollectionViewDelegate,UICollectionViewDataSource,LPAFCHeadPickerViewDelegate>
 
 @property (nonatomic, strong) UICollectionView *collectionView;
 
@@ -23,6 +24,8 @@
 @property (nonatomic, strong) LPAFCHeadPickerView *headPickerView;
 
 @property (nonatomic, strong) LPPNavSearchView *navSearchView;
+
+@property (nonatomic, strong) ZCXPullDownFilterView *filterView;
 
 @end
 
@@ -76,9 +79,28 @@
     if (!_headPickerView) {
         _headPickerView = [[NSBundle mainBundle] loadNibNamed:@"LPAFCHeadPickerView" owner:nil options:nil].lastObject;
         _headPickerView.frame = CGRectMake(0, 0, kScreenWidth, 104);
+        _headPickerView.delegate = self;
         [self.view addSubview:_headPickerView];
     }
     return _headPickerView;
+}
+
+- (void)filterBtnClick:(UIButton *)btn{
+    NSInteger btnTag;
+    if ([btn.currentTitle isEqualToString:@"品牌"]) {
+        btnTag = 0;
+    }else if ([btn.currentTitle isEqualToString:@"类别"]){
+        btnTag = 1;
+    }else{
+        btnTag = 2;
+    }
+    if (self.filterView) {
+        [self.filterView removeFromSuperview];
+    }
+    self.filterView = [[ZCXPullDownFilterView alloc] initWithPullDownFilterView:btnTag];
+    //放在最上层
+    UIWindow *window = [[UIApplication sharedApplication].delegate window];
+    [window addSubview:self.filterView];
 }
 
 #pragma  mark - UICollectionViewDelegate

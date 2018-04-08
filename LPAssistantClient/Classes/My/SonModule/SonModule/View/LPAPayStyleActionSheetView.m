@@ -52,7 +52,7 @@
     
     _tableView.frame = CGRectMake(0, kScreenHeight, kScreenWidth, 200);
     
-    [UIView animateWithDuration:0.5 animations:^{
+    [UIView animateWithDuration:0.3 animations:^{
         
         CGRect rect = _tableView.frame;
         rect.origin.y -= _tableView.bounds.size.height;
@@ -62,7 +62,7 @@
 
 //滑动消失
 - (void)dismiss{
-    [UIView animateWithDuration:0.5 animations:^{
+    [UIView animateWithDuration:0.3 animations:^{
         CGRect rect = _tableView.frame;
         rect.origin.y += _tableView.bounds.size.height;
         _tableView.frame = rect;
@@ -107,8 +107,8 @@
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath{
 
-    if ([self.delegate respondsToSelector:@selector(addPayStyleCell)]) {
-        [self.delegate addPayStyleCell];
+    if ([self.delegate respondsToSelector:@selector(addPayStyleCell:)]) {
+        [self.delegate addPayStyleCell:indexPath.row];
     }
     //然后让界面消失
     [self dismiss];

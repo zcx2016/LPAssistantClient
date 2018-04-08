@@ -11,7 +11,7 @@
 @protocol LPAPayStyleActionSheetViewDelegate<NSObject>
 
 @optional
-- (void)addPayStyleCell;
+- (void)addPayStyleCell:(NSInteger )row;
 
 @end
 

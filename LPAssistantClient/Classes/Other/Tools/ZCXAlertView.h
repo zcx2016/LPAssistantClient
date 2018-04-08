@@ -1,0 +1,22 @@
+//
+//  ZCXAlertView.h
+//  LPAssistantClient
+//
+//  Created by 张晨曦 on 2018/4/8.
+//  Copyright © 2018年 张晨曦. All rights reserved.
+//
+
+#import <UIKit/UIKit.h>
+
+@interface ZCXAlertView : UIView
+
+
+@property (weak, nonatomic) IBOutlet UITextField *phoneNumTF;
+@property (weak, nonatomic) IBOutlet UITextField *verifyCodeTF;
+
+@property (weak, nonatomic) IBOutlet UIButton *sendCodeBtn;
+
+@property (weak, nonatomic) IBOutlet UIButton *ignoreBtn;
+@property (weak, nonatomic) IBOutlet UIButton *sureBtn;
+
+@end

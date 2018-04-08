@@ -23,17 +23,26 @@
     [self.brandBtn setTitleColor:ZCXColor(189, 169, 104)  forState:UIControlStateNormal];
     [self.categoryBtn setTitleColor:[UIColor darkGrayColor] forState:UIControlStateNormal];
     [self.discountBtn setTitleColor:[UIColor darkGrayColor] forState:UIControlStateNormal];
+    if ([self.delegate respondsToSelector:@selector(filterBtnClick:)]) {
+        [self.delegate filterBtnClick:btn];
+    }
 }
 
 - (void)categoryBtnClick:(UIButton *)btn{
     [self.brandBtn setTitleColor:[UIColor darkGrayColor]  forState:UIControlStateNormal];
     [self.categoryBtn setTitleColor:ZCXColor(189, 169, 104) forState:UIControlStateNormal];
     [self.discountBtn setTitleColor:[UIColor darkGrayColor] forState:UIControlStateNormal];
+    if ([self.delegate respondsToSelector:@selector(filterBtnClick:)]) {
+        [self.delegate filterBtnClick:btn];
+    }
 }
 
 - (void)discountBtnClick:(UIButton *)btn{
     [self.brandBtn setTitleColor:[UIColor darkGrayColor]  forState:UIControlStateNormal];
     [self.categoryBtn setTitleColor:[UIColor darkGrayColor] forState:UIControlStateNormal];
     [self.discountBtn setTitleColor:ZCXColor(189, 169, 104) forState:UIControlStateNormal];
+    if ([self.delegate respondsToSelector:@selector(filterBtnClick:)]) {
+        [self.delegate filterBtnClick:btn];
+    }
 }
 @end

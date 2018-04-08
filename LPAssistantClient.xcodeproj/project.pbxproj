@@ -17,6 +17,16 @@
 		35441F952074D0A800759621 /* LPAPayStyleActionSheetView.m in Sources */ = {isa = PBXBuildFile; fileRef = 35441F942074D0A800759621 /* LPAPayStyleActionSheetView.m */; };
 		35441F992074D36700759621 /* LPAPickStyleCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 35441F972074D36700759621 /* LPAPickStyleCell.m */; };
 		35441F9A2074D36700759621 /* LPAPickStyleCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 35441F982074D36700759621 /* LPAPickStyleCell.xib */; };
+		35441F9D2079BA0800759621 /* ZCXPullDownFilterView.m in Sources */ = {isa = PBXBuildFile; fileRef = 35441F9C2079BA0800759621 /* ZCXPullDownFilterView.m */; };
+		35441FA12079BA5200759621 /* ZCX_PDF_BrandCategoryCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 35441F9F2079BA5200759621 /* ZCX_PDF_BrandCategoryCell.m */; };
+		35441FA22079BA5200759621 /* ZCX_PDF_BrandCategoryCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 35441FA02079BA5200759621 /* ZCX_PDF_BrandCategoryCell.xib */; };
+		35441FA62079BB0300759621 /* glasses@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 35441FA32079BB0200759621 /* glasses@2x.png */; };
+		35441FA72079BB0300759621 /* glasses@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 35441FA42079BB0200759621 /* glasses@3x.png */; };
+		35441FA82079BB0300759621 /* glasses.png in Resources */ = {isa = PBXBuildFile; fileRef = 35441FA52079BB0300759621 /* glasses.png */; };
+		35441FAC2079BBAE00759621 /* ZCX_PDF_DiscoutCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 35441FAA2079BBAE00759621 /* ZCX_PDF_DiscoutCell.m */; };
+		35441FAD2079BBAE00759621 /* ZCX_PDF_DiscoutCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 35441FAB2079BBAE00759621 /* ZCX_PDF_DiscoutCell.xib */; };
+		35441FB02079D57500759621 /* ZCXAlertView.m in Sources */ = {isa = PBXBuildFile; fileRef = 35441FAF2079D57500759621 /* ZCXAlertView.m */; };
+		35441FB22079D58400759621 /* ZCXAlertView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 35441FB12079D58400759621 /* ZCXAlertView.xib */; };
 		354D62CE2071F19B00534D1E /* LPAMyBillingVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 354D62CD2071F19B00534D1E /* LPAMyBillingVC.m */; };
 		354D62D1207203D800534D1E /* LPAMyCMRHeadView.m in Sources */ = {isa = PBXBuildFile; fileRef = 354D62D0207203D800534D1E /* LPAMyCMRHeadView.m */; };
 		354D62D3207203EB00534D1E /* LPAMyCMRHeadView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 354D62D2207203EB00534D1E /* LPAMyCMRHeadView.xib */; };
@@ -313,6 +323,20 @@
 		35441F962074D36700759621 /* LPAPickStyleCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LPAPickStyleCell.h; sourceTree = "<group>"; };
 		35441F972074D36700759621 /* LPAPickStyleCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LPAPickStyleCell.m; sourceTree = "<group>"; };
 		35441F982074D36700759621 /* LPAPickStyleCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LPAPickStyleCell.xib; sourceTree = "<group>"; };
+		35441F9B2079BA0800759621 /* ZCXPullDownFilterView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZCXPullDownFilterView.h; sourceTree = "<group>"; };
+		35441F9C2079BA0800759621 /* ZCXPullDownFilterView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZCXPullDownFilterView.m; sourceTree = "<group>"; };
+		35441F9E2079BA5200759621 /* ZCX_PDF_BrandCategoryCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZCX_PDF_BrandCategoryCell.h; sourceTree = "<group>"; };
+		35441F9F2079BA5200759621 /* ZCX_PDF_BrandCategoryCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZCX_PDF_BrandCategoryCell.m; sourceTree = "<group>"; };
+		35441FA02079BA5200759621 /* ZCX_PDF_BrandCategoryCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ZCX_PDF_BrandCategoryCell.xib; sourceTree = "<group>"; };
+		35441FA32079BB0200759621 /* glasses@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "glasses@2x.png"; sourceTree = "<group>"; };
+		35441FA42079BB0200759621 /* glasses@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "glasses@3x.png"; sourceTree = "<group>"; };
+		35441FA52079BB0300759621 /* glasses.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = glasses.png; sourceTree = "<group>"; };
+		35441FA92079BBAE00759621 /* ZCX_PDF_DiscoutCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZCX_PDF_DiscoutCell.h; sourceTree = "<group>"; };
+		35441FAA2079BBAE00759621 /* ZCX_PDF_DiscoutCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZCX_PDF_DiscoutCell.m; sourceTree = "<group>"; };
+		35441FAB2079BBAE00759621 /* ZCX_PDF_DiscoutCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ZCX_PDF_DiscoutCell.xib; sourceTree = "<group>"; };
+		35441FAE2079D57500759621 /* ZCXAlertView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZCXAlertView.h; sourceTree = "<group>"; };
+		35441FAF2079D57500759621 /* ZCXAlertView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZCXAlertView.m; sourceTree = "<group>"; };
+		35441FB12079D58400759621 /* ZCXAlertView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ZCXAlertView.xib; sourceTree = "<group>"; };
 		354D62CC2071F19B00534D1E /* LPAMyBillingVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LPAMyBillingVC.h; sourceTree = "<group>"; };
 		354D62CD2071F19B00534D1E /* LPAMyBillingVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LPAMyBillingVC.m; sourceTree = "<group>"; };
 		354D62CF207203D800534D1E /* LPAMyCMRHeadView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LPAMyCMRHeadView.h; sourceTree = "<group>"; };
@@ -892,6 +916,9 @@
 		3572FCD6206CC65A006836ED /* Commodity */ = {
 			isa = PBXGroup;
 			children = (
+				35441FA52079BB0300759621 /* glasses.png */,
+				35441FA32079BB0200759621 /* glasses@2x.png */,
+				35441FA42079BB0200759621 /* glasses@3x.png */,
 				354D637C2073985B00534D1E /* bankCardIcon.png */,
 				354D637D2073985B00534D1E /* bankCardIcon@2x.png */,
 				354D63812073985C00534D1E /* bankCardIcon@3x.png */,
@@ -1157,6 +1184,17 @@
 				35441F8E2074A51800759621 /* ZCXActionSheetTBCell.h */,
 				35441F8F2074A51800759621 /* ZCXActionSheetTBCell.m */,
 				35441F902074A51800759621 /* ZCXActionSheetTBCell.xib */,
+				35441F9B2079BA0800759621 /* ZCXPullDownFilterView.h */,
+				35441F9C2079BA0800759621 /* ZCXPullDownFilterView.m */,
+				35441F9E2079BA5200759621 /* ZCX_PDF_BrandCategoryCell.h */,
+				35441F9F2079BA5200759621 /* ZCX_PDF_BrandCategoryCell.m */,
+				35441FA02079BA5200759621 /* ZCX_PDF_BrandCategoryCell.xib */,
+				35441FA92079BBAE00759621 /* ZCX_PDF_DiscoutCell.h */,
+				35441FAA2079BBAE00759621 /* ZCX_PDF_DiscoutCell.m */,
+				35441FAB2079BBAE00759621 /* ZCX_PDF_DiscoutCell.xib */,
+				35441FAE2079D57500759621 /* ZCXAlertView.h */,
+				35441FAF2079D57500759621 /* ZCXAlertView.m */,
+				35441FB12079D58400759621 /* ZCXAlertView.xib */,
 			);
 			path = Tools;
 			sourceTree = "<group>";
@@ -1736,6 +1774,7 @@
 				35B04F5D206BA580002D563F /* logo.png in Resources */,
 				35B04EB5206B6F1A002D563F /* main_home_highlight@3x.png in Resources */,
 				35B04F23206B86CF002D563F /* redBtnBg@3x.png in Resources */,
+				35441FB22079D58400759621 /* ZCXAlertView.xib in Resources */,
 				3572FD41206DD2E9006836ED /* LPARemindCell.xib in Resources */,
 				35B04F26206B86CF002D563F /* search@2x.png in Resources */,
 				354D636F2073847E00534D1E /* LPAPayTopCell.xib in Resources */,
@@ -1777,6 +1816,7 @@
 				35B04EF4206B7CB8002D563F /* rightArrow@2x.png in Resources */,
 				354D63302073460400534D1E /* LPA_LogisticsTopCell.xib in Resources */,
 				35B04F2E206B8A6A002D563F /* LPACommonSearchView.xib in Resources */,
+				35441FA82079BB0300759621 /* glasses.png in Resources */,
 				3572FCF3206CCC43006836ED /* extern.png in Resources */,
 				35B04F50206BA580002D563F /* pwd.png in Resources */,
 				35B04F52206BA580002D563F /* pwd@3x.png in Resources */,
@@ -1796,6 +1836,7 @@
 				3572FCC7206CC071006836ED /* main_my_highlight@3x.png in Resources */,
 				35B04F56206BA580002D563F /* account@2x.png in Resources */,
 				354D635A2073717600534D1E /* lowPrice@2x.png in Resources */,
+				35441FA22079BA5200759621 /* ZCX_PDF_BrandCategoryCell.xib in Resources */,
 				354D63132073187600534D1E /* order_sel.png in Resources */,
 				35B04EBA206B6F1A002D563F /* main_reception_highlight@3x.png in Resources */,
 				35B04F1E206B86CF002D563F /* headImg@3x.png in Resources */,
@@ -1810,6 +1851,7 @@
 				35B04EDE206B76CF002D563F /* LPAHomeCollectionCell.xib in Resources */,
 				35B04ED3206B6F2C002D563F /* bannerHome.png in Resources */,
 				354D63592073717600534D1E /* lowPrice.png in Resources */,
+				35441FAD2079BBAE00759621 /* ZCX_PDF_DiscoutCell.xib in Resources */,
 				3572FCE6206CCA14006836ED /* LPPNavSearchView.xib in Resources */,
 				3572FCB7206CBFB1006836ED /* bindVip@2x.png in Resources */,
 				35B04ECC206B6F2C002D563F /* bigVip@3x.png in Resources */,
@@ -1819,6 +1861,7 @@
 				35B04F5F206BA580002D563F /* loginBg@3x.png in Resources */,
 				354D6354207369F900534D1E /* LPPCDCommodityStyleCell.xib in Resources */,
 				35B04EFE206B7CD2002D563F /* light_open@2x.png in Resources */,
+				35441FA62079BB0300759621 /* glasses@2x.png in Resources */,
 				3572FCF1206CCC43006836ED /* extern@2x.png in Resources */,
 				354D63902073985D00534D1E /* cash@3x.png in Resources */,
 				35B04F3C206BA2FD002D563F /* LPALoginVC.xib in Resources */,
@@ -1884,6 +1927,7 @@
 				3572FCA8206CBF71006836ED /* selected@2x.png in Resources */,
 				35B04ED1206B6F2C002D563F /* bigScanNew.png in Resources */,
 				35B04F06206B7D15002D563F /* LPPCommonTBCell.xib in Resources */,
+				35441FA72079BB0300759621 /* glasses@3x.png in Resources */,
 				354D634E207369F900534D1E /* LPPCDComparePriceCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -1946,6 +1990,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				35441FA12079BA5200759621 /* ZCX_PDF_BrandCategoryCell.m in Sources */,
 				35B04E99206B43BC002D563F /* LPAMyVC.m in Sources */,
 				354D633C2073543300534D1E /* LPACompletePayStyleCell.m in Sources */,
 				3572FD5E206E2079006836ED /* LPAMyKPIVC.m in Sources */,
@@ -1969,6 +2014,7 @@
 				3572FD86206E3CAC006836ED /* LPABindVipResultCell.m in Sources */,
 				3590DA18206B39EE00504520 /* ViewController.m in Sources */,
 				354D631F20732CB400534D1E /* LPA_CRM_AllOrderVC.m in Sources */,
+				35441FAC2079BBAE00759621 /* ZCX_PDF_DiscoutCell.m in Sources */,
 				354D6353207369F900534D1E /* LPPCDCardCollectionCell.m in Sources */,
 				3572FD34206CFD92006836ED /* LPAOrderDetailVC.m in Sources */,
 				35B04F3B206BA2FD002D563F /* LPALoginVC.m in Sources */,
@@ -2020,11 +2066,13 @@
 				35B04ED9206B7605002D563F /* ATCarouselView.m in Sources */,
 				3572FD74206E28C7006836ED /* LPATimeSelectView.m in Sources */,
 				354D62D1207203D800534D1E /* LPAMyCMRHeadView.m in Sources */,
+				35441FB02079D57500759621 /* ZCXAlertView.m in Sources */,
 				3572FCD5206CC38D006836ED /* LPPCommodityCell.m in Sources */,
 				3572FD0E206CF089006836ED /* LPACommonSearchCell.m in Sources */,
 				3572FC9E206CBC2B006836ED /* LPAFindCommodityVC.m in Sources */,
 				3572FD61206E208E006836ED /* LPAMyCMRVC.m in Sources */,
 				35441F952074D0A800759621 /* LPAPayStyleActionSheetView.m in Sources */,
+				35441F9D2079BA0800759621 /* ZCXPullDownFilterView.m in Sources */,
 				3590DA23206B39EE00504520 /* main.m in Sources */,
 				354D62D62072089000534D1E /* LPA_CRM_VipDetailVC.m in Sources */,
 				354D63092073168900534D1E /* LPA_CRM_GoodsView.m in Sources */,
