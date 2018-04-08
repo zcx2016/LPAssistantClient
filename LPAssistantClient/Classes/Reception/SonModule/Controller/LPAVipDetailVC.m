@@ -23,6 +23,8 @@
 
 @property (nonatomic, weak) UITextField *tempTF;
 
+@property (nonatomic, strong) SCTimePickerView *scTimePickerView;
+
 @end
 
 @implementation LPAVipDetailVC
@@ -111,7 +113,10 @@
                 cell.titleLabel.text = @"生日";
                 cell.inputTF.placeholder = @"1988年8月8日";
                 self.tempTF = cell.inputTF;
-                cell.inputTF.inputView = [[[NSBundle mainBundle] loadNibNamed:@"SCTimePickerView" owner:self options:nil] firstObject];
+                self.scTimePickerView = [[[NSBundle mainBundle] loadNibNamed:@"SCTimePickerView" owner:self options:nil] firstObject];
+                self.scTimePickerView.identifierStr = @"会员生日";
+                cell.inputTF.inputView = self.scTimePickerView;
+          
             }else if (indexPath.row == 2){
                 cell.titleLabel.text = @"其他";
                 cell.inputTF.placeholder = @"输入其他信息";

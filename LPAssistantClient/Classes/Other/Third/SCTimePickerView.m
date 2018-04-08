@@ -29,16 +29,47 @@
 
 - (void)cancelBtnClick{
     //取消时，界面也要下移
-//    [[NSNotificationCenter defaultCenter] postNotificationName:@"viewMoveDown" object:nil];
     [self removeFromSuperview];
 }
 
 - (void)doneBtnClick{
+    NSLog(@"self.identifierSt---%@",self.identifierStr);
     //  将新的日期传过去
     if (self.timeString != nil) {
-        [[NSNotificationCenter defaultCenter] postNotificationName:@"vipBirthday" object:nil userInfo:@{@"time" : self.timeString}];
-//    }else{
-//        [[NSNotificationCenter defaultCenter] postNotificationName:@"viewMoveDown" object:nil];
+        if ([self.identifierStr isEqualToString:@"会员生日"]) {
+            [[NSNotificationCenter defaultCenter] postNotificationName:@"vipBirthday" object:nil userInfo:@{@"time" : self.timeString}];
+        }
+        if ([self.identifierStr isEqualToString:@"门店排名开始时间"]) {
+            [[NSNotificationCenter defaultCenter] postNotificationName:@"storeRankStart" object:nil userInfo:@{@"time" : self.timeString}];
+        }
+        if ([self.identifierStr isEqualToString:@"门店排名结束时间"]) {
+            [[NSNotificationCenter defaultCenter] postNotificationName:@"storeRankEnd" object:nil userInfo:@{@"time" : self.timeString}];
+        }
+        if ([self.identifierStr isEqualToString:@"我的门店开始时间"]) {
+            [[NSNotificationCenter defaultCenter] postNotificationName:@"myStoreStart" object:nil userInfo:@{@"time" : self.timeString}];
+        }
+        if ([self.identifierStr isEqualToString:@"我的门店结束时间"]) {
+            [[NSNotificationCenter defaultCenter] postNotificationName:@"myStoreEnd" object:nil userInfo:@{@"time" : self.timeString}];
+        }
+        if ([self.identifierStr isEqualToString:@"我的KPI开始时间"]) {
+            [[NSNotificationCenter defaultCenter] postNotificationName:@"myKPIStart" object:nil userInfo:@{@"time" : self.timeString}];
+        }
+        if ([self.identifierStr isEqualToString:@"我的KPI结束时间"]) {
+            [[NSNotificationCenter defaultCenter] postNotificationName:@"myKPIEnd" object:nil userInfo:@{@"time" : self.timeString}];
+        }
+        if ([self.identifierStr isEqualToString:@"消费明细开始时间"]) {
+            [[NSNotificationCenter defaultCenter] postNotificationName:@"spendDetailStart" object:nil userInfo:@{@"time" : self.timeString}];
+        }
+        if ([self.identifierStr isEqualToString:@"消费明细结束时间"]) {
+            [[NSNotificationCenter defaultCenter] postNotificationName:@"spendDetailEnd" object:nil userInfo:@{@"time" : self.timeString}];
+        }
+        if ([self.identifierStr isEqualToString:@"订单明细开始时间"]) {
+            [[NSNotificationCenter defaultCenter] postNotificationName:@"orderDetailStart" object:nil userInfo:@{@"time" : self.timeString}];
+        }
+        if ([self.identifierStr isEqualToString:@"订单明细结束时间"]) {
+            [[NSNotificationCenter defaultCenter] postNotificationName:@"orderDetailEnd" object:nil userInfo:@{@"time" : self.timeString}];
+        }
+
     }
     [self removeFromSuperview];
 }

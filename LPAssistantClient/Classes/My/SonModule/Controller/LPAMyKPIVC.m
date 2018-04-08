@@ -10,6 +10,7 @@
 #import "LPAMyKPICell.h"
 #import "LPAMyKPIHeadView.h"
 #import "LPATimeSelectView.h"
+#import "SCTimePickerView.h"
 
 @interface LPAMyKPIVC ()<UITableViewDataSource,UITableViewDelegate>
 
@@ -20,6 +21,10 @@
 @property (nonatomic, assign) NSInteger tag;
 
 @property (nonatomic, strong) LPATimeSelectView *timeSelectView;
+
+@property (nonatomic, strong) SCTimePickerView *startTimePickerView;
+
+@property (nonatomic, strong) SCTimePickerView *endTimePickerView;
 
 @end
 
@@ -46,13 +51,20 @@
     [self rightTB];
     
     //生日通知
-    [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(vipBirthdayNoti:) name:@"vipBirthday" object:nil];
+    [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(myKPIStartNoti:) name:@"myKPIStart" object:nil];
+    [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(myKPIEndNoti:) name:@"myKPIEnd" object:nil];
 }
 
-- (void)vipBirthdayNoti:(NSNotification *)noti{
+- (void)myKPIStartNoti:(NSNotification *)noti{
     NSDictionary *timeDict = [noti userInfo];
     _timeSelectView.startTF.text = [timeDict objectForKey:@"time"];
     [_timeSelectView.startTF resignFirstResponder];
+}
+
+- (void)myKPIEndNoti:(NSNotification *)noti{
+    NSDictionary *timeDict = [noti userInfo];
+    _timeSelectView.endTF.text = [timeDict objectForKey:@"time"];
+    [_timeSelectView.endTF resignFirstResponder];
 }
 
 - (void)setHeadTimePickView{
@@ -63,8 +75,14 @@
         make.top.equalTo(self.view).with.offset(64);
         make.height.equalTo(@60);
     }];
-    _timeSelectView.startTF.inputView = [[[NSBundle mainBundle] loadNibNamed:@"SCTimePickerView" owner:self options:nil] firstObject];
-    _timeSelectView.endTF.inputView = [[[NSBundle mainBundle] loadNibNamed:@"SCTimePickerView" owner:self options:nil] firstObject];
+
+    self.startTimePickerView = [[[NSBundle mainBundle] loadNibNamed:@"SCTimePickerView" owner:self options:nil] firstObject];
+    self.startTimePickerView.identifierStr = @"我的KPI开始时间";
+    _timeSelectView.startTF.inputView = self.startTimePickerView;
+    
+    self.endTimePickerView = [[[NSBundle mainBundle] loadNibNamed:@"SCTimePickerView" owner:self options:nil] firstObject];
+    self.endTimePickerView.identifierStr = @"我的KPI结束时间";
+    _timeSelectView.endTF.inputView = self.endTimePickerView;
 }
 
 //创建导航栏分栏控件

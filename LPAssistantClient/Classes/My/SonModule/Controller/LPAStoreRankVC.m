@@ -11,6 +11,7 @@
 #import "LPAStoreRankCell.h"
 #import "LPAStoreRankBottomView.h"
 #import "LPAMyStoreVC.h"
+#import "SCTimePickerView.h"
 
 @interface LPAStoreRankVC ()<UITableViewDelegate,UITableViewDataSource>
 
@@ -19,6 +20,10 @@
 @property (nonatomic, strong) LPATimeSelectView *timeSelectView;
 
 @property (nonatomic, strong) LPAStoreRankBottomView *bottomView;
+
+@property (nonatomic, strong) SCTimePickerView *startTimePickerView;
+
+@property (nonatomic, strong) SCTimePickerView *endTimePickerView;
 
 @end
 
@@ -41,14 +46,21 @@
     [self tableView];
     [self setBottomView];
     
-    //生日通知
-    [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(vipBirthdayNoti:) name:@"vipBirthday" object:nil];
+    //门店排名通知
+    [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(storeRankStartNoti:) name:@"storeRankStart" object:nil];
+    [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(storeRankEndNoti:) name:@"storeRankEnd" object:nil];
 }
 
-- (void)vipBirthdayNoti:(NSNotification *)noti{
+- (void)storeRankStartNoti:(NSNotification *)noti{
     NSDictionary *timeDict = [noti userInfo];
     _timeSelectView.startTF.text = [timeDict objectForKey:@"time"];
     [_timeSelectView.startTF resignFirstResponder];
+}
+
+- (void)storeRankEndNoti:(NSNotification *)noti{
+    NSDictionary *timeDict = [noti userInfo];
+    _timeSelectView.endTF.text = [timeDict objectForKey:@"time"];
+    [_timeSelectView.endTF resignFirstResponder];
 }
 
 - (void)setHeadTimePickView{
@@ -59,8 +71,14 @@
         make.top.equalTo(self.view).with.offset(0);
         make.height.equalTo(@60);
     }];
-    _timeSelectView.startTF.inputView = [[[NSBundle mainBundle] loadNibNamed:@"SCTimePickerView" owner:self options:nil] firstObject];
-    _timeSelectView.endTF.inputView = [[[NSBundle mainBundle] loadNibNamed:@"SCTimePickerView" owner:self options:nil] firstObject];
+
+    self.startTimePickerView = [[[NSBundle mainBundle] loadNibNamed:@"SCTimePickerView" owner:self options:nil] firstObject];
+    self.startTimePickerView.identifierStr = @"门店排名开始时间";
+    _timeSelectView.startTF.inputView = self.startTimePickerView;
+    
+    self.endTimePickerView = [[[NSBundle mainBundle] loadNibNamed:@"SCTimePickerView" owner:self options:nil] firstObject];
+    self.endTimePickerView.identifierStr = @"门店排名结束时间";
+    _timeSelectView.endTF.inputView = self.endTimePickerView;
 }
 
 - (void)setBottomView{

@@ -12,9 +12,16 @@
 #import "LPALoginVC.h"
 #import "LPAChangePwdVC.h"
 
-@interface LPAMyInfoVC ()<UITableViewDelegate,UITableViewDataSource>
+#import <AVFoundation/AVFoundation.h>
+#import <AssetsLibrary/AssetsLibrary.h>
+
+@interface LPAMyInfoVC ()<UITableViewDelegate,UITableViewDataSource,UIAlertViewDelegate,UIImagePickerControllerDelegate,UINavigationControllerDelegate>
 
 @property (nonatomic, strong) UITableView *tableView;
+
+@property (nonatomic, strong) UIImagePickerController *imagePickerController;
+
+@property (nonatomic, weak) LPAReceptionCell *weak_headCell;
 
 @end
 
@@ -27,6 +34,12 @@
     
     [self tableView];
     [self setBottomBtn];
+    
+    //照片选择器
+    self.imagePickerController = [[UIImagePickerController alloc] init];
+    self.imagePickerController.delegate = self;
+    self.imagePickerController.modalTransitionStyle = UIModalTransitionStyleFlipHorizontal;
+    self.imagePickerController.allowsEditing = YES;
 }
 
 #pragma mark - 设置 底部按钮
@@ -44,11 +57,7 @@
 }
 
 - (void)quitLogin:(UIButton *)btn{
-    NSLog(@"33");
     LPALoginVC *vc = [LPALoginVC new];
-//    UINavigationController *pushNavVc = [[UINavigationController alloc] initWithRootViewController:vc];
-//    pushNavVc.navigationBar.barTintColor = [UIColor whiteColor];
-//    [self presentViewController:pushNavVc animated:YES completion:nil] ;
     [self presentViewController:vc animated:YES completion:nil] ;
 }
 
@@ -68,6 +77,10 @@
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath{
     if(indexPath.section == 0 && indexPath.row == 0){
         LPAReceptionCell *cell= [tableView dequeueReusableCellWithIdentifier:@"LPAReceptionCell" forIndexPath:indexPath];
+        self.weak_headCell = cell;
+        cell.headImgView.userInteractionEnabled = YES;
+        [cell.headImgView addGestureRecognizer:[[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(tapImgEvents:)]];
+        cell.indicatorBtn.hidden = YES;
         cell.nameLabel.hidden = YES;
         cell.nickNameLabel.text = @"Stephen";
         cell.moneyLabel.text = @"金牌店员";
@@ -101,7 +114,7 @@
                     cell.diyDetailLabel.text = @"金牌店员";
                 }else{
                     cell.diyTitleLabel.text = @"姓名";
-                    cell.diyDetailLabel.text = @"彼得帕克";
+                    cell.diyDetailLabel.text = @"Stephen";
                 }
             }
         }
@@ -154,6 +167,89 @@
         [self.view addSubview:_tableView];
     }
     return _tableView;
+}
+
+#pragma mark - 更换头像
+- (void)tapImgEvents:(UITapGestureRecognizer *)recognize{
+    UIAlertController *alert = [UIAlertController alertControllerWithTitle:@"修改头像" message:nil preferredStyle:UIAlertControllerStyleAlert];
+    [alert addAction:[UIAlertAction actionWithTitle:@"选择本地照片" style:UIAlertActionStyleDefault handler:^(UIAlertAction * _Nonnull action) {
+        //点击调用相册
+        self.imagePickerController.sourceType = UIImagePickerControllerSourceTypePhotoLibrary;
+        self.imagePickerController.allowsEditing = YES;
+        //相册权限
+        ALAuthorizationStatus authStatus = [ALAssetsLibrary authorizationStatus];
+        if (authStatus == ALAuthorizationStatusRestricted || authStatus ==ALAuthorizationStatusDenied){
+            //无权限 引导去开启
+            NSURL *url = [NSURL URLWithString:UIApplicationOpenSettingsURLString];
+            if ([[UIApplication sharedApplication] canOpenURL:url]) {
+                [[UIApplication sharedApplication] openURL:url];
+            }
+        }
+        [self  presentViewController:self.imagePickerController animated:YES completion:nil];
+    }]];
+    
+    //判断设备是否有具有摄像头(相机)功能
+    if ([UIImagePickerController isSourceTypeAvailable:UIImagePickerControllerSourceTypeCamera])
+    {
+        [alert addAction:[UIAlertAction actionWithTitle:@"拍照" style:UIAlertActionStyleDefault handler:^(UIAlertAction * _Nonnull action) {
+            //点击调用照相机
+            self.imagePickerController.sourceType = UIImagePickerControllerSourceTypeCamera;
+            self.imagePickerController.allowsEditing = YES;
+            //相机权限
+            AVAuthorizationStatus authStatus = [AVCaptureDevice authorizationStatusForMediaType:AVMediaTypeVideo];
+            if (authStatus ==AVAuthorizationStatusRestricted || authStatus == AVAuthorizationStatusDenied ){
+                // 无权限 引导去开启
+                NSURL *url = [NSURL URLWithString:UIApplicationOpenSettingsURLString];
+                if ([[UIApplication sharedApplication]canOpenURL:url]) {
+                    [[UIApplication sharedApplication]openURL:url];
+                }
+            }
+            [self presentViewController:self.imagePickerController animated:YES completion:nil];
+        }]];
+    }
+    [alert addAction:[UIAlertAction actionWithTitle:@"取消" style:UIAlertActionStyleDestructive handler:^(UIAlertAction * _Nonnull action) {
+        
+    }]];
+    [self  presentViewController:alert animated:YES completion:nil];
+}
+
+
+#pragma mark - 相机／相册 代理
+- (void)imagePickerController:(UIImagePickerController *)picker didFinishPickingMediaWithInfo:(NSDictionary<NSString *,id> *)info{
+    //通过key值获取到图片
+    UIImage * image =info[UIImagePickerControllerOriginalImage];
+    //转换成jpg格式，并压缩，0.5比例最好
+    NSData *imageData = UIImageJPEGRepresentation(image, 0.5);
+    
+    //    NSString *imageName = [NSString stringWithFormat:@"%@.jpg",[self getCurrentTime]];
+    //
+    //    //将图片上传到服务器
+    //    NSDictionary *dict = @{@"registerId" : self.registerId , @"employeeId" : self.employeeId};
+    //
+    //    [[LCHTTPSessionManager sharedInstance] upload:[kUrlReqHead stringByAppendingString:@"/app/users/updatePhoto.do"] parameters:dict name:@"imgarray0" fileName:imageName data:imageData completion:^(id  _Nonnull result, BOOL isSuccess) {
+    //
+    //        //存头像
+    //        [UserDefautsLhm setObject:result[@"data"] forKey:KeyUserHeadImg];
+    //    }];
+    //
+    //    //判断数据源类型
+    if (picker.sourceType == UIImagePickerControllerSourceTypePhotoLibrary) {    //相册
+        self.weak_headCell.headImgView.image = image;
+        
+        [self  dismissViewControllerAnimated:YES completion:nil];
+    }
+    
+    if (picker.sourceType == UIImagePickerControllerSourceTypeCamera) {   //相机
+        
+        UIImageWriteToSavedPhotosAlbum(image, nil, nil, nil);
+        self.weak_headCell.headImgView.image = image;
+        [self  dismissViewControllerAnimated:YES completion:nil];
+    }
+}
+
+//当用户取消选取时调用
+- (void)imagePickerControllerDidCancel:(UIImagePickerController *)picker{
+    [self dismissViewControllerAnimated:YES completion:nil];
 }
 
 @end

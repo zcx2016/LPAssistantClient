@@ -24,24 +24,24 @@
                     </constraints>
                 </view>
                 <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="2017/11/17" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="xTb-Cv-9KO">
-                    <rect key="frame" x="15" y="10" width="100" height="30"/>
+                    <rect key="frame" x="15" y="10" width="110" height="30"/>
                     <constraints>
-                        <constraint firstAttribute="width" constant="100" id="Bik-ea-TiX"/>
+                        <constraint firstAttribute="width" constant="110" id="Bik-ea-TiX"/>
                     </constraints>
                     <nil key="textColor"/>
                     <fontDescription key="fontDescription" type="system" pointSize="15"/>
                     <textInputTraits key="textInputTraits"/>
                 </textField>
                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="至" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1FD-dL-ReI">
-                    <rect key="frame" x="125" y="16" width="15.5" height="18"/>
+                    <rect key="frame" x="135" y="16" width="15.5" height="18"/>
                     <fontDescription key="fontDescription" type="system" pointSize="15"/>
                     <color key="textColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     <nil key="highlightedColor"/>
                 </label>
                 <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="2017/12/17" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="EcB-hf-0lR">
-                    <rect key="frame" x="150" y="10" width="100" height="30"/>
+                    <rect key="frame" x="160" y="10" width="110" height="30"/>
                     <constraints>
-                        <constraint firstAttribute="width" constant="100" id="woq-mg-Eyh"/>
+                        <constraint firstAttribute="width" constant="110" id="woq-mg-Eyh"/>
                     </constraints>
                     <nil key="textColor"/>
                     <fontDescription key="fontDescription" type="system" pointSize="15"/>

@@ -16,4 +16,6 @@
 
 @property (weak, nonatomic) IBOutlet UIDatePicker *datePickerView;
 
+@property (nonatomic, copy) NSString  *identifierStr;
+
 @end

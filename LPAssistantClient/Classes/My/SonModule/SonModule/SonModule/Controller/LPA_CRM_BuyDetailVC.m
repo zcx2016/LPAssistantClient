@@ -9,12 +9,17 @@
 #import "LPA_CRM_BuyDetailVC.h"
 #import "LPA_CRM_BuyDetailCell.h"
 #import "LPATimeSelectView.h"
+#import "SCTimePickerView.h"
 
 @interface LPA_CRM_BuyDetailVC ()<UITableViewDelegate,UITableViewDataSource>
 
 @property (nonatomic, strong) UITableView *tableView;
 
 @property (nonatomic, strong) LPATimeSelectView *timeSelectView;
+
+@property (nonatomic, strong) SCTimePickerView *startTimePickerView;
+
+@property (nonatomic, strong) SCTimePickerView *endTimePickerView;
 
 @end
 
@@ -28,6 +33,22 @@
     [self tableView];
     
     [self timeSelectView];
+    
+    //消费明细时间通知
+    [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(spendDetailStartNoti:) name:@"spendDetailStart" object:nil];
+    [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(spendDetailEndNoti:) name:@"spendDetailEnd" object:nil];
+}
+
+- (void)spendDetailStartNoti:(NSNotification *)noti{
+    NSDictionary *timeDict = [noti userInfo];
+    _timeSelectView.startTF.text = [timeDict objectForKey:@"time"];
+    [_timeSelectView.startTF resignFirstResponder];
+}
+
+- (void)spendDetailEndNoti:(NSNotification *)noti{
+    NSDictionary *timeDict = [noti userInfo];
+    _timeSelectView.endTF.text = [timeDict objectForKey:@"time"];
+    [_timeSelectView.endTF resignFirstResponder];
 }
 
 - (LPATimeSelectView *)timeSelectView{
@@ -35,6 +56,14 @@
         _timeSelectView = [[NSBundle mainBundle] loadNibNamed:@"LPATimeSelectView" owner:nil options:nil].lastObject;
         _timeSelectView.frame = CGRectMake(0, 0, kScreenWidth, 124);
         [self.view addSubview:_timeSelectView];
+        
+        self.startTimePickerView = [[[NSBundle mainBundle] loadNibNamed:@"SCTimePickerView" owner:self options:nil] firstObject];
+        self.startTimePickerView.identifierStr = @"消费明细开始时间";
+        _timeSelectView.startTF.inputView = self.startTimePickerView;
+        
+        self.endTimePickerView = [[[NSBundle mainBundle] loadNibNamed:@"SCTimePickerView" owner:self options:nil] firstObject];
+        self.endTimePickerView.identifierStr = @"消费明细结束时间";
+        _timeSelectView.endTF.inputView = self.endTimePickerView;
     }
     return _timeSelectView;
 }
