@@ -3,8 +3,9 @@ target 'LPAssistantClient' do
     
 pod "BlocksKit"
 
+
+
 pod "Masonry"
 
-pod "ViewDeck"
 end
 

@@ -14,6 +14,7 @@
 //跳转
 #import "LPAGoodsDetailVC.h"
 #import "ZCXPullDownFilterView.h"
+#import <ViewDeck/ViewDeck.h>
 
 @interface LPAFindCommodityVC ()<UICollectionViewDelegate,UICollectionViewDataSource,LPAFCHeadPickerViewDelegate>
 
@@ -72,7 +73,8 @@
 
 #pragma mark - 弹出右边筛选
 - (void)externEvents:(UIButton *)btn{
-//    [self.viewDeckController openSide:IIViewDeckSideRight animated:YES];
+
+    [self.viewDeckController openSide:IIViewDeckSideRight animated:YES];
 }
 
 - (LPAFCHeadPickerView *)headPickerView{
