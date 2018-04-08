@@ -47,6 +47,8 @@
     [self setBottomBtn];
     
     [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(hideViewThenPushVcNoti:) name:@"hideViewThenPushVc" object:nil];
+    
+    [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(pushDiscountPickVcNoti:) name:@"pushDiscountPickVc" object:nil];
 }
 
 - (void)setBottomBtn{
@@ -69,13 +71,20 @@
     [window addSubview:self.sheetView];
 }
 
+
 - (void)hideViewThenPushVcNoti:(NSNotification *)noti{
     [self.sheetView dismiss];
     dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(0.3 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
-//        LPAAddVipVC *vc = [LPAAddVipVC new];
-//        [self.navigationController pushViewController:vc animated:YES];
-            LPAPayOnlineVC *vc = [LPAPayOnlineVC new];
-            [self.navigationController pushViewController:vc animated:YES];
+        LPAAddVipVC *vc = [LPAAddVipVC new];
+        [self.navigationController pushViewController:vc animated:YES];
+    });
+}
+
+- (void)pushDiscountPickVcNoti:(NSNotification *)noti{
+    [self.sheetView dismiss];
+    dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(0.3 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
+        LPAPayOnlineVC *vc = [LPAPayOnlineVC new];
+        [self.navigationController pushViewController:vc animated:YES];
     });
 }
 

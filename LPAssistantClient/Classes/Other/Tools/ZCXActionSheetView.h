@@ -10,6 +10,8 @@
 
 @interface ZCXActionSheetView : UIView
 
+@property (nonatomic, strong) UIButton *sureBtn;
+
 - (instancetype)initWithActionSheet;
 
 - (void)dismiss;

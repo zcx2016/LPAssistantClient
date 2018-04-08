@@ -7,8 +7,9 @@
 //
 
 #import "AppDelegate.h"
+#import "RightSideViewController.h"
 
-@interface AppDelegate ()
+@interface AppDelegate ()<IIViewDeckControllerDelegate>
 
 @end
 
@@ -17,12 +18,27 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     self.window = [[UIWindow alloc] initWithFrame:[UIScreen mainScreen].bounds];
-    //先设置根控制器
+    //设置状态栏字体颜色为黑色
+    [UIApplication sharedApplication].statusBarStyle = UIStatusBarStyleDefault;
+    
+//    //先设置根控制器
     self.window.rootViewController = [NSClassFromString(@"LPAMainTabBarC") new];
     self.window.rootViewController.view.backgroundColor = [UIColor whiteColor];
     [self.window makeKeyAndVisible];
-    //设置状态栏字体颜色为黑色
-    [UIApplication sharedApplication].statusBarStyle = UIStatusBarStyleDefault;
+    
+//    _rootTabbarCtrV = [NSClassFromString(@"LPPMainTabBarC") new];
+//    //右边
+//    RightSideViewController *rightView=[[RightSideViewController alloc]init];
+//    UINavigationController *rightNvi=[[UINavigationController alloc]initWithRootViewController:rightView];
+//
+//    IIViewDeckController *viewDeckController =[[IIViewDeckController alloc]initWithCenterViewController:_rootTabbarCtrV leftViewController:nil rightViewController:rightNvi];
+//    viewDeckController.delegate=self;
+//    //由于项目需要---禁止抽屉的左滑右滑效果！
+////    [viewDeckController.view removeGestureRecognizer:viewDeckController.leftEdgeGestureRecognizer];
+////    [viewDeckController.view removeGestureRecognizer:viewDeckController.rightEdgeGestureRecognizer];
+//
+//    self.window.rootViewController=viewDeckController;
+//    [self.window makeKeyAndVisible];
     
     return YES;
 }

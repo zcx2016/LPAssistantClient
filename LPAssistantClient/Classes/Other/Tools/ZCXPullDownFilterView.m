@@ -38,11 +38,16 @@
         _maskView = [[UIView alloc]initWithFrame:CGRectMake(0, 104, kScreenWidth, kScreenHeight-104)];
         _maskView.backgroundColor = [UIColor blackColor];
         _maskView.userInteractionEnabled = YES;
+//        [_maskView addGestureRecognizer:[[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(tapMaskViewEvents:)]];
         _maskView.alpha = 0.5;
         [self addSubview:_maskView];
     }
     return _maskView;
 }
+
+//- (void)tapMaskViewEvents:(UITapGestureRecognizer *)recognize{
+//    [self dismiss];
+//}
 
 #pragma mark ------ 绘制视图
 - (void)layoutSubviews {
@@ -53,7 +58,7 @@
 //滑动弹出
 - (void)show {
     
-    _collectionView.frame = CGRectMake(0, 104, kScreenWidth, 500);
+    _collectionView.frame = CGRectMake(0, 104, kScreenWidth, 400);
     
     [UIView animateWithDuration:0.5 animations:^{
         
@@ -133,7 +138,7 @@
 - (UICollectionView *)collectionView{
     if (!_collectionView) {
         UICollectionViewFlowLayout *layout = [[UICollectionViewFlowLayout alloc] init];
-        _collectionView = [[UICollectionView alloc] initWithFrame:CGRectMake(0, 104, kScreenWidth, 500) collectionViewLayout:layout];
+        _collectionView = [[UICollectionView alloc] initWithFrame:CGRectMake(0, 104, kScreenWidth, 400) collectionViewLayout:layout];
         _collectionView.delegate = self;
         _collectionView.dataSource = self;
         _collectionView.backgroundColor = [UIColor whiteColor];

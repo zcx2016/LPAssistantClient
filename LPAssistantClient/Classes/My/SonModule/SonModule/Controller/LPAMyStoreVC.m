@@ -23,48 +23,49 @@
 
 @implementation LPAMyStoreVC
 
-- (void)viewWillAppear:(BOOL)animated{
-    [super viewWillAppear:animated];
-    self.navigationController.navigationBar.translucent = YES;
-}
-
-- (void)viewWillDisappear:(BOOL)animated{
-    [super viewWillDisappear:animated];
-    self.navigationController.navigationBar.translucent = NO;
-}
-
 - (void)viewDidLoad {
     [super viewDidLoad];
  
     self.navigationItem.title = @"店员排名";
     self.view.backgroundColor = [UIColor whiteColor];
     
+    [self setHeadTimePickView];
     [self tableView];
-    [self timeSelectView];
-    [self bottomView];
+    [self setBottomView];
+    
+    //生日通知
+    [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(vipBirthdayNoti:) name:@"vipBirthday" object:nil];
 }
 
-- (LPATimeSelectView *)timeSelectView{
-    if (!_timeSelectView) {
-        _timeSelectView = [[NSBundle mainBundle] loadNibNamed:@"LPATimeSelectView" owner:nil options:nil].lastObject;
-        _timeSelectView.frame = CGRectMake(0, 60, kScreenWidth, 64);
-        [self.view addSubview:_timeSelectView];
-    }
-    return _timeSelectView;
+- (void)vipBirthdayNoti:(NSNotification *)noti{
+    NSDictionary *timeDict = [noti userInfo];
+    _timeSelectView.startTF.text = [timeDict objectForKey:@"time"];
+    [_timeSelectView.startTF resignFirstResponder];
 }
 
-- (LPAStoreRankBottomView *)bottomView{
-    if (!_bottomView) {
-        _bottomView = [[NSBundle mainBundle] loadNibNamed:@"LPAStoreRankBottomView" owner:nil options:nil].lastObject;
-        _bottomView.frame = CGRectMake(0, kScreenHeight-60, kScreenWidth, 60);
-        _bottomView.myStoreTitleLabel.text = @"我";
-        _bottomView.myStoreDetailLabel.text = @"周星驰";
-        _bottomView.saleDetailLabel.text = @"￥18000";
-        _bottomView.rankDetailLabel.text = @"第1名";
-        [self.view addSubview:_bottomView];
-        
-    }
-    return _bottomView;
+- (void)setHeadTimePickView{
+    _timeSelectView = [[NSBundle mainBundle] loadNibNamed:@"LPATimeSelectView" owner:nil options:nil].lastObject;
+    [self.view addSubview:_timeSelectView];
+    [_timeSelectView mas_makeConstraints:^(MASConstraintMaker *make) {
+        make.left.right.equalTo(self.view).with.offset(0);
+        make.top.equalTo(self.view).with.offset(0);
+        make.height.equalTo(@60);
+    }];
+    _timeSelectView.startTF.inputView = [[[NSBundle mainBundle] loadNibNamed:@"SCTimePickerView" owner:self options:nil] firstObject];
+    _timeSelectView.endTF.inputView = [[[NSBundle mainBundle] loadNibNamed:@"SCTimePickerView" owner:self options:nil] firstObject];
+}
+
+- (void)setBottomView{
+    _bottomView = [[NSBundle mainBundle] loadNibNamed:@"LPAStoreRankBottomView" owner:nil options:nil].lastObject;
+    [self.view addSubview:_bottomView];
+    [_bottomView mas_makeConstraints:^(MASConstraintMaker *make) {
+        make.left.right.bottom.equalTo(self.view).with.offset(0);
+        make.height.equalTo(@60);
+    }];
+    _bottomView.myStoreTitleLabel.text = @"我";
+    _bottomView.myStoreDetailLabel.text = @"周星驰";
+    _bottomView.saleDetailLabel.text = @"￥18000";
+    _bottomView.rankDetailLabel.text = @"第1名";
 }
 
 - (void)myStore{
@@ -125,15 +126,13 @@
 #pragma mark - 懒加载tableView
 - (UITableView *)tableView{
     if (!_tableView) {
-        _tableView = [[UITableView alloc] initWithFrame:CGRectMake(10, 10+60, kScreenWidth-20, kScreenHeight-10-60 - 64) style:UITableViewStyleGrouped];
+        _tableView = [[UITableView alloc] initWithFrame:CGRectMake(10, 10+60, kScreenWidth-20, kScreenHeight-10-60 - 64-60) style:UITableViewStyleGrouped];
         _tableView.delegate = self;
         _tableView.dataSource = self;
         _tableView.separatorStyle = UITableViewCellSeparatorStyleNone;
         _tableView.layer.cornerRadius = 5;
         _tableView.layer.masksToBounds = YES;
         _tableView.backgroundColor = [UIColor whiteColor];
-        //去掉ios7 的separatorInset边距
-        //        _tableView.separatorInset = UIEdgeInsetsMake(0, 0, 0, 0);
         //注册cell
         [_tableView registerNib:[UINib nibWithNibName:NSStringFromClass([LPAStoreRankCell class]) bundle:[NSBundle mainBundle]] forCellReuseIdentifier:@"LPAStoreRankCell"];
         

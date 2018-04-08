@@ -27,6 +27,15 @@
 		35441FAD2079BBAE00759621 /* ZCX_PDF_DiscoutCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 35441FAB2079BBAE00759621 /* ZCX_PDF_DiscoutCell.xib */; };
 		35441FB02079D57500759621 /* ZCXAlertView.m in Sources */ = {isa = PBXBuildFile; fileRef = 35441FAF2079D57500759621 /* ZCXAlertView.m */; };
 		35441FB22079D58400759621 /* ZCXAlertView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 35441FB12079D58400759621 /* ZCXAlertView.xib */; };
+		35441FB52079FBBB00759621 /* RightSideViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 35441FB32079FBBB00759621 /* RightSideViewController.m */; };
+		35441FBF2079FC4000759621 /* LPPFiltCategoryCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 35441FB62079FC4000759621 /* LPPFiltCategoryCell.m */; };
+		35441FC02079FC4000759621 /* LPPFilterHeadView.m in Sources */ = {isa = PBXBuildFile; fileRef = 35441FB72079FC4000759621 /* LPPFilterHeadView.m */; };
+		35441FC12079FC4000759621 /* LPPFilterBottomView.m in Sources */ = {isa = PBXBuildFile; fileRef = 35441FBA2079FC4000759621 /* LPPFilterBottomView.m */; };
+		35441FC22079FC4000759621 /* LPPFiltCategoryCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 35441FBB2079FC4000759621 /* LPPFiltCategoryCell.xib */; };
+		35441FC32079FC4000759621 /* LPPFilterBottomView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 35441FBC2079FC4000759621 /* LPPFilterBottomView.xib */; };
+		35441FC42079FC4000759621 /* LPPFilterHeadView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 35441FBE2079FC4000759621 /* LPPFilterHeadView.xib */; };
+		35441FC82079FD7700759621 /* LPPOtherCollectionCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 35441FC62079FD7700759621 /* LPPOtherCollectionCell.m */; };
+		35441FC92079FD7700759621 /* LPPOtherCollectionCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 35441FC72079FD7700759621 /* LPPOtherCollectionCell.xib */; };
 		354D62CE2071F19B00534D1E /* LPAMyBillingVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 354D62CD2071F19B00534D1E /* LPAMyBillingVC.m */; };
 		354D62D1207203D800534D1E /* LPAMyCMRHeadView.m in Sources */ = {isa = PBXBuildFile; fileRef = 354D62D0207203D800534D1E /* LPAMyCMRHeadView.m */; };
 		354D62D3207203EB00534D1E /* LPAMyCMRHeadView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 354D62D2207203EB00534D1E /* LPAMyCMRHeadView.xib */; };
@@ -337,6 +346,20 @@
 		35441FAE2079D57500759621 /* ZCXAlertView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZCXAlertView.h; sourceTree = "<group>"; };
 		35441FAF2079D57500759621 /* ZCXAlertView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZCXAlertView.m; sourceTree = "<group>"; };
 		35441FB12079D58400759621 /* ZCXAlertView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ZCXAlertView.xib; sourceTree = "<group>"; };
+		35441FB32079FBBB00759621 /* RightSideViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RightSideViewController.m; sourceTree = "<group>"; };
+		35441FB42079FBBB00759621 /* RightSideViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RightSideViewController.h; sourceTree = "<group>"; };
+		35441FB62079FC4000759621 /* LPPFiltCategoryCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LPPFiltCategoryCell.m; sourceTree = "<group>"; };
+		35441FB72079FC4000759621 /* LPPFilterHeadView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LPPFilterHeadView.m; sourceTree = "<group>"; };
+		35441FB82079FC4000759621 /* LPPFilterBottomView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LPPFilterBottomView.h; sourceTree = "<group>"; };
+		35441FB92079FC4000759621 /* LPPFiltCategoryCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LPPFiltCategoryCell.h; sourceTree = "<group>"; };
+		35441FBA2079FC4000759621 /* LPPFilterBottomView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LPPFilterBottomView.m; sourceTree = "<group>"; };
+		35441FBB2079FC4000759621 /* LPPFiltCategoryCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LPPFiltCategoryCell.xib; sourceTree = "<group>"; };
+		35441FBC2079FC4000759621 /* LPPFilterBottomView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LPPFilterBottomView.xib; sourceTree = "<group>"; };
+		35441FBD2079FC4000759621 /* LPPFilterHeadView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LPPFilterHeadView.h; sourceTree = "<group>"; };
+		35441FBE2079FC4000759621 /* LPPFilterHeadView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LPPFilterHeadView.xib; sourceTree = "<group>"; };
+		35441FC52079FD7600759621 /* LPPOtherCollectionCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LPPOtherCollectionCell.h; sourceTree = "<group>"; };
+		35441FC62079FD7700759621 /* LPPOtherCollectionCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LPPOtherCollectionCell.m; sourceTree = "<group>"; };
+		35441FC72079FD7700759621 /* LPPOtherCollectionCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LPPOtherCollectionCell.xib; sourceTree = "<group>"; };
 		354D62CC2071F19B00534D1E /* LPAMyBillingVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LPAMyBillingVC.h; sourceTree = "<group>"; };
 		354D62CD2071F19B00534D1E /* LPAMyBillingVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LPAMyBillingVC.m; sourceTree = "<group>"; };
 		354D62CF207203D800534D1E /* LPAMyCMRHeadView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LPAMyCMRHeadView.h; sourceTree = "<group>"; };
@@ -1441,6 +1464,8 @@
 				35B04E9D206B4511002D563F /* LPAMainNavC.m */,
 				35B04E9A206B4511002D563F /* LPAMainTabBarC.h */,
 				35B04E9B206B4511002D563F /* LPAMainTabBarC.m */,
+				35441FB42079FBBB00759621 /* RightSideViewController.h */,
+				35441FB32079FBBB00759621 /* RightSideViewController.m */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -1455,6 +1480,18 @@
 		35B04E8A206B432B002D563F /* View */ = {
 			isa = PBXGroup;
 			children = (
+				35441FB92079FC4000759621 /* LPPFiltCategoryCell.h */,
+				35441FB62079FC4000759621 /* LPPFiltCategoryCell.m */,
+				35441FBB2079FC4000759621 /* LPPFiltCategoryCell.xib */,
+				35441FB82079FC4000759621 /* LPPFilterBottomView.h */,
+				35441FBA2079FC4000759621 /* LPPFilterBottomView.m */,
+				35441FBC2079FC4000759621 /* LPPFilterBottomView.xib */,
+				35441FBD2079FC4000759621 /* LPPFilterHeadView.h */,
+				35441FB72079FC4000759621 /* LPPFilterHeadView.m */,
+				35441FBE2079FC4000759621 /* LPPFilterHeadView.xib */,
+				35441FC52079FD7600759621 /* LPPOtherCollectionCell.h */,
+				35441FC62079FD7700759621 /* LPPOtherCollectionCell.m */,
+				35441FC72079FD7700759621 /* LPPOtherCollectionCell.xib */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -1749,6 +1786,7 @@
 				35B04F51206BA580002D563F /* delete@2x.png in Resources */,
 				354D638A2073985D00534D1E /* cash.png in Resources */,
 				3572FCC6206CC071006836ED /* main_my_highlight.png in Resources */,
+				35441FC32079FC4000759621 /* LPPFilterBottomView.xib in Resources */,
 				3590DA1D206B39EE00504520 /* Assets.xcassets in Resources */,
 				3572FCB8206CBFB1006836ED /* add@2x.png in Resources */,
 				35B04ECF206B6F2C002D563F /* bigFindCommodity.png in Resources */,
@@ -1816,6 +1854,7 @@
 				35B04EF4206B7CB8002D563F /* rightArrow@2x.png in Resources */,
 				354D63302073460400534D1E /* LPA_LogisticsTopCell.xib in Resources */,
 				35B04F2E206B8A6A002D563F /* LPACommonSearchView.xib in Resources */,
+				35441FC22079FC4000759621 /* LPPFiltCategoryCell.xib in Resources */,
 				35441FA82079BB0300759621 /* glasses.png in Resources */,
 				3572FCF3206CCC43006836ED /* extern.png in Resources */,
 				35B04F50206BA580002D563F /* pwd.png in Resources */,
@@ -1900,6 +1939,7 @@
 				35B04F5B206BA580002D563F /* logo@2x.png in Resources */,
 				3572FD6C206E258A006836ED /* checkBtnBg@2x.png in Resources */,
 				3572FCB9206CBFB1006836ED /* bindVip.png in Resources */,
+				35441FC92079FD7700759621 /* LPPOtherCollectionCell.xib in Resources */,
 				354D62E3207225F800534D1E /* redBg.png in Resources */,
 				35441F8520747A0900759621 /* LPAPayRoutePopView.xib in Resources */,
 				35B04EFD206B7CD2002D563F /* light_close@3x.png in Resources */,
@@ -1919,6 +1959,7 @@
 				354D6352207369F900534D1E /* LPPCDCardCollectionCell.xib in Resources */,
 				35B04F02206B7CD2002D563F /* light_close.png in Resources */,
 				354D62E6207225F800534D1E /* blackBg@2x.png in Resources */,
+				35441FC42079FC4000759621 /* LPPFilterHeadView.xib in Resources */,
 				3572FD27206CF473006836ED /* select@3x.png in Resources */,
 				3572FD29206CF473006836ED /* disSelect@2x.png in Resources */,
 				355A15C5206C8ADA007DBF87 /* LPAFindPwdVC.xib in Resources */,
@@ -2009,6 +2050,7 @@
 				354D63402073658900534D1E /* LPAGoodsDetailVC.m in Sources */,
 				35B04F2C206B8A4E002D563F /* LPACommonSearchView.m in Sources */,
 				3572FD37206DD07D006836ED /* LPAChatRemindVC.m in Sources */,
+				35441FC82079FD7700759621 /* LPPOtherCollectionCell.m in Sources */,
 				354D634D207369F900534D1E /* LPPCDComparePriceCell.m in Sources */,
 				35B04E9E206B4511002D563F /* LPAMainTabBarC.m in Sources */,
 				3572FD86206E3CAC006836ED /* LPABindVipResultCell.m in Sources */,
@@ -2019,6 +2061,7 @@
 				3572FD34206CFD92006836ED /* LPAOrderDetailVC.m in Sources */,
 				35B04F3B206BA2FD002D563F /* LPALoginVC.m in Sources */,
 				3572FD3B206DD2B1006836ED /* LPAChatCell.m in Sources */,
+				35441FC12079FC4000759621 /* LPPFilterBottomView.m in Sources */,
 				35441F912074A51800759621 /* ZCXActionSheetTBCell.m in Sources */,
 				35F8DBA92071C44A0058D33F /* LPAMyKPICell.m in Sources */,
 				35B04EDD206B76CF002D563F /* LPAHomeCollectionCell.m in Sources */,
@@ -2055,6 +2098,7 @@
 				354D62FC2072383300534D1E /* LPAChangePwdView.m in Sources */,
 				3572FD70206E26DB006836ED /* LPAStoreRankCell.m in Sources */,
 				3572FD09206CEBB1006836ED /* LPAPayOnlineCell.m in Sources */,
+				35441FC02079FC4000759621 /* LPPFilterHeadView.m in Sources */,
 				354D6305207313C900534D1E /* LPA_CRM_OrderDetailCell.m in Sources */,
 				354D6351207369F900534D1E /* LPPCDCommodityStyleCell.m in Sources */,
 				354D632520732CE300534D1E /* LPA_CRM_WaitPostVC.m in Sources */,
@@ -2064,8 +2108,10 @@
 				35B04F32206B92AB002D563F /* LPAMyInfoVC.m in Sources */,
 				35F8DBAD2071C5300058D33F /* LPAMyKPIHeadView.m in Sources */,
 				35B04ED9206B7605002D563F /* ATCarouselView.m in Sources */,
+				35441FB52079FBBB00759621 /* RightSideViewController.m in Sources */,
 				3572FD74206E28C7006836ED /* LPATimeSelectView.m in Sources */,
 				354D62D1207203D800534D1E /* LPAMyCMRHeadView.m in Sources */,
+				35441FBF2079FC4000759621 /* LPPFiltCategoryCell.m in Sources */,
 				35441FB02079D57500759621 /* ZCXAlertView.m in Sources */,
 				3572FCD5206CC38D006836ED /* LPPCommodityCell.m in Sources */,
 				3572FD0E206CF089006836ED /* LPACommonSearchCell.m in Sources */,

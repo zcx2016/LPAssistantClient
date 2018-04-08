@@ -9,6 +9,8 @@
 #import "ZCXActionSheetView.h"
 #import "ZCXActionSheetTopView.h"
 #import "ZCXActionSheetTBCell.h"
+//
+#import "ZCXAlertView.h"
 
 @interface ZCXActionSheetView()<UITableViewDelegate,UITableViewDataSource,UITextFieldDelegate>
 
@@ -100,22 +102,25 @@
         make.height.equalTo(@1);
     }];
     
-    UIButton *btn = [UIButton new];
-    [botView addSubview:btn];
-    [btn mas_makeConstraints:^(MASConstraintMaker *make) {
+    self.sureBtn = [UIButton new];
+    [botView addSubview:self.sureBtn];
+    [self.sureBtn mas_makeConstraints:^(MASConstraintMaker *make) {
         make.left.equalTo(botView).with.offset(10);
         make.right.equalTo(botView).with.offset(-10);
         make.top.equalTo(botView).with.offset(5);
         make.bottom.equalTo(botView).with.offset(-5);
     }];
-    [btn setTitle:@"选择会员" forState:UIControlStateNormal];
-    [btn addTarget:self action:@selector(pickVip) forControlEvents:UIControlEventTouchUpInside];
-    [btn setBackgroundImage:[UIImage imageNamed:@"redBtnBg"] forState:UIControlStateNormal];
+    [self.sureBtn setTitle:@"选择会员" forState:UIControlStateNormal];
+    [self.sureBtn addTarget:self action:@selector(pickVip) forControlEvents:UIControlEventTouchUpInside];
+    [self.sureBtn setBackgroundImage:[UIImage imageNamed:@"redBtnBg"] forState:UIControlStateNormal];
 }
 
 - (void)pickVip{
-    NSLog(@"选择好会员，然后传值，然后将界面退出");
-    [self dismiss];
+
+    ZCXAlertView  *alertView = [[NSBundle mainBundle] loadNibNamed:@"ZCXAlertView" owner:nil options:nil].lastObject;
+    //放在最上层
+    UIWindow *window = [[UIApplication sharedApplication].delegate window];
+    [window addSubview:alertView];
 }
 
 //背景

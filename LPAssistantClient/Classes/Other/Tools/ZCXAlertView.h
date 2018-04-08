@@ -8,15 +8,21 @@
 
 #import <UIKit/UIKit.h>
 
-@interface ZCXAlertView : UIView
+@interface ZCXAlertView : UIView<UITextFieldDelegate>
 
+@property (weak, nonatomic) IBOutlet UIView *maskView;
+
+@property (weak, nonatomic) IBOutlet UIView *diyContentView;
 
 @property (weak, nonatomic) IBOutlet UITextField *phoneNumTF;
 @property (weak, nonatomic) IBOutlet UITextField *verifyCodeTF;
 
 @property (weak, nonatomic) IBOutlet UIButton *sendCodeBtn;
 
-@property (weak, nonatomic) IBOutlet UIButton *ignoreBtn;
+@property (weak, nonatomic) IBOutlet UIButton *skipBtn;
 @property (weak, nonatomic) IBOutlet UIButton *sureBtn;
+
+- (void)dissMissView;
+
 
 @end

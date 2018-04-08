@@ -24,34 +24,24 @@
 
 @implementation LPA_CRM_VipDetailVC
 
-- (void)viewWillAppear:(BOOL)animated{
-    [super viewWillAppear:animated];
-    self.navigationController.navigationBar.translucent = YES;
-}
-
-- (void)viewWillDisappear:(BOOL)animated{
-    [super viewWillDisappear:animated];
-    self.navigationController.navigationBar.translucent = NO;
-}
-
 - (void)viewDidLoad {
     [super viewDidLoad];
 
     self.navigationItem.title = @"会员详情";
     
     [self tableView];
-    [self bottomView];
+    [self setBottomView];
 }
 
-- (LPA_CRM_bottomView *)bottomView{
-    if (!_bottomView) {
-        _bottomView = [[NSBundle mainBundle] loadNibNamed:@"LPA_CRM_bottomView" owner:nil options:nil].lastObject;
-        _bottomView.frame = CGRectMake(0, kScreenHeight-55, kScreenWidth, 55);
-        [_bottomView.buyDetailBtn addTarget:self action:@selector(buyDetailBtnClick:) forControlEvents:UIControlEventTouchUpInside];
-        [_bottomView.orderDetailBtn addTarget:self action:@selector(orderDetailBtnClick:) forControlEvents:UIControlEventTouchUpInside];
-        [self.view addSubview:_bottomView];
-    }
-    return _bottomView;
+- (void)setBottomView{
+    _bottomView = [[NSBundle mainBundle] loadNibNamed:@"LPA_CRM_bottomView" owner:nil options:nil].lastObject;
+    [self.view addSubview:_bottomView];
+    [_bottomView mas_makeConstraints:^(MASConstraintMaker *make) {
+        make.left.right.bottom.equalTo(self.view).with.offset(0);
+        make.height.equalTo(@55);
+    }];
+    [_bottomView.buyDetailBtn addTarget:self action:@selector(buyDetailBtnClick:) forControlEvents:UIControlEventTouchUpInside];
+    [_bottomView.orderDetailBtn addTarget:self action:@selector(orderDetailBtnClick:) forControlEvents:UIControlEventTouchUpInside];
 }
 
 - (void)buyDetailBtnClick:(UIButton *)btn{

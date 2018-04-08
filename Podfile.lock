@@ -15,15 +15,18 @@ PODS:
     - BlocksKit/Core
     - BlocksKit/DynamicDelegate
   - Masonry (1.0.2)
+  - ViewDeck (2.4.2)
 
 DEPENDENCIES:
   - BlocksKit
   - Masonry
+  - ViewDeck
 
 SPEC CHECKSUMS:
   BlocksKit: 7f422b971407001178d181a43b99014ea2591fe6
   Masonry: 7c429b56da9d4ee0bbb3ed77a5ea710d6a5df39e
+  ViewDeck: 0b7b83bc2782a20dfb76207d0a2e8c5e6a6d182d
 
-PODFILE CHECKSUM: 32cead840d2b83623395dd1f1bae123905c60dc8
+PODFILE CHECKSUM: 4d397947f3c5fd2d07e5ae297aec64c8a93ef948
 
 COCOAPODS: 1.4.0

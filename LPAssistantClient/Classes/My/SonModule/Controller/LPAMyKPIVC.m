@@ -41,18 +41,30 @@
     self.view.backgroundColor = [UIColor whiteColor];
     [self createSegMentController];
     
+    [self setHeadTimePickView];
     [self leftTB];
     [self rightTB];
-    [self timeSelectView];
+    
+    //生日通知
+    [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(vipBirthdayNoti:) name:@"vipBirthday" object:nil];
 }
 
-- (LPATimeSelectView *)timeSelectView{
-    if (!_timeSelectView) {
-        _timeSelectView = [[NSBundle mainBundle] loadNibNamed:@"LPATimeSelectView" owner:nil options:nil].lastObject;
-        _timeSelectView.frame = CGRectMake(0, 64, kScreenWidth, 60);
-        [self.view addSubview:_timeSelectView];
-    }
-    return _timeSelectView;
+- (void)vipBirthdayNoti:(NSNotification *)noti{
+    NSDictionary *timeDict = [noti userInfo];
+    _timeSelectView.startTF.text = [timeDict objectForKey:@"time"];
+    [_timeSelectView.startTF resignFirstResponder];
+}
+
+- (void)setHeadTimePickView{
+    _timeSelectView = [[NSBundle mainBundle] loadNibNamed:@"LPATimeSelectView" owner:nil options:nil].lastObject;
+    [self.view addSubview:_timeSelectView];
+    [_timeSelectView mas_makeConstraints:^(MASConstraintMaker *make) {
+        make.left.right.equalTo(self.view).with.offset(0);
+        make.top.equalTo(self.view).with.offset(64);
+        make.height.equalTo(@60);
+    }];
+    _timeSelectView.startTF.inputView = [[[NSBundle mainBundle] loadNibNamed:@"SCTimePickerView" owner:self options:nil] firstObject];
+    _timeSelectView.endTF.inputView = [[[NSBundle mainBundle] loadNibNamed:@"SCTimePickerView" owner:self options:nil] firstObject];
 }
 
 //创建导航栏分栏控件
